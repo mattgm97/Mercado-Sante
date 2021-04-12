@@ -1,0 +1,171 @@
+.cb-flag {
+    
+  max-height: 50px;
+  height: 50px;
+
+  &-HightLight {
+
+    p{
+      &:nth-child(odd){
+        background-color: #FF681E;
+        color: white;
+        font-size: 10px;
+        padding: 5px 6px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 8px;
+        font-family: "Proxima Nova";
+        font-weight: 500;
+      }
+  
+      &:nth-child(even){
+        background-color: #A59E88;
+        color: white;
+        font-size: 10px;
+        padding: 5px 6px;
+        text-align: center;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 8px;
+        font-family: "Proxima Nova";
+        font-weight: 500;
+      }
+    }
+  }
+
+  a.cb-stamps__highlight{
+    color: #FFF;
+    font-family: "Univia Pro";
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    p.flag.promocoes-do-dia{
+      background: $color-bg-3;
+      padding: 9px 15px;
+      margin: 0;
+      width: 160px;
+      border-radius: 20px;
+    }
+  }
+    
+
+    &-payment {
+        display: inline-block;
+        // max-width: 190px;
+      
+        // @media (max-width: $screen-md-min) {
+        //   margin-bottom: 30px;
+        // }
+      
+        li {
+          display: inline-block;
+        }
+      
+        // Selos de pagamento
+        [class*="stamp"] {
+          // background: url('@{payment-logo}') no-repeat 0 0;
+          background: url("//cdn.quatrodigital.com/_general/qd-payment-stamp-flat.png")
+            no-repeat 0 0;
+          width: 47px;
+          height: 28px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          list-style: none;
+      
+        //   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        //     display: inline-block;
+        //     float: none !important;
+        //   }
+        }
+      
+        [class*="amex"] {
+          background-position: 0 0;
+        }
+      
+        [class*="master"] {
+          background-position: -306px -33px;
+        }
+      
+        [class*="visa"] {
+          background-position: -51px 0;
+        }
+      
+        [class*="elo"] {
+          background-position: -102px 0;
+        }
+      
+        [class*="diners"] {
+          background-position: -153px 0;
+        }
+      
+        [class*="boleto"] {
+          background-position: -204px 0;
+        }
+      
+        [class*="discover"] {
+          background-position: -255px 0;
+        }
+      
+        [class*="visaelectron"] {
+          background-position: -306px 0;
+        }
+      
+        [class*="paypal"] {
+          background-position: -356px 0;
+        }
+      
+        [class*="hsbc"] {
+          background-position: -508px 0;
+        }
+      
+        [class*="pagseguro"] {
+          background-position: 0 -33px;
+        }
+      
+        [class*="mercadopago"] {
+          background-position: -51px -33px;
+        }
+      
+        [class*="bradesco"] {
+          background-position: -102px -33px;
+        }
+      
+        [class*="itau"] {
+          background-position: -153px -33px;
+        }
+      
+        [class*="brasil"] {
+          background-position: -204px -33px;
+        }
+      
+        [class*="hipercard"] {
+          background-position: -255px -33px;
+        }
+      
+        [class*="bcash"] {
+          background-position: -356px -33px;
+        }
+      
+        [class*="aura"] {
+          background-position: -457px -33px;
+        }
+      
+        [class*="two-card"] {
+          background-position: -559px 0;
+        }
+      
+        [class*="stamp-cartao-havan"] {
+          background-position: -559px -33px;
+        }
+      
+        [class*="banrisul"] {
+          background-position: -508px -33px;
+        }
+      
+        [class*="santander"] {
+          background-position: -559px 0;
+        }
+      }
+      
+}

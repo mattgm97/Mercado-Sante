@@ -1,0 +1,466 @@
+.cb-header {
+    background: $color-bg-4;
+    padding: 25px 0 0 0;
+    // position: fixed;
+    z-index: 5;
+    width: 100%;
+    margin: 0;
+
+    @media (max-width: $screen-sm-max) {
+        display: none;
+    }
+
+    &-search{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        legend,
+        label,
+        select,
+        input[type=hidden]{
+            display: none;
+        }
+
+        fieldset {
+            width: 100%;
+            display: flex;
+        }
+
+        input.fulltext-search-box {
+            width: 100%;
+            height: 40px;
+            padding: 10px 0 10px 20px;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            // border-radius: 18px;
+            background: $color-bg-1!important;
+            border: 0;
+            letter-spacing: 0px;
+            color: $color-text-13;
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        input[type=button]{
+            // max-width: 30px;
+
+        }
+
+        .btn-buscar {
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+            
+            font-size: 0;
+            border: 0;
+            width: 80px;
+            background-color: $color-bg-1!important;
+            background-image: url("//carajasevolucao.vteximg.com.br/arquivos/icon-lupa.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-minhaConta {
+        padding-left: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        ul {
+            padding: 0;
+            display: flex;
+            margin: 0;
+            li {
+                list-style: none;
+                
+               a {
+                letter-spacing: 0px;
+                font-size: 12px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                color: $color-text-5;
+                text-decoration: none;
+                cursor: pointer;
+                    span {
+                        display: block;
+                        font-weight: 900;
+                    }
+               }
+
+                &:first-child {
+                    margin-right: 20px;
+                    display: flex;
+                    &:before {
+                        content: url("//carajasevolucao.vteximg.com.br/arquivos/icon-user.svg");
+                        margin-right: 10px;
+                        margin-top: 5px;
+                    }
+                }
+                
+                &:last-child {
+                    display: flex;
+                    &:before {
+                        content: url("//carajasevolucao.vteximg.com.br/arquivos/icon-carrinho.svg");
+                        margin-right: 10px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-departamento {
+        padding-left: 20px;
+        a {
+            font-size: 14px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0px;
+            color: $color-text-5;
+            text-decoration: none;
+            &:before {
+                content: "\f0c9";
+                @include cbyk-icon;
+                font-size: 14px;
+                color: $color-ico-4;
+                margin-right: 10px;
+            }
+
+            &:after {
+                content: "\f078";
+                @include cbyk-icon;
+                font-size: 14px;
+                color: $color-ico-4;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &-menu {
+        padding-top: 15px;
+        position: relative;
+        .depto-nav-area {
+            background: $color-bg-1;
+            position: absolute;
+            z-index: 999999999999999999;
+            margin-top: 25px;
+            padding: 0;
+            filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+        
+            .box-banner {
+                padding: 30px 20px 30px 0;
+            }
+
+            .deptos {
+                padding-right: 0;
+                &:first-child {
+                   
+                    margin: 0;
+
+                    ul {
+                        padding: 20px 0 0 10px;
+                    }
+                }
+
+                ul {
+                    li {
+                        
+                        &:after {
+                            content: "\f054";
+                            @include cbyk-icon;
+                            font-size: 14px;
+                            color: $color-text-6;
+                            margin-left: 10px;
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            #top-menu,
+            .deptos {
+
+                ul {
+                    padding: 0;
+                    padding-top: 20px;
+                    width: 100%;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        margin-bottom: 10px;
+                        
+
+                        a {
+                            letter-spacing: -0.14px;
+                            font-size: 14px;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: $color-text-6;
+                        }
+                    }
+                }
+            }
+
+            .deptonav {
+                ul {
+                    li:nth-child(odd) {
+                        clear: both;
+                        float: left;
+                        width: 50%;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        &-btn {
+            color: $color-ico-4;
+            font-size: 30px;
+        }
+    }
+
+    &-departamentos {
+        ul {
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-right: 40px;
+
+                a {
+                    letter-spacing: 0px;
+                    color: $color-text-5;
+                    font-size: 14px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color-text-14;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                    a {
+                        letter-spacing: 0px;
+                        color: $color-text-16;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 900;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &-deptos {
+            border-right: 0.5px solid $color-bd-9;
+            position: relative;
+        }
+
+        &-todos {
+            background: $color-bg-10;
+            padding: 10px 0 10px 10px;
+            position: absolute;
+            bottom: 0;
+            a {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                text-decoration: none;
+                color: $color-text-1;
+
+                &:after {
+                    content: "\f054";
+                    @include cbyk-icon;
+                    font-size: 14px;
+                    color: $color-text-6;
+                    margin-left: 10px;
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &-deptos {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+
+                a {
+                    color: $color-text-4;
+                    font-family: "Univia Pro";
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: -0.36px;
+                    line-height: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-areaUser {
+
+        &-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                padding: 0;
+                margin: 0;
+                li.dropdown {
+                    list-style: none;
+
+                    button {
+                        background: transparent;
+                        border: 0;
+                        font-size: 40px;
+                        color: $color-ico-1;
+                    }
+
+                    a {
+                        background-color: #FFF;
+                        padding: 10px;
+                        border-radius: 50px;
+                        color: $color-bg-4;
+                        font-size: 20px;
+                    }
+
+                    ul {
+                        padding: 20px;
+                        background: $color-bg-1;
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5) !important;
+                        border-radius: 10px !important;
+
+                        li {
+                           a {
+                            color: #828282;
+                            font-family: "Univia Pro";
+                            font-size: 14px;
+                            line-height: 14px;
+                           }
+
+                           &:last-child{
+                                a {
+                                    color: #63A213;
+                                    font-family: "Univia Pro";
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 14px;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+
+                    a {
+                        color: $color-text-5;
+                        font-size: 35px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-mobile{
+        background: $color-bg-4;
+        padding: 45px 30px 0 30px;
+        margin: 0;
+
+        @media (max-width: $screen-sm-max) {
+            padding: 15px 30px 0 30px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+
+        &-menu {
+            padding: 0;
+        }
+
+        &-logo {
+            padding: 0;
+            a {
+                margin-left: 20px;
+                img {
+                    width: 115px;
+                }
+            }
+        }
+
+        &-account {
+            ul {
+                padding: 0;
+                display: flex;
+                margin: 10px 0 0 0;
+                li {
+                    list-style: none;
+                    
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+
+                    i {
+                        color: $color-ico-4;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .cb-header-search  {
+            padding: 20px 0;
+        }
+    }
+}
+
+#ajaxBusy{
+    display: none;
+}
+
+body.product{
+    padding-top: 155px;
+}
+
+body.Home{
+    padding-top: 115px;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 80px;
+    }
+
+    .cb-cashback{
+        display: none;
+    }
+}
+
+body.departamento{
+    padding-top: 155px;
+}

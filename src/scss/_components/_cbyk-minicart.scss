@@ -1,0 +1,197 @@
+.cb-minicart {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff;
+    height: 100vh;
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,.25));
+    min-width: 345px;
+    z-index: 999;
+    max-width: 430px;
+
+    @media (max-width: $screen-sm-max) {
+        position: absolute;
+        max-width: 300px;
+        height: auto;
+    }
+
+    &-header {
+        background: $color-bg-4;
+        margin: 0;
+        h2 {
+            padding: 30px;
+            letter-spacing: -0.17px;
+            color: $color-text-5;
+            font-size: 18px;
+
+            &:before {
+                content: "\f053";
+                @include cbyk-icon;
+                font-size: 14px;
+                color: $color-ico-4;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &-btn {
+        &-close {
+            right: 0;
+            position: absolute;
+            cursor: pointer;
+            i {
+                color: $color-ico-4;
+                padding: 30px;
+            }
+        }
+    }
+
+    &-body {
+        background: $color-bg-1;
+        padding: 20px;
+        
+        #mini-cart-admake-aux {
+            display: none;
+        }
+
+        .prod-total {
+            margin-top: 15px;
+            p {
+                font-size: 12px;
+                letter-spacing: 0.31px;
+                color: $color-text-6;
+                font-family: 'Raleway', sans-serif;
+                margin-top: 10px;
+            }
+
+            input {
+                background: transparent;
+                border: 0;
+                margin-top: 1px;
+                text-align: center;
+                letter-spacing: 0.55px;
+                color: $color-text-1;
+                font-size: 20px;
+                text-align: center;
+                padding-left: 0;
+                width: 64px;
+            }
+
+            .unid{
+                display: block;
+                letter-spacing: 0.31px;
+                color: $color-text-11;
+                font-family: "Proxima Nova";
+                font-size: 12px;
+            }
+            
+            .price{
+                font-family: "Proxima Nova";
+                letter-spacing: 0.55px;
+                color: $color-text-1;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+
+        .mini-cart-item {
+            border-bottom: 0.5px solid $color-bd-9;
+            margin-bottom: 20px;
+        }
+
+        .product-remover {
+            cursor: pointer;
+
+            i {
+                color: $color-text-11;
+                border: 1px solid $color-ico-8;
+                padding: 10px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &-detalhes{
+        p {
+            line-height: 15px;
+            a {
+                letter-spacing: 0.31px;
+                text-decoration: none;
+                font-size: 12px;
+                color: $color-text-9;
+                font-family: 'Proxima Nova';
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-footer {
+        padding: 20px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+
+        @media (max-width: $screen-sm-max) {
+            position: relative;
+        }
+
+        .mini-cart-totais {
+            border-bottom: 0.5px solid $color-bg-10;
+            margin-bottom: 20px;
+
+            span{
+                letter-spacing: 0.31px;
+                color: $color-text-6;
+                font-size: 12px;
+                font-family: 'Proxima Nova';
+            }
+
+            strong {
+                font-family: 'Proxima Nova';
+                right: 0;
+                position: absolute;
+                margin-right: 20px;
+                color: $color-text-1;
+                font-size: 22px;
+                letter-spacing: 0.55px;
+                position: absolute;
+                top: 10px;
+            }
+        }
+
+        .mini-cart-botao {
+            text-align: center;
+            background: $color-bg-5;
+            padding: 10px;
+
+            a {
+                letter-spacing: 0.25px;
+                color: $color-text-5;
+                text-decoration: none;
+                font-size: 24px;
+                font-family: 'Proxima Nova';
+                font-weight: 600;
+            }
+        }
+
+        .mini-cart-botao-continuar {
+            text-align: center;
+            padding-top: 15px;
+
+            a {
+                text-decoration: underline;
+                letter-spacing: 0.37px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+    }
+}

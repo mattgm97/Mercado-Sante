@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Modelo Vtex</title>
+     <vtex:metaTags />
+     <vtex:template id="CBYK-Ca-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/CSS.cbyk.ca.product.css" rel="stylesheet" type="text/css" />
+ 
+ </head>
+ 
+ <body id="product-page">
+
+    <header>
+        <!--  SubTemplate: Header -->
+        <vtex:template id="CBYK-Ca-Header" />
+        <!-- /SubTemplate: Header -->
+    </header>
+    <!--colocar share fb e wpp-->
+    <section class="cb-product-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 cb-product-breadCrumb">
+                   <vtex.cmc:breadCrumb />
+                </div>
+                <div class="cb-product-info">
+                   <div class="row">
+                       <div class="col-md-6 cb-product-descricao">
+                           <div class="row">
+                               <div class="col-md-12 cb-product-name">
+                                   <vtex.cmc:productName />
+                               </div>
+                               <div class="col-md-12 cb-product-brand">
+                                   <span>Marca: </span>
+                                   <vtex.cmc:brandName />
+                               </div>
+                               <div class="col-md-12 cb-product-cod">
+                                   <span>Cód:</span>
+                                   <vtex.cmc:skuReference />
+                               </div>
+                               <div class="col-md-12 cb-evaluation-rate">
+                                <vtex.cmc:evaluationRate/>
+                               </div>
+                               <div class="col-md-12 cb-product-flags">
+                                   <!-- Tag de Promoção -->
+                                   <vtex.cmc:discountHightLight />
+                                   <vtex.cmc:HightLight/>
+                                   <!-- Finaliza tag de Promoção -->
+                               </div>
+                               <div class="col-md-12 cb-product-info-descricao">
+                                <vtex.cmc:ProductDescription />
+                                <a href="#description">Leia mais</a>
+                               </div>
+                               <div class="col-md-12 cb-compartilhamento">
+                                <p style="font-weight: bold;display: block;color: #1D1D1B;font-size: 19px;display: inline-block;">Compartilhe</p>
+                                <ul class="share-btns" style="display: inline-block;">
+                                    <li id="fbshare"> <a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li id="wppshare"><a href=""> <i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6 product-image">
+                           <!--  Component: Product Images -->
+                           <vtex.cmc:ProductImage zoom="on" />
+                       </div>
+                   </div>
+               </div>
+
+               <div class="cb-product-price">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <vtex.cmc:skuPrice />
+                        </div>
+                        <div class="col-md-12 cb-product-parcelamento">
+                            <span class="parcelamentoProd">Formas de pagamento
+                                <span class="caret"></span>
+                            </span>
+                            <div class="installmentslist">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 cb-product-caixa"></div>
+                        <div class="col-md-12">
+                            <vtex.cmc:SellerOptions />
+                        </div>
+                        <div class="col-md-12">
+                            <vtex.cmc:SalesChannelDropList />
+                        </div>
+                        <div class="col-md-12">
+                            <vtex.cmc:stockKeepingUnitService />
+                        </div>
+                        <div class="col-md-12 cb-product-adicionar"></div>
+                        <div class="col-md-12 cb-product-frete">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Calcule o frete
+                            </button>
+                            <!-- <button type="button" class="btn btn-primary" id="freteee" >
+                                Calcule o frete
+                            </button> -->
+
+                            <!-- <div class="shipping-box">
+                                <vtex.cmc:shippingValue />
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        ShippingValue();
+                                    });
+                                </script>
+                            </div> -->
+                        </div>
+                        <div class="col-md-12 cb-product-totalCaixas"></div>
+                        <div class="col-md-12 cb-product-adicionar-prevencao"></div>
+                        <div class="col-md-12 cb-product-buy">
+                            <vtex.cmc:BuyButton /> 
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 cb-product-compreJunto">
+                    <vtex.cmc:BuyTogether />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 cb-shelf-title-link">
+                <vtex:contentPlaceHolder id="Titulo Quem viu, viu também" />
+            </div>
+            <div class="col-md-12 cb-product-colecao">
+                <vtex:contentPlaceHolder id="Coleção Quem viu, viu também" />
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 cb-shelf-title-link">
+                <vtex:contentPlaceHolder id="Titulo Indicação" />
+            </div>
+            <div class="col-md-12 cb-product-colecao">
+                <vtex:contentPlaceHolder id="Coleção Indicação" />
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cb-product-description">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#description">Informações sobre o produto</a>
+                                <a href="#specification">Ficha técnica</a>
+                                <a href="#reviews">Avaliações</a>
+                                <hr />
+                            </div>
+                            <div class="col-md-12 cb-product-description-description" id="description">
+                                <h2>Descrição</h2>
+                                <vtex.cmc:ProductDescription />
+                            </div>
+                            <div class="col-md-12 cb-product-description-specification"  id="specification">
+                                <h2>Ficha técnica</h2>
+                                <vtex.cmc:productSpecification />
+                            </div>
+                            <div class="col-md-12 cb-product-description-reviews"  id="reviews">
+                                <h2>Avaliação dos clientes</h2>
+                                <!-- <vtex.cmc:productSpecification /> -->
+                                <vtex.cmc:UserReview />
+                            </div>
+                        </div>      
+                    </div><!-- .product-description -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <vtex:contentPlaceHolder id="Banner promoção Trio" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row cb-product-newsletter" id="newsletter">
+                <div class="col-md-5 d-flex cb-product-newsletter-text" id="newstext">
+                    <img src="/arquivos/icon-envelope.svg" alt="" />
+                    <p>
+                      Cadastre seu e-mail e receba <span>ofertas exclusivas da Carajás</span>
+                    </p>
+                </div>
+                <div class="col-md-7 cb-product-newsletter-input" id="newsform">
+                  <label>
+                      <!-- <input id="nameform" type="name" placeholder="Seu nome" /> -->
+                      <input id="emailform" type="email" placeholder="Digite seu email..." />
+                      <input id="commit" name="commit" type="submit" value="ENVIAR" />
+                  </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+          <div class="row">
+              <div class="col-12 cb-shelf-title-link">
+                  <vtex:contentPlaceHolder id="Titulo Últimos conteúdos" />
+              </div>
+          </div>
+          <div class="row cb-product-conteudos">
+            <vtex:contentPlaceHolder id="Últimos conteúdos" />
+          </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+          <div class="row cb-product-departamento">
+            <div class="col-md-12">
+                <vtex:contentPlaceHolder id="Titulo Compre por departamento" />
+            </div>
+            <div class="col-md-12">
+                <vtex:contentPlaceHolder id="Carousel Compre por departamento" />
+            </div>
+          </div>
+        </div>
+    </section>
+     <!--  SubTemplate: Footer -->
+     <vtex:template id="CBYK-Ca-footer" />
+     <!-- /SubTemplate: Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade cb-product-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Simulação de frete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Essa é uma simulação de frete, calculada sobre 1 unidade do produto. Para saber o valor final, inclua os produtos no carrinho de compra e coloque seu CEP para confirmar o valor.</p>
+                    <div class="shipping-box">
+                        <vtex.cmc:shippingValue />
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                ShippingValue();
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+ <script src="/arquivos/discount.js"></script>
+ <script>
+     $(document).ready(function () {
+         $(".bt.freight-btn").val("CALCULAR");
+     });
+ 
+ </script>
+
+ <script src="/arquivos/JS.cbyk-product.js"></script>
+ <vtex:template id="CBYK-Ca-footer-Tags" />
+
+ </html>

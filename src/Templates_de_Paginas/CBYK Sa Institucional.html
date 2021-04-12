@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title>Departamento</title>
+     <vtex:metaTags/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+     <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
+     <script src="/arquivos/ion.rangeSlider.min.js"></script>
+     <vtex:template id="CBYK-Ca-Header-Tags" />
+     <link href="/arquivos/CSS.cbyk.ca.institucional.css" rel="stylesheet" type="text/css" />
+ </head>
+ 
+ <body id="departament-page">
+    <header>
+        <!--  SubTemplate: Header -->
+        <vtex:template id="CBYK-Ca-Header" />
+        <!-- /SubTemplate: Header -->
+      </header>
+    
+
+    <section>
+        <div class="container">
+            <div class="row cb-institucional">
+                <div class="col-md-3 cb-institucional-menu">
+                    <vtex.cmc:MenuInstitucionalLateral />
+                </div>
+                <div class="col-md-9 cb-institucional-conteudo">
+                    <vtex:contentPlaceHolder id="Conteúdo institucional" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  SubTemplate: Footer -->
+    <vtex:template id="CBYK-Ca-footer" />
+    <!-- /SubTemplate: Footer -->
+ 
+ </body>
+    <vtex:template id="CBYK-Ca-footer-Tags" />
+</html>
+
+

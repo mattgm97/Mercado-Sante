@@ -1,0 +1,1089 @@
+@import "_mixins/cbyk-mixins";
+
+.cb-product{
+
+    &-container{
+        @media (max-width: $screen-sm-max) {
+            padding: 0 10px;
+        }
+
+
+        .product-image {
+            .apresentacao {
+                .zoomPad {
+                   
+                    @media (max-width: $screen-sm-max) {
+                        position: relative;
+                        display: block !important;
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .thumbs {
+                    li {
+                        border: 1px solid $color-bd-5;
+
+                        a {
+                            img{
+                                padding: 8px;
+                                width: 40px;
+                            }
+                        }
+                    }
+
+                    button {
+                        top: 0 !important;
+                    }
+
+                    .slick-list {
+                        .slick-track {
+                            li {
+                               
+                                @media (max-width: $screen-sm-max) {
+                                    max-width: 55px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .product-image {
+                .zoomPad {
+                    z-index: 1 !important;
+                }
+            }
+        }
+    }
+
+    &-breadCrumb {
+        ul {
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-transform: capitalize;
+                    letter-spacing: 0.28px;
+                    font-size: 11px;
+                    color: $color-text-9;
+                    text-decoration: none;
+
+                    &:after {
+                        @include cbyk-icon;
+                        content: '\f054';
+                        margin: 10px;
+
+                        &:last-child{
+                           font-size: 0;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        color: $color-text-12;
+
+                        &:after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-descricao{
+        @media (max-width: $screen-sm-max) {
+            order: 2;
+        }
+    }
+
+    &-info {
+        border: 1px solid $color-bd-5;
+        border-radius: 2px;
+        max-width: calc(75% - 20px);
+        margin-right: 20px;
+        padding: 25px;
+
+        @media (max-width: $screen-sm-max) {
+            max-width: 100%;
+            margin: 0px;
+            order: 1;
+            margin-bottom: 10px;
+        }
+
+        // &:hover {
+        //     border: 1px solid $color-bd-6;
+        // }
+
+        &-descricao {
+            .productDescription {
+                padding: 20px 0;
+                color: $color-text-6;
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.35px;
+
+                display: inline-block;
+                height: 86px;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
+
+                position: relative;
+                width: 100%;
+
+                &:after {
+                    content: '...';
+                }
+            }
+
+            a {
+                color: $color-text-12;
+                text-decoration: underline;
+                letter-spacing: 0.35px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                display: block;
+
+                margin: 30px 0;
+            }
+        }
+
+        ul.thumbs {
+            
+            .slick-prev {
+                z-index: 999;
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                @include cbyk-arrows-1;
+                &:after {
+                    content: '\f053';
+                    font-size: 20px;
+                }
+            }
+    
+            .slick-next {
+                z-index: 999;
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                @include cbyk-arrows-1;
+                &:after {
+                    content: '\f054';
+                    font-size: 20px;
+                }
+            }
+
+            .slick-dots {
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px;
+                li{
+                    list-style: none;
+                    margin-right: 10px;
+                }
+
+                button {
+                    @include cbyk-dots-1;
+                    width: 10px;
+                    height: 10px;
+                    background: $color-bg-11;
+                }
+
+                .slick-active {
+                    button {
+                        background: $color-bg-12;
+                    }
+                }
+            }
+        }
+    }
+
+    &-flags {
+        display: flex;
+        p{
+            &:nth-child(odd){
+              background-color: #FF681E;
+              color: white;
+              font-size: 10px;
+              padding: 5px 6px;
+              text-align: center;
+              margin-bottom: 5px;
+              font-size: 8px;
+              font-family: "Proxima Nova";
+              font-weight: 500;
+              max-width: 50%;
+            }
+        
+            &:nth-child(even){
+              background-color: #A59E88;
+              color: white;
+              font-size: 10px;
+              padding: 5px 6px;
+              text-align: center;
+              margin-bottom: 5px;
+              text-transform: uppercase;
+              font-size: 8px;
+              font-family: "Proxima Nova";
+              font-weight: 500;
+              max-width: 50%;
+            }
+          }
+    }
+
+    &-parcelamento{
+        margin-top: 15px;
+
+        .parcelamentoProd {
+            cursor: pointer;
+            text-decoration: underline;
+            letter-spacing: 0.3px;
+            color: $color-text-19;
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        .installmentslist {
+            display: none;
+            position: absolute;
+            background: $color-text-5;
+            filter: drop-shadow(0 3px 3px rgba(0,0,0,.25));
+            ul {
+                padding: 10px 20px 10px 20px;
+                margin: 0;
+                li {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    color: $color-text-15;
+                    letter-spacing: 0.35px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+
+                    &:after {
+                        content: ' sem juros';
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-modal {
+        
+        .modal-header {
+            h5,
+            button {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                letter-spacing: 0.35px;
+                color: $color-text-6;
+                font-size: 14px;
+            }
+        }
+
+        .modal-body {
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 10px;
+                letter-spacing: 0.25px;
+                color: $color-text-11;
+            }
+
+            .shipping-box {
+                .content {
+                    fieldset {
+
+                        label {
+                            font-size: 0;
+                            width: 80%;
+                            &:before {
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 600;
+                                font-size: 12px;
+                                content: 'Cacule o frete e o prazo de entrega:';
+                                letter-spacing: 0.3px;
+                                color: $color-text-6;
+                            }
+                            .fitext {
+                                height: 40px;
+                                border-radius: 0;
+                                border: 1px solid #EDECEC;
+                                box-shadow: none;
+
+                                display: block;
+                                width: 100%;
+                                padding: 0 10px;
+
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 600;
+                                font-size: 12px;
+                                letter-spacing: 0.3px;
+                                color: $color-text-6;
+                            }
+                        }
+
+                        .cep-busca {
+                            display: block;
+
+                            a {
+                                margin: 0;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 500;
+                                font-size: 10px;
+                                text-decoration: underline;
+                                letter-spacing: 0.25px;
+                                color: $color-text-11;
+                            }
+                        }
+
+                        .frete-calcular{
+                            .freight-btn {
+                                height: 40px;
+                                border-radius: 0;
+                                box-shadow: none;
+                                font-family: "Proxima Nova";
+                                font-weight: 600;
+                                font-size: 20px;
+                                letter-spacing: 0.2px;
+                                color: $color-text-5;
+                                background: $color-bg-4;
+                                border: 0;
+                            }
+                        }
+                    }
+                    
+                    .freight-values {
+                        border: 0;
+
+                        table {
+                            thead{
+                                tr {
+                                    th {
+                                        width: 50%;
+                                        font-family: 'Raleway', sans-serif;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        letter-spacing: 0.35px;
+                                        color: $color-text-6;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        font-family: 'Raleway', sans-serif;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        letter-spacing: 0.3px;
+                                        color: $color-text-6;
+                                        border: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-caixa {
+        margin-top: 10px;
+        p {
+            background: $color-bg-4;
+            padding: 5px;
+            letter-spacing: 0px;
+            color: $color-text-5;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            span {
+                letter-spacing: 0px;
+                color: $color-text-14;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-totalCaixas {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: $color-text-11;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &-btn {
+        &-menos{
+            @include cbyk-arrows-1;
+            padding: 0;
+            margin-left: 8px;
+            margin-right: 5px;
+            
+            &:after {
+                content: '\f053';
+                font-size: 20px;
+            }
+        }
+
+        &-mais{
+            @include cbyk-arrows-1;
+            padding: 0;
+            margin-right: 5px;
+            margin-left: 7px;
+
+            &:after {
+                content: '\f054';
+                font-size: 20px;
+            }
+        }
+    }
+
+    &-qtd {
+        border: 1px solid #EDECEC;
+        padding: 10px;
+        &-input {
+            max-width: 100%;
+            text-align: center;
+            border: 0;
+        }
+    }
+
+    &-quantity {
+        margin: 20px 0;
+        a.buy-button-ref {
+            display: none !important;
+        }
+    }
+
+    &-frete {
+        margin-top: 50px;
+        a {
+            color: $color-text-12;
+            text-decoration: underline;
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+        }
+
+        button {
+            padding: 0;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: #ffa300 !important;
+        }
+    }
+
+    &-buy{
+        margin-top: 0;
+        a {
+            background: $color-bg-5;
+            text-align: center;
+            color: $color-text-5;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            height: 40px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-button {
+            &-box{
+                a {
+                    max-width: 288px;
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    &-metragemPiso {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            color: $color-text-11;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-adicionar {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        color: $color-text-11;
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        p {
+            margin: 0 0 0 20px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            color: $color-text-6;
+        }
+    }
+
+    &-name {
+        color: $color-text-9;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+
+    &-brand {
+        display: flex;
+        span {
+            margin-right: 10px;
+            color: $color-text-11;
+            font-size: 14px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.35px;
+        }
+        a {
+            color: $color-text-3;
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            bottom: 3px;
+            position: relative;
+        }
+    }
+
+    &-cod {
+        display: flex;
+        color: $color-text-11;
+        font-size: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        margin-top: 10px;
+        span {
+            margin-right: 10px;
+        }
+    }
+
+    &-image{
+        #image {
+            a {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &-price {
+        border: 1px solid $color-bd-5;
+        border-radius: 2px;
+        max-width: 25%;
+        padding: 25px;
+        @media (max-width: $screen-sm-max) {
+            max-width: 100%;
+            order: 3;
+        }
+
+        // &:hover {
+        //     border: 1px solid $color-bd-6;
+        // }
+
+        .plugin-preco {
+            .productPrice {
+                p.descricao-preco{
+                    em.valor-por.price-best-price{
+                        color: $color-text-11;
+                        letter-spacing: 0.3px;
+                        font-size: 12px;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+
+                        strong.skuBestPrice {
+                            letter-spacing: -1.25px;
+                            color: $color-text-1;
+                            font-size: 50px;
+                            font-family: "Proxima Nova";
+                            font-weight: 700;
+                        }
+                    }
+
+                    em.valor-de.price-list-price{
+                        letter-spacing: 0.3px;
+                        color: $color-text-11;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 12px;
+
+                        strong{
+                            text-decoration: line-through;
+                            font-weight: 500;
+                        }
+                    }
+
+                    em.valor-dividido.price-installments{
+                        
+                        span {
+                            span {
+                                font-size: 0px;
+
+                                label{
+                                    font-size: 14px;
+
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        letter-spacing: 0.35px;
+                        color: $color-text-10;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        strong {
+                            font-weight: 500;
+                        }
+
+                        &:before {
+                            content: 'em até ';
+                        }
+
+                        &:after {
+                            content: ' sem juros';
+                        }
+                    }
+                }
+            }
+
+            .preco-a-vista {
+                display: none !important;
+            }
+        }
+    }
+    &-compreJunto {
+        margin-top: 30px;
+
+        #divCompreJunto {
+
+            table {
+                margin-top: 30px;
+            }
+
+            .itemA,
+            .itemB,
+            .buy {
+                
+                width: 400px;
+                border: 1px solid $color-bg-6;
+                padding: 30px;
+                border-radius: 3px;
+
+                &:hover {
+                    border: 1px solid $color-bg-7;
+                }
+
+                h3 {
+                    margin-top: 15px;
+                    font-size: 16px;
+                    a {
+                        text-align: left;
+                        display: block;
+                        font-size: 16px;
+                        color: $color-text-9;
+                        font-family: 'Raleway', sans-serif;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+
+            .itemA,
+            .itemB{
+                
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            .plus,
+            .equal {
+                width: 90px;
+                text-align: center;
+                color: $color-text-1;
+                font-size: 50px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+            }
+
+            .buy {
+                font-size: 14px;
+                color: $color-text-9;
+                font-family: 'Raleway', sans-serif;
+                
+                .comprar-junto {
+                    
+                   margin-top: 30px;
+                    background: $color-bg-4;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        color: $color-text-5;
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 500;
+                    }
+                }
+
+                .more {
+                    display: none;
+                }
+            }
+
+            .buy-together {
+                display: none;
+            }
+        }
+    }
+
+    &-description {
+        margin-top: 50px;
+        a {
+            text-decoration: none;
+            margin-right: 35px;
+            color: $color-text-1;
+            letter-spacing: 0.35px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        &-description {
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        &-specification {
+            
+            table {
+                width: 100%;
+            }
+            
+            tr {
+                
+                &:nth-child(odd){
+                    background: $color-bg-13;
+                }
+    
+                &:nth-child(even){
+                    background: $color-bg-1;
+                }
+
+                td {
+                    font-size: 12px !important; 
+                    letter-spacing: 0px;
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+        }
+    }
+    
+    &-colecao {
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 260px;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                left: -5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: '\f053';
+                font-size: 20px;
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 260px;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                right: -5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: '\f054';
+                font-size: 20px;
+            }
+        }
+    }
+
+    &-newsletter{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 35px 0 35px 65px;
+        background: $color-bg-4;
+        @media (max-width: $screen-sm-max) {
+            padding: 20px 30px 20px 30px;
+        }
+        p {
+            color: $color-text-5;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            display: block;
+            margin: 0;
+            @media (max-width: $screen-sm-max) {
+                font-size: 14px;
+            }
+            span {
+                font-weight: 700;
+                display: block;
+            }
+        }
+
+        i {
+            font-size: 100px;
+            margin-right: 70px;
+            color: $color-ico-4;
+            @media (max-width: $screen-sm-max) {
+                margin-right: 10px;
+                font-size: 40px;
+            }
+        }
+
+        &-text {
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 90px;
+                margin-right: 50px;
+            }
+        }
+
+        &-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $screen-sm-max) {
+                margin-top: 20px;
+            }
+            label {
+                width: 100%;
+            }
+
+            input#emailform {
+                width: 70%;
+                border-radius: 21px;
+                height: 40px;
+                border: 0;
+                box-sizing: none;
+                padding-left: 30px;
+                @media (max-width: $screen-sm-max) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            input#commit {
+                margin-left: 40px;
+                border: 0;
+                letter-spacing: 0px;
+                color: $color-text-5;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                padding: 10px 20px;
+                background: $color-bg-5;
+                @media (max-width: $screen-sm-max) {
+                    margin-left: 0px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-conteudos{
+        
+        img{
+            width: 100%;
+        }
+
+        &-content {
+            height: 490px;
+            background: $color-bg-3;
+
+            h2 {
+                padding-top: 15px;
+                letter-spacing: 0.2px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            p {
+                letter-spacing: 0.14px;
+                color: $color-text-2;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+
+    
+        }
+
+        &-data {
+            p {
+                letter-spacing: -0.12px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+            }
+        }
+
+        &-link {
+            text-align: right;
+            a {
+                text-decoration: none;
+                letter-spacing: 0.12px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                font-size: 11px;
+                
+            }
+        }
+    }
+
+    &-departamento {
+        padding: 30px 0 20px 0;
+        text-align: center;
+        @media (max-width: $screen-sm-max) {
+            padding: 30px 0 10px 0;
+        }
+        &-item {
+            padding: 0 10px;
+            @media (max-width: $screen-sm-max) {
+                padding: 0 5px;
+            }
+            &-icon {
+                background: $color-bg-4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 25px 0;
+                @media (max-width: $screen-sm-max) {
+                    padding: 10px 0;
+                }
+                img {
+                    height: 76px;
+                    @media (max-width: $screen-sm-max) {
+                        height: 40px;
+                    }
+                }
+            }
+
+            &-text {
+                padding: 20px 0;
+                p {
+                    color: $color-text-6;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    text-align: center;
+                        @media (max-width: $screen-sm-max) {
+                            font-size: 9px;
+                        }
+                }
+            }
+        }
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 60px;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                left: -5px;
+                top: 20px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: '\f053';
+                font-size: 20px;
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 60px;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                right: -5px;
+                top: 20px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: '\f054';
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.cb-product {
+    .box-banner {
+        padding: 40px 0;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.cb-zoom {
+	overflow: hidden;
+	transition: transform .5s ease;
+
+    &:hover {
+        transform: scale(.95);
+        border: 1px solid $color-bd-4;
+    }
+    
+}

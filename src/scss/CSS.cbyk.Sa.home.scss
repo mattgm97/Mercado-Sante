@@ -1,0 +1,702 @@
+@import "_mixins/cbyk-mixins";
+
+.cb-home{
+
+    &-content {
+        &-info {
+            bottom: 0;
+        }
+    }
+
+    &-fullbanner {
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            @include cbyk-arrows-1;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-banner-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            @include cbyk-arrows-1;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-banner-next.svg");
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0 0 0;
+
+            li {
+                list-style: none;
+                font-size: 0;
+                
+                button {
+                    border: 0;
+                    margin: 0 5px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: $color-bg-11 !important;
+                    border-color: $color-bg-11 !important;
+                }
+            }
+
+            li.slick-active {
+                button {
+                    border: 0;
+                    margin: 0 5px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: $color-bg-12 !important;
+                }
+            }
+        }
+    }
+
+    &-tipbar {
+        margin: 30px 0;
+        @media (max-width: $screen-sm-max) {
+            display: none;
+        }
+        &-content {
+            a {
+                display: flex !important;
+                color: $color-text-7;
+                font-size: 14px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                margin: 0;
+                text-decoration: none;
+                letter-spacing: 0px;
+                line-height: normal;
+                span {
+                    font-weight: 700;
+                }
+                &:hover {
+                    color: $color-text-3;
+
+                    .cb-home-tipbar-icon-active {
+                        img{
+                            display: block;
+                        }
+                    }
+
+                    .cb-home-tipbar-icon {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+
+                .cb-home-tipbar-icon {
+                    img {
+                        display: block;
+                    }
+                }
+
+                .cb-home-tipbar-icon-active {
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            img {
+                margin-right: 5px;
+                width: auto;
+                height: 35px;
+            }
+
+            &-active{
+                margin-right: 5px;
+                width: auto;
+                height: 35px;
+            }
+        }
+    }
+   
+    &-conteudos{
+
+        &-content {
+            height: 510px;
+            background: $color-bg-3;
+
+            h2 {
+                padding-top: 15px;
+                letter-spacing: 0.2px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            p {
+                letter-spacing: 0.14px;
+                color: $color-text-2;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            img{
+                width: 100%;
+            }
+    
+        }
+
+        &-data {
+            p {
+                letter-spacing: -0.12px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 11px;
+            }
+        }
+
+        &-link {
+            text-align: right;
+            a {
+                text-decoration: none;
+                letter-spacing: 0.12px;
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                
+            }
+        }
+    }
+
+    &-colecao {
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                left: -5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                right: -5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+            }
+        }
+    }
+
+    &-departamento {
+
+        text-align: center;
+        @media (max-width: $screen-sm-max) {
+            padding: 30px 0 10px 0;
+        }
+        &-item {
+            padding: 0 10px;
+            @media (max-width: $screen-sm-max) {
+                padding: 0 5px;
+            }
+            &-icon {
+                background: $color-bg-4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 25px 0;
+                @media (max-width: $screen-sm-max) {
+                    padding: 10px 0;
+                }
+                img {
+                    height: 76px;
+                    @media (max-width: $screen-sm-max) {
+                        height: 40px;
+                    }
+                }
+            }
+
+            &-text {
+                padding: 20px 0;
+                p {
+                    color: $color-text-6;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    text-align: center;
+                        @media (max-width: $screen-sm-max) {
+                            font-size: 9px;
+                        }
+                }
+            }
+        }
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                left: -5px;
+                top: 45px;
+                width: 30px;
+                height: 30px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                right: -5px;
+                top: 45px;
+                width: 30px;
+                height: 30px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+            }
+        }
+    }
+
+    &-destaques {
+        &-slick {
+            .slick-prev {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                left: -10px;
+                @media (max-width: $screen-sm-max) {
+                    left: 5px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+                }
+            }
+    
+            .slick-next {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                @media (max-width: $screen-sm-max) {
+                    right: 5px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+                }
+            }
+        }
+
+        &-colecao {
+
+            ul {
+                width: 50% !important;
+                @media (max-width: $screen-sm-max) {
+                    max-width: 176px;
+                }
+            }
+            .slick-prev {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                left: -10px;
+                @media (max-width: $screen-sm-max) {
+                    left: 5px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+                }
+            }
+    
+            .slick-next {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                @media (max-width: $screen-sm-max) {
+                    right: 5px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+                }
+            }
+        }
+    }
+
+    &-lojasParceiras {
+        margin-bottom: 40px;
+
+        .item {
+            img {
+                width: 100%;
+                padding-right: 20px;
+                @media (max-width: $screen-sm-max) {
+                    width: 100%;
+                    padding: 0px;
+                }
+            }
+        }
+
+
+        .slick-slide{
+            @media (max-width: $screen-sm-max) {
+                // max-width: 155px !important;
+                margin: 0 5px;
+            }
+        }
+
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                top: 50%;
+                left: -5px;
+                width: 30px;
+                height: 30px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                top: 50%;
+                right: -5px;
+                width: 30px;
+                height: 30px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+            }
+        }
+    }
+
+    &-nossasFiliais {
+        margin-bottom: 30px;
+        .item {
+            img {
+                width: 100%;
+                padding-right: 20px;
+                @media (max-width: $screen-sm-max) {
+                    width: 100%;
+                    padding: 0px;
+                }
+            }
+        }
+
+
+        .slick-slide{
+            @media (max-width: $screen-sm-max) {
+                // max-width: 155px !important;
+                margin: 0 5px;
+            }
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            margin: 20px;
+            font-size: 14px;
+            text-align: center;
+            @media (max-width: $screen-sm-max) {
+                font-size: 12px;
+            }
+        }
+
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            @media (max-width: $screen-sm-max) {
+                left: -5px;
+                top: 20px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            @media (max-width: $screen-sm-max) {
+                right: -5px;
+                top: 20px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+            }
+        }
+    }
+
+    &-novidades{
+        .slick-prev {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            @media (max-width: $screen-sm-max) {
+                left: 5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+            }
+        }
+
+        .slick-next {
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            @media (max-width: $screen-sm-max) {
+                right: 5px;
+            }
+            @include cbyk-arrows-2;
+            &:after {
+                content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+            }
+        }
+    }
+
+    &-cartao-club-app {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-newsletter{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 35px 0 35px 65px;
+        background: $color-bg-4;
+        @media (max-width: $screen-sm-max) {
+            padding: 20px 30px 20px 30px;
+        }
+        p {
+            color: $color-text-5;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            display: block;
+            margin: 0;
+            @media (max-width: $screen-sm-max) {
+                font-size: 14px;
+            }
+            span {
+                font-weight: 700;
+                display: block;
+            }
+        }
+
+        i {
+            font-size: 100px;
+            margin-right: 70px;
+            color: $color-ico-4;
+            @media (max-width: $screen-sm-max) {
+                margin-right: 10px;
+                font-size: 40px;
+            }
+        }
+
+        &-text {
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 120px;
+                margin-right: 50px;
+            }
+        }
+
+        &-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $screen-sm-max) {
+                margin-top: 20px;
+            }
+            label {
+                width: 100%;
+            }
+
+            input#emailform {
+                width: 70%;
+                border-radius: 21px;
+                height: 40px;
+                border: 0;
+                box-sizing: none;
+                padding-left: 30px;
+                @media (max-width: $screen-sm-max) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            input#commit {
+                margin-left: 40px;
+                border: 0;
+                letter-spacing: 0px;
+                color: $color-text-5;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                padding: 10px 20px;
+                background: $color-bg-5;
+                @media (max-width: $screen-sm-max) {
+                    margin-left: 0px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-desconto {
+        &-slick {
+            .slick-prev {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                left: -10px;
+                @media (max-width: $screen-sm-max) {
+                    left: 5px;
+                    width: 30px;
+                    height: 30px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-prev.svg");
+                }
+            }
+    
+            .slick-next {
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                @media (max-width: $screen-sm-max) {
+                    right: 5px;
+                    width: 30px;
+                    height: 30px;
+                }
+                @include cbyk-arrows-2;
+                &:after {
+                    content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-next.svg");
+                }
+            }
+        }
+    }
+
+}
+
+
+.home {
+    .box-banner {
+        padding: 20px 0;
+        a {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .cb-home-fullbanner {
+        .box-banner {
+            padding: 0 !important;
+            a {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .cb-home-novidades {
+        .box-banner {
+            padding: 0 !important;
+            a {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .cb-home-desconto {
+        .box-banner {
+            padding: 0 !important;
+            a {
+                img {
+                    width: 100%;
+                    height: auto;
+                    @media (max-width: $screen-sm-max) {
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cb-home-destaques {
+        .box-banner {
+            padding: 0 !important;
+            a {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

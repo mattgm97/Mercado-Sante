@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+  <head>
+    <vtex:metaTags />
+    <vtex:contentPlaceHolder id="cbyk_head" />
+    <meta charset="UTF-8" />
+    <title>
+        <vtex.cmc:HomePageTitle />
+    </title>
+    <vtex:template id="CBYK-Pa-Header-Tags" />
+    <link rel="stylesheet" href="//pontodoagro.vteximg.com.br/arquivos/CSS.cbyk.pa.search.css" type="text/css" />
+</head>
+
+<body class="resultado-busca">
+  <header>
+    <!--  SubTemplate: Header -->
+    <vtex:template id="CBYK-Ca-Header" />
+    <!-- /SubTemplate: Header -->
+  </header>
+
+
+    <div class="container cb-search-bread-crumb">
+      <div class="row">
+        <div class="col-xs-12">
+            <vtex.cmc:breadCrumb />
+        </div>
+        <!-- Search Title -->
+        <div class="cb-search-title">
+          <vtex.cmc:searchTitle />
+        </div>
+        <!-- Search Title -->
+      </div>
+    </div>
+
+    <div class="container-fluid cb-search">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <h3><i class="icon-filter-2"></i> Filtrar Resultado</h3>
+                <div class="cb-search-navigation">
+                  <vtex.cmc:searchNavigator />
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="cb-search-result">
+                  <vtex.cmc:searchResult />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <!-- SEO Text -->
+                <div class="cb-search-seo">
+                    <vtex:contentPlaceHolder id="Texto SEO abaixo do menu lateral" />
+                </div>
+                <!-- SEO Text -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <vtex:template id="CBYK-Pa-footer" />
+    <!-- Footer -->
+</body>
+
+</html>

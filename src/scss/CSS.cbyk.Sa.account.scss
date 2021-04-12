@@ -1,0 +1,148 @@
+@import "_mixins/cbyk-mixins";
+
+.cb-account{
+    .vtex-account__menu {
+        &.w-100{
+            width: auto !important;
+        }
+
+        .vtex-account__menu-links {
+            .c-on-base {
+                color: $color-text-1;
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .c-muted-1 {
+                color: $color-text-15;
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .b--action-primary {
+                border-color: $color-bd-7;
+            }
+        }
+    }
+
+    .vtex-account__page-body {
+
+        .vtex-profile-form__profile-summary {
+            color: $color-text-6;
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        &.pa4-s {
+            padding: 0 !important;
+        }
+
+        label {
+            color: $color-text-1;
+            letter-spacing: 0.45px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &.vtex-account__profile {
+            main {
+                div{
+                    &:last-child{
+                        div{
+                            &:last-child {
+                                article {
+                                    main.ph7 {
+                                        div{
+                                            &:first-child{
+                                                color: $color-text-1 !important;
+                                                letter-spacing: 0.45pxb !important;
+                                                font-family: 'Raleway', sans-serif !important;
+                                                font-size: 18px !important;
+                                                font-weight: 700 !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .vtex-account__page {
+        header {
+            position: relative;
+            margin-bottom: 30px;
+            .pa7-ns {
+                padding: 0;
+            }
+            .t-heading-2 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.6px;
+                color: #1D1D1B;
+            }
+        }
+
+        button {
+            span {
+                border: 1px solid $color-bd-8;
+                padding: 10px 25px;
+                color: $color-text-12;
+                font-size: 20px;
+                font-weight: 700;
+
+                span {
+                    border: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .vtex-account__password-box {
+        label {
+            &:last-child {
+                color: $color-text-13;
+                letter-spacing: 0.45px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .vtex-pageHeader__children {
+        button {
+            background: transparent;
+            border: 0;
+            .ph5 {
+                padding: 0;
+            }
+        }
+    }
+
+    .vtex-account__profile-edit,
+    .vtex-account__address-create {
+        button {
+            background: transparent;
+            border: 0;
+        }
+    }
+
+    .address-summary {
+        color: $color-text-6;
+        letter-spacing: 0.45px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
