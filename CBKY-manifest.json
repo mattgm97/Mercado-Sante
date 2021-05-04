@@ -1,11 +1,11 @@
 {
     "version": 1.4,
     "vtexAccountName": [
-        "Carajas"
+        "MercadoSante"
     ],
     "urlProduction": [
-        "carajas.vtexcommercestable.com.br/",
-        "carajas.com.br"
+        "mercadosante.vtexcommercestable.com.br/",
+        "mercadosante.com.br"
     ],
     "template": "Padrao",
     "short": "pa",

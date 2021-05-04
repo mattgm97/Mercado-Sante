@@ -1,5 +1,5 @@
 {
-  "name": "CarajasNovo",
+  "name": "MercadoSante",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get your application up and running.",
   "main": "gulpfile.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/cbykonneecommerce/Carajas-Novo.git"
+    "url": "git+ssh://github.com/cbykonneecommerce/Mercado-Sante.git"
   },
   "author": "CBYK Onne",
   "license": "ISC",
-  "homepage": "https://github.com/cbykonneecommerce/Carajas-Novo.git",
+  "homepage": "https://github.com/cbykonneecommerce/Mercado-Sante.git",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

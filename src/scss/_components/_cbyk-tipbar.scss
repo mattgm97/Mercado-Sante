@@ -1,26 +1,3 @@
 .cb-tipbar {
-    margin-top: 30px;
-    .slick-slide {
-        display: flex !important;
-        height: 85px;
-        border: 1px solid $color-bd-1;
-        border-radius: 4px;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0;
 
-        p {
-            margin: 0px;
-
-            strong {
-                display: block;
-            }
-        }
-
-        i {
-            padding: 20px;
-            color: $color-ico-1;
-            font-size: 25px;
-        }
-    }
 }

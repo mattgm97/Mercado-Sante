@@ -1,226 +1,209 @@
-<div class="contianer-fluid">
-    <div class="row cb-topBar">
-        <div class="col-12 col-md-12">
-            <div class="container">
-                <div class="row">
-                    <vtex.cmc:TopBarHeader />
-                </div>
+<header>
+    <div class="container-fluid">
+        <div class="row cb-topBar">
+            <div class="col-12 col-md-12">
+                <vtex.cmc:TopBarHeader />
             </div>
         </div>
     </div>
-    <div class="row cb-header">
-        <div class="col-12 col-md-12">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-12">
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <a href="/" title="Carajás" class="link-logo"><img  src="/arquivos/carajas-nova-logo.svg" alt="Logo" /></a>
-                            </div>
-                            <div class="col-12 col-md-6 cb-header-search">
-                                <!-- .search -->
-                                <vtex.cmc:fullTextSearchBox/>
-                                <!-- .search -->
-                            </div>
-                            <div class="col-12 col-md-3 cb-header-minhaConta">
-                                <ul>
-                                    <li><a href="/account" title="Entrar Minha conta">Entrar <span>Minha conta</span></a></li>
-                                    <li><a class="cb-header-cart" title="Minhas Compras">Minhas <span>Compras</span></a></li>
-                                </ul>
-                            </div>
+    <div class="contianer-fluid">
+    
+        <div class="row cb-header">
+            <div class="col-12 col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-1">
+                            <a href="/" title="Mercado Santé" class="cb-header-logo"><img  src="/arquivos/logo-mercado-sante-header.png" alt="Mercado Santé" /></a>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-12 cb-header-menu">
-                        <div class="row">
-                            <div class="col-9 col-md-3 cb-header-departamento">
-                                <a class="cb-header-menu-departamentos">Compre por categoria</a>
-                            </div>
-                            <div class="col-9 col-md-9 cb-header-departamentos">
-                                <vtex.cmc:DepartamentosHeader />
-                            </div>
-                            <div class="col-12 col-md-12 cb-menu-depto-nav depto-nav-area d-none">
-                                <div class="row m-0">
-                                    <div class="col-3 col-md-3 cb-header-departamentos-deptos">
-                                        <div class="row">
-                                            <div class="deptos col-12 col-md-12 hidden-xs hidden-sm">
-                                                <ul></ul>
-                                                <!--<vtex.cmc:departmentNavigator/>-->
-                                            </div>
-                                            <div class="col-12 col-md-12 cb-header-departamentos-todos">
-                                                <a href="">Todos os departamentos</a>
-                                            </div>
+                        <div class="col-12 col-md-5 cb-menu-depto-nav depto-nav-area d-none">
+                            <div class="row">
+                                <div class="col-3 col-md-3 cb-header-departamentos-deptos">
+                                    <div class="row">
+                                        <div class="deptos col-12 col-md-12 hidden-xs hidden-sm">
+                                            <ul></ul>
                                         </div>
                                     </div>
-                                    <div class="col-9 col-md-9">
-                                        <div class="row">
-                                            <div class="col-8 col-md-8">
-                                                <div class="visible-lg" id="top-menu">
-                                                    <div class="row" id="deptos-list"></div>
-                                                </div><!-- #top-menu -->
-                                            </div>
-                                            <div class="col-4 col-md-4">
-                                                <vtex:BannerMenu />
+                                </div>
+                                <div class="col-9 col-md-9">
+                                    <div class="row">
+                                        <div class="col-8 col-md-8">
+                                            <div class="visible-lg" id="top-menu">
+                                                <div class="row" id="deptos-list"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-md-4 cb-header-search">
+                            <vtex.cmc:fullTextSearchBox/>
+                        </div>
+                        <div class="col-12 col-md-2 cb-header-user">
+                            <ul>
+                                <li>
+                                    <img src="/arquivos/icon-header-user.png" />
+                                </li>
+                                <li>
+                                    <img src="/arquivos/icon-header-sacola.png" />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row cb-header-mobile">
-        <div class="col-1 cb-header-mobile-menu">
-            <button aria-label="Menu Mobile" class="cb-header-menu-btn btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><i class="fa fa-bars"></i></button>
+        
+        <div class="row cb-header-mobile">
+            <div class="col-1 cb-header-mobile-menu">
+                <button aria-label="Menu Mobile" class="cb-header-menu-btn btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="col-7 cb-header-mobile-logo">
+                <a href="/" title="Carajás" class="link-logo"><img  src="/arquivos/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="col-4 cb-header-mobile-account">
+                <ul>
+                    <a href="/account"><li><i class="fas fa-user"></i></li></a>
+                    <!-- <li><i class="fas fa-shopping-cart"></i></li> -->
+                    <li><a class="cb-header-cart" title="Minhas Compras"><img src="//carajasevolucao.vteximg.com.br/arquivos/icon-carrinho.svg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 cb-header-search">
+                <!-- .search -->
+                <vtex.cmc:fullTextSearchBox/>
+                <!-- .search -->
+            </div>
         </div>
-        <div class="col-7 cb-header-mobile-logo">
-            <a href="/" title="Carajás" class="link-logo"><img  src="/arquivos/logo.png" alt="Logo" /></a>
+        
+        <div class="cb-menu-mobile" id="menu-mobile">
+            <div class="cb-menu-mobile-header">
+                <div class="cb-menu-mobile-account">
+                    <ul>
+                        <li class="cb-menu-mobile-link-login"><a href="/account" title="Fazer Login">Entrar<span>Minha conta</span></a></li>
+                    </ul>
+                </div>
+                <div class="cb-menu-mobile-close">
+                    <span class="cb-menu-close pull-right btn-menu-xs" data-id="#menu-mobile"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+            <div class="recebe-menu">
+                <!-- RECEBE MENU MOBILE -->
+            </div>
+            <div class="sidenav">
+    
+            </div>
+            <div class="cb-menu-mobile-banner">
+                <vtex:BannerMenu />
+            </div>
         </div>
-        <div class="col-4 cb-header-mobile-account">
-            <ul>
-                <a href="/account"><li><i class="fas fa-user"></i></li></a>
-                <!-- <li><i class="fas fa-shopping-cart"></i></li> -->
-                <li><a class="cb-header-cart" title="Minhas Compras"><img src="//carajasevolucao.vteximg.com.br/arquivos/icon-carrinho.svg" alt="" /></a></li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-6 cb-header-search">
-            <!-- .search -->
-            <vtex.cmc:fullTextSearchBox/>
-            <!-- .search -->
+    
+        <div class="cb-minicart" id="usuario-cart">
+            <div class="row cb-minicart-header">
+                <div class="col-6 col-md-6">
+                    <h2>Carrinho</h2>
+                </div>
+                <div class="col-6 col-md-6">
+                    <span class="cb-minicart-btn-close" data-id="#menu-mobile"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+            <div class="cb-minicart-body">
+                <div id="mySidenav" class="sidenavcart">
+                    <div id="mini-cart-admake-aux">
+                        <!-- <vtex.cmc:miniCart /> -->
+                        <vtex.cmc:AmountItemsInCart />
+                    </div><!-- #mini-cart-admake-aux -->
+                    <div id="mini-cart-admake">
+                        <!-- <div class="mini-cart-header"></div> -->
+                        <div class="mini-cart-itens">
+                            <!-- recebe itens -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cb-minicart-footer">
+                <div id="mySidenav" class="sidenavcart">
+                    <div id="mini-cart-admake">
+                        <div class="mini-cart-footer">
+                            <div class="mini-cart-totais">
+                                <!-- recebe valor total -->
+                                <span>Subtotal</span>
+                                <strong id="mini-cart-admake-total" class="pull-right"></strong>
+                                <!-- recebe valor total -->
+                            </div>
+                            <div class="mini-cart-botao">
+                                <a href="/checkout/#/cart" class="cb-minicart-finalizarCompra">Finalizar compra</a>
+                            </div>
+                            <div class="mini-cart-botao-continuar">
+                                <a href="/checkout/#/cart" class="cb-minicart-finalizarCompra">Continuar comprando</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <div class="cb-menu-mobile" id="menu-mobile">
-        <div class="cb-menu-mobile-header">
-            <div class="cb-menu-mobile-account">
-                <ul>
-                    <li class="cb-menu-mobile-link-login"><a href="/account" title="Fazer Login">Entrar<span>Minha conta</span></a></li>
-                </ul>
-            </div>
-            <div class="cb-menu-mobile-close">
-                <span class="cb-menu-close pull-right btn-menu-xs" data-id="#menu-mobile"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
-        <div class="recebe-menu">
-            <!-- RECEBE MENU MOBILE -->
-        </div>
-        <div class="sidenav">
-
-        </div>
-        <div class="cb-menu-mobile-banner">
-            <vtex:BannerMenu />
-        </div>
-    </div>
-
-    <div class="cb-minicart" id="usuario-cart">
-        <div class="row cb-minicart-header">
-            <div class="col-6 col-md-6">
-                <h2>Carrinho</h2>
-            </div>
-            <div class="col-6 col-md-6">
-                <span class="cb-minicart-btn-close" data-id="#menu-mobile"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
-        <div class="cb-minicart-body">
-            <div id="mySidenav" class="sidenavcart">
-                <div id="mini-cart-admake-aux">
-                    <!-- <vtex.cmc:miniCart /> -->
-                    <vtex.cmc:AmountItemsInCart />
-                </div><!-- #mini-cart-admake-aux -->
-                <div id="mini-cart-admake">
-                    <!-- <div class="mini-cart-header"></div> -->
-                    <div class="mini-cart-itens">
-                        <!-- recebe itens -->
+    <!--MODAL PARA LOCAL-->
+    <div class="modal fade in header-location-modal  newlocalmodal gtm-estado-fechar-fora-overlay" id="header-location-modal" tabindex="-1"
+                role="dialog" aria-labelledby="basicModal" aria-hidden="true"
+                style="display: none; z-index: 9999; position: fixed;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">FECHAR <i
+                                    class="fas fa-times gtm-estado-fechar-btn"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">
+                                <div class="row" id="intro-modal-text">
+                                    <h1>Onde voce está?</h1>
+                                    <p>Sabendo disso, iremos oferecer produtos e serviços customizados para a sua região</p>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="modal-content">
+                                        <div class="col-md-6 offset-md-3">
+                                            <button class="use-location modal-buttom-identity gtm-estado-usar-localizacao-link"><i class="fas fa-compass" aria-hidden="true"></i> Usar sua localização</button>
+                                        
+                                        </div>
+                                    
+                                        
+                                    </div>
+                                  
+                                </div>
+                                <div class="row">
+                                    <div class="modal-content">
+                                        <div class="col-md-6 offset-md-3" style="padding: 0.8em;    text-align: center;">
+                                            <span >OU</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="modal-content">
+                                        <div class="col-md-8 offset-md-2">
+                                            
+                                            <div class="search-location">
+                                                <div id="locationField">
+                                                    <input id="autocomplete"
+                                                           placeholder="Informe nome da rua ou CEP"
+                                                           onFocus="geolocate()"
+                                                           type="text"/>
+                                                  </div>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="submit" class="btn header-qd-v1-location-modal-button-ok"
+                                data-dismiss="modal">Ok</button>-->
+    
+    
+                                <p style="margin-top: 1em;" id="atttext"><strong>Atenção!</strong> Os preços de produtos e serviços Carajás podem variar de acordo com a região escolhida</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="cb-minicart-footer">
-            <div id="mySidenav" class="sidenavcart">
-                <div id="mini-cart-admake">
-                    <div class="mini-cart-footer">
-                        <div class="mini-cart-totais">
-                            <!-- recebe valor total -->
-                            <span>Subtotal</span>
-                            <strong id="mini-cart-admake-total" class="pull-right"></strong>
-                            <!-- recebe valor total -->
-                        </div>
-                        <div class="mini-cart-botao">
-                            <a href="/checkout/#/cart" class="cb-minicart-finalizarCompra">Finalizar compra</a>
-                        </div>
-                        <div class="mini-cart-botao-continuar">
-                            <a href="/checkout/#/cart" class="cb-minicart-finalizarCompra">Continuar comprando</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--MODAL PARA LOCAL-->
-<div class="modal fade in header-location-modal  newlocalmodal gtm-estado-fechar-fora-overlay" id="header-location-modal" tabindex="-1"
-			role="dialog" aria-labelledby="basicModal" aria-hidden="true"
-			style="display: none; z-index: 9999; position: fixed;">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">FECHAR <i
-								class="fas fa-times gtm-estado-fechar-btn"></i></button>
-					</div>
-					<div class="modal-body">
-						<div class="">
-							<div class="row" id="intro-modal-text">
-								<h1>Onde voce está?</h1>
-								<p>Sabendo disso, iremos oferecer produtos e serviços customizados para a sua região</p>
-								
-							</div>
-							<div class="row">
-								<div class="modal-content">
-									<div class="col-md-6 offset-md-3">
-										<button class="use-location modal-buttom-identity gtm-estado-usar-localizacao-link"><i class="fas fa-compass" aria-hidden="true"></i> Usar sua localização</button>
-									
-									</div>
-								
-									
-								</div>
-							  
-							</div>
-							<div class="row">
-								<div class="modal-content">
-									<div class="col-md-6 offset-md-3" style="padding: 0.8em;    text-align: center;">
-										<span >OU</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="modal-content">
-									<div class="col-md-8 offset-md-2">
-										
-										<div class="search-location">
-											<div id="locationField">
-												<input id="autocomplete"
-													   placeholder="Informe nome da rua ou CEP"
-													   onFocus="geolocate()"
-													   type="text"/>
-											  </div>
-										</div>
-			
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<!--<button type="submit" class="btn header-qd-v1-location-modal-button-ok"
-							data-dismiss="modal">Ok</button>-->
-
-
-							<p style="margin-top: 1em;" id="atttext"><strong>Atenção!</strong> Os preços de produtos e serviços Carajás podem variar de acordo com a região escolhida</p>
-					</div>
-				</div>
-			</div>
-		</div>
+</header>

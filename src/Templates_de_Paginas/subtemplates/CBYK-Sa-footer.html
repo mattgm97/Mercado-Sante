@@ -1,203 +1,94 @@
 <footer>
     <div class="container-fluid">
-        <div class="row cb-footer-atendimento">
+        <div class="row cb-newsletter" id="newsletter">
+            <div class="col-md-5 d-flex cb-newsletter-text" id="newstext">
+                <p>Fique por dentro das novidades e promoções</p>
+            </div>
+            <div class="col-md-7 cb-newsletter-input" id="newsform">
+              <label>
+                  <input id="nameform" type="name" placeholder="NOME" />
+                  <input id="emailform" type="email" placeholder="E-MAIL" />
+                  <input id="commit" name="commit" type="submit" value="ENVIAR" />
+              </label>
+            </div>
+        </div>
+
+        <div class="row cb-footer">
             <div class="col-12 col-md-12">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-3">
-                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-compre-telefone.svg" alt="Compre por telefone carajás" />
-                            <h2>Compre por telefone</h2>
-                            <p>Segunda à Sábado das 8h às 20h<br />
-                            Domingo das 8h às 18h<br />
-                            Execeto feriados</p>
-                            <h3>4003-2020</h3>
+                        <div class="col-12 col-md-3 cb-footer-logo">
+                            <img src="/arquivos/logo-mercado-sante-footer.png" />
                         </div>
-                        <div class="col-12 col-md-3">
-                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-compre-whatsapp.svg" alt="Compre pelo WhatsApp carajás" />
-                            <h2>Compre pelo WhatsApp</h2>
-                            <p>Segunda à Sábado das 8h às 20h<br />
-                                Domingo das 8h às 18h</p>
-                            <h3>(11) 4003-2020</h3>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-baixe-app.svg" alt="Baixe nosso app aqui Carajás" />
-                            <h2>Baixe nosso app aqui</h2>
-                            <h2>Central de atendimento</h2>
-                            <p>Email para <a href="mailto:sac@carajasonline.com">sac@carajasonline.com</a></p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-siga-carajas.svg" alt="Siga Carajás Online" />
-                            <h2>Siga Carajás Online</h2>
+                        <div class="col-12 col-md-2 cb-footer-sobre">
+                            <h2>SOBRE NÓS</h2>
                             <ul>
-                                <li><a href="https://www.facebook.com/carajasonline/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/carajasonline/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://wa.me/551140032020/" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCDdEDGI9ZMcs1jLedQAUCEQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/carajasonline" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#">Quem Somos</a></li>
+                                <li><a href="#">Política de Troca</a></li>
+                                <li><a href="#">Política de Pagamento</a></li>
                             </ul>
-                            <h2>Blog</h2>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row cb-footer-content">
-            <div class="col-12 col-md-12">
-                <div class="container">
-                    <div class="row cb-footer-content-top">
-                        <div class="col-12 col-md-12 cb-footer-logo">
-                            <img src="//carajasevolucao.vteximg.com.br/arquivos/logo-carajas-footer.svg" alt="Carajás" />
+                        <div class="col-12 col-md-2 cb-footer=atendimento">
+                            <h2>ATENDIMENTO</h2>
+                            <ul>
+                                <li><a href="#">Dúvidas Frequentes</a></li>
+                                <li><a href="#">Fale Conosco</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="row cb-footer-content-body">
-                        <div class="col-md-3 cb-footer-departamentos d-none d-sm-none d-md-block">
-                            <h2>Departamentos</h2>
-                            <vtex.cmc:DepartamentosFooter />
-                        </div>
-                        <div class="col-md-3 cb-footer-departamentos-mobile d-sm-block d-md-none">
-                            <ul class="cb-footer-accordion">
-                                <li><span class="cb-footer-accordion-trigger cb-footer-accordion-none-submenu">Departamentos</span>
-                                    <vtex.cmc:DepartamentosFooter />
+                        <div class="col-12 col-md-3 cb-footer-seguranca">
+                            <h2>SEGURANÇA</h2>
+                            <ul>
+                                <li>              
+                                    <a href="https://secure.vtex.com/?an=MERCADOSANTE" target="_blank">
+                                        <img src="/arquivos/selo-pci-vtex.png" alt="Selo PCI" class="img-responsive" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/arquivos/selo-ebit.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/arquivos/selo-ibd.png" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-9 cb-footer-content-institucional">
-                            <div class="row">
-                                <div class="col-md-4 cb-footer-politicas d-none d-sm-none d-md-block">
-                                    <h2>Políticas</h2>
-                                    <ul>
-                                        <li><a href="/Institucional/politica-frete">Política de Frete</a></li>
-                                        <li><a href="/Institucional/politica-trocas">Política de Trocas</a></li>
-                                        <li><a href="/Institucional/politica-retirada">Política de Retirada na Loja</a></li>
-                                        <li><a href="/Institucional/politica-compra">Política de Compra e Entrega</a></li>
-                                        <li><a href="/Institucional/privacidade">Política de Privacidade e Cookies</a></li>
-                                        <li><a href="/Institucional/politica-descontos">Política de Descontos e Vendedor Parceiro</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-4 cb-footer-politicas d-sm-block d-md-none">
-                                    <ul class="cb-footer-accordion">
-                                        <li><span class="cb-footer-accordion-trigger cb-footer-accordion-none-submenu">Políticas</span>
-                                            <ul class="cb-footer-accordion-submenu">
-                                                <li><a href="/Institucional/politica-frete">Política de Frete</a></li>
-                                                <li><a href="/Institucional/politica-trocas">Política de Trocas</a></li>
-                                                <li><a href="/Institucional/politica-retirada">Política de Retirada na Loja</a></li>
-                                                <li><a href="/Institucional/politica-compra">Política de Compra e Entrega</a></li>
-                                                <li><a href="/Institucional/privacidade">Política de Privacidade e Cookies</a></li>
-                                                <li><a href="/Institucional/politica-descontos">Política de Descontos e Vendedor Parceiro</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-4 cb-footer-institucional d-none d-sm-none d-md-block">
-                                    <h2>Institucional</h2>
-                                    <ul>
-                                        <li><a href="/Institucional/quem-somos">Quem somos</a></li>
-                                        <li><a href="/Institucional/Televendas">Televendas</a></li>
-                                        <li><a href="/Institucional/faq">Perguntas Frequentes</a></li>
-                                        <li><a href="/Institucional/nossas-lojas">Nossas lojas</a></li>
-                                        <li><a href="https://trabalheconosco.vagas.com.br/carajas" target="_blank" > Trabalhe Conosco</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-4 cb-footer-institucional d-sm-block d-md-none">
-                                    <ul class="cb-footer-accordion">
-                                        <li><span class="cb-footer-accordion-trigger cb-footer-accordion-none-submenu">Institucional</span>
-                                            <ul class="cb-footer-accordion-submenu">
-                                                <li><a href="/Institucional/quem-somos">Quem somos</a></li>
-                                                <li><a href="/Institucional/Televendas">Televendas</a></li>
-                                                <li><a href="/Institucional/faq">Perguntas Frequentes</a></li>
-                                                <li><a href="/Institucional/nossas-lojas">Nossas lojas</a></li>
-                                                <li><a href="https://trabalheconosco.vagas.com.br/carajas" target="_blank" > Trabalhe Conosco</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-4 cb-footer-conteudo d-none d-sm-none d-md-block">
-                                    <h2>Conteúdo</h2>
-                                    <ul>
-                                        <li><a href="#">Aprenda</a></li>
-                                        <li><a href="#">Inspire-se</a></li>
-                                        <li><a href="#">Dicas</a></li>
-                                        <li><a href="#">Faça Você Mesmo</a></li>
-                                        <li><a href="#">Cursos e Eventos</a></li>
-                                        <li><a href="#">Tendências</a></li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="col-md-4 cb-footer-conteudo d-sm-block d-md-none">
-                                    <ul class="cb-footer-accordion">
-                                        <li><span class="cb-footer-accordion-trigger cb-footer-accordion-none-submenu">Conteúdo</span>
-                                            <ul class="cb-footer-accordion-submenu">
-                                                <li><a href="#">Aprenda</a></li>
-                                                <li><a href="#">Inspire-se</a></li>
-                                                <li><a href="#">Dicas</a></li>
-                                                <li><a href="#">Faça Você Mesmo</a></li>
-                                                <li><a href="#">Cursos e Eventos</a></li>
-                                                <li><a href="#">Tendências</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-12 cb-footer-pagamento">
-                                    <h2>Formas de Pagamento</h2>
-                                    <ul>
-                                        <li>
-                                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-western-union.svg" alt="Western Uunion" />
-                                        </li>
-                                        <li>
-                                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-master-card.svg" alt="Master Card" />
-                                        </li>
-                                        <li>
-                                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-paypal.svg" alt="Paypal" />
-                                        </li>
-                                        <li>
-                                            <img src="//carajasevolucao.vteximg.com.br/arquivos/icon-visa.svg" alt="Visa" />
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-4 cb-footer-powered">
-                                            <h3>Powered By</h3>
-                                            <ul>
-                                                <li>
-                                                    <a href="http://www.cbykonne.com/" target="_blank" rel="noopener noreferrer">
-                                                        <img src="https://carajas.myvtex.com/arquivos/logo-cbyk.svg" alt="CBYK Onne" class="img-responsive" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="http://www.vtex.com/" target="_blank" rel="noopener noreferrer">
-                                                        <img src="https://carajas.myvtex.com/arquivos/logo-vtex.svg" alt="Vtex" class="img-responsive" />
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4 cb-footer-selos">
-                                            <h3>Selos</h3>
-                                            <ul>
-                                                <li>
-                                                    <a href="https://secure.vtex.com/?an=CARAJAS" target="_blank">
-                                                        <img src="https://carajas.vteximg.com.br/arquivos/selo-pci-vtex.png" alt="Selo PCI" class="img-responsive" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <img src="https://carajas.myvtex.com/arquivos/siteseguro.png" alt="Site Seguro" class="img-responsive" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-12 col-md-2 cb-footer-redes">
+                            <h2>REDES SOCIAIS</h2>
+                            <ul>
+                                <li>              
+                                    <a href="#" target="_blank">
+                                        <img src="/arquivos/icon-facebook-footer.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/arquivos/icon-instagram-footer.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/arquivos/icon-whatsapp-footer.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-3 cb-footer-pagamento">
+                            <h2>FORMAS DE PAGAMENTO</h2>
+                        </div>
+                        <div class="col-12 col-md-6 cb-footer-direitos">
+                            <p>2021 - SANTE - Razão Social: SANTE Loja LTDA - Av Macuco, 654, Cj 12 Moema- São Paulo-SP.
+                                Todos os Direitos Reservados | CNPJ: 32.812.078/0001-05</p>
+                        </div>
+                        <div class="col-12 col-md-3 cb-footer-powered">
+                            <h3>Powered By</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-12 cb-footer-direitos">
-                <p>CNPJ: 03.656.804/0001-31 // Endereço: Avenida Durval de Goes Monteiro 1896, Tabuleiro dos Martins, Maceió – AL CEP 57061-000 - Todos os direitos reservados 2021 | Carajás Distribuição Brasil</p>
             </div>
         </div>
     </div>

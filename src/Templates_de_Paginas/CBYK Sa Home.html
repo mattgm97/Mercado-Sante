@@ -1,317 +1,54 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
-
-<head>
-  <title>Carajás Home Center | Aqui o importante é você.</title>
-  <vtex:metaTags />
-  <vtex:template id="CBYK-Ca-Header-Tags" />
-  <link href="/arquivos/CSS.cbyk.ca.home.css" rel="stylesheet" type="text/css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <script id="navegg" type="text/javascript">
-    (function (n, v, g) {
-      o = 'Navegg'; if (!n[o]) {
-        a = v.createElement('script'); a.src = g; b = document.getElementsByTagName('script')[0];
-        b.parentNode.insertBefore(a, b); n[o] = n[o] || function (parms) {
-          n[o].q = n[o].q || []; n[o].q.push([this, parms])
-        };
-      }
-    })
-      (window, document, 'https://tag.navdmp.com/universal.min.js');
-    window.naveggReady = window.naveggReady || [];
-    nvg70380 = new Navegg({
-      acc: 70380
-    });
-  </script>
-</head>
-
-<body id="home-page">
-
-  <header>
-    <!--  SubTemplate: Header -->
-    <vtex:template id="CBYK-Ca-Header" />
-    <!-- /SubTemplate: Header -->
-  </header>
-
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 p-0">
-          <div class="cb-home-fullbanner d-none d-sm-none d-md-block">
-            <vtex:contentPlaceHolder id="Full banner desktop" />
-          </div>
-
-          <div class="cb-home-fullbanner d-sm-block d-md-none">
-            <vtex:contentPlaceHolder id="Full banner mobile" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-desconto">
-        <div class="col-md-6">
-          <vtex:contentPlaceHolder id="BANNER DESTAQUE 1" />
-        </div>
-        <div class="col-md-6">
-          <vtex:contentPlaceHolder id="BANNER DESTAQUE 2" />
-        </div>
-      </div>
-      <div class="row cb-home-desconto cb-home-desconto-slick">
-        <div class="col-md-4">
-          <vtex:contentPlaceHolder id="BANNER DESTAQUE 3" />
-        </div>
-        <div class="col-md-4">
-          <vtex:contentPlaceHolder id="BANNER DESTAQUE 4" />
-        </div>
-        <div class="col-md-4">
-          <vtex:contentPlaceHolder id="BANNER DESTAQUE 5" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <vtex.cmc:TipBarPadrao />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo ofertas" />
-        </div>
-        <div class="col-md-12 cb-home-colecao">
-          <vtex:contentPlaceHolder id="Coleção Ofertas" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-novidades">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Novidades Exclusivas" />
-        </div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-6 col-md-6">
-              <vtex:contentPlaceHolder id="BANNER MOSAICO 1" />
-            </div>
-            <div class="col-6 col-md-6">
-              <vtex:contentPlaceHolder id="BANNER MOSAICO 2" />
-            </div>
-            <div class="col-12 col-md-12">
-              <vtex:contentPlaceHolder id="BANNER MOSAICO 3" />
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 cb-home-novidades-slick">
-          <vtex:contentPlaceHolder id="BANNER MOSAICO 4" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-departamento">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Compre por departamento" />
-        </div>
-        <div class="col-md-12">
-          <vtex:contentPlaceHolder id="Carousel Compre por departamento" />
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo  Mais vendidos" />
-        </div>
-        <div class="col-md-12 cb-home-colecao">
-          <vtex:contentPlaceHolder id="Coleção Mais vendidos" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <vtex:contentPlaceHolder id="Banner WhatsApp desktop" />
-        </div>
-        <div class="col-md-12">
-          <vtex:contentPlaceHolder id="Banner WhatsApp mobile" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-destaques">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo destaques" />
-        </div>
-        <div class="col-md-5 cb-home-destaques-colecao">
-          <vtex:contentPlaceHolder id="Coleção destaques" />
-        </div>
-        <div class="col-md-7 cb-home-destaques-slick">
-          <vtex:contentPlaceHolder id="BANNER DE PRODUTO" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-ideias">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Ideias para sua casa" />
-        </div>
-        <div class="col-md-12 ">
-            <div class="cb-accordion-container">
-              <div class="cb-accordion-flexbox-slider cb-accordion-flexbox-slider-1">
-                <div class="cb-accordion-flexbox-slide">
-                  <vtex:contentPlaceHolder id="Imagem Slide 1" />
-                  <div class="cb-accordion-text-block">
-                    <vtex:contentPlaceHolder id="Texto Slide 1" />
-                  </div>
-                </div>
-                <div class="cb-accordion-flexbox-slide">
-                  <vtex:contentPlaceHolder id="Imagem Slide 2" />
-                  <div class="cb-accordion-text-block">
-                    <vtex:contentPlaceHolder id="Texto Slide 2" />
-                  </div>
-                </div>
-                <div class="cb-accordion-flexbox-slide">
-                  <vtex:contentPlaceHolder id="Imagem Slide 3" />
-                  <div class="cb-accordion-text-block">
-                    <vtex:contentPlaceHolder id="Texto Slide 3" />
-                  </div>
-                </div>
-                <div class="cb-accordion-flexbox-slide">
-                  <vtex:contentPlaceHolder id="Imagem Slide 4" />
-                  <div class="cb-accordion-text-block">
-                    <vtex:contentPlaceHolder id="Texto Slide 4" />
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-cartao-club-app">
-        <vtex:contentPlaceHolder id="Banners Cartao Club e App" />
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Novidades para sua casa" />
-        </div>
-        <div class="col-md-12 cb-home-colecao">
-          <vtex:contentPlaceHolder id="Coleção Novidades para sua casa" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <vtex:contentPlaceHolder id="BANNER 2/3" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-12 cb-shelf-title-link">
-          <h1 class="cb-shelf-title">Últimos conteúdos</h1>
-        </div>
-      </div>
-      <div class="row cb-home-ultimo-conteudo">
-        <vtex.cmc:ultimoConteudo />
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-        <div class="row cb-home-newsletter" id="newsletter">
-            <div class="col-md-5 d-flex cb-home-newsletter-text" id="newstext">
-                <img src="/arquivos/icon-envelope.svg" alt="" />
-                <p>
-                  Cadastre seu e-mail e receba <span>ofertas exclusivas da Carajás</span>
-                </p>
-            </div>
-            <div class="col-md-7 cb-home-newsletter-input" id="newsform">
-              <label>
-                  <!-- <input id="nameform" type="name" placeholder="Seu nome" /> -->
-                  <input id="emailform" type="email" placeholder="Digite seu email..." />
-                  <input id="commit" name="commit" type="submit" value="ENVIAR" />
-              </label>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-lojasParceiras">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Lojas parceiras" />
-        </div>
-        <div class="col-md-12">
-          <vtex:contentPlaceHolder id="BANNER PARCEIRO" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row cb-home-nossasFiliais">
-        <div class="col-md-12 cb-shelf-title-link">
-          <vtex:contentPlaceHolder id="Titulo Nossas filiais" />
-        </div>
-        <div class="col-md-12">
-          <vtex:contentPlaceHolder id="Nossas filiais" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-     <!--  SubTemplate: Footer -->
-     <vtex:template id="CBYK-Ca-footer" />
-     <!-- /SubTemplate: Footer -->
-</body>
-<vtex:template id="CBYK-Ca-footer-Tags" />
-
-</html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title> Modelo Vtex</title>
+     <vtex:metaTags/>
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="CBYK-Sa-Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="home-extra-top"></div>
+                     
+         <section id="home-content" class="container">
+                     
+             <div id="category-extra-middle"></div>
+         
+             <div class="fullbanner">
+                 <vtex:contentPlaceHolder id="bannersegmentado" />
+             </div><!-- .fullbanner -->
+                     
+             <div id="category-extra-vitrine-1"></div>
+ 
+             <div class="showcase-default showcase-owl">
+                 <vtex:contentPlaceHolder id="Destaques" />
+             </div>
+                     
+             <div id="category-extra-vitrine-2"></div>
+ 
+             <div class="showcase-default showcase-owl">
+                 <vtex:contentPlaceHolder id="Lançamentos" />
+             </div> 
+ 
+         </section><!-- #content -->  
+                     
+         <div id="category-extra-bottom"></div>
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="CBYK-Sa-footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="CBYK-Sa-footer-Tags" />
+ </html>

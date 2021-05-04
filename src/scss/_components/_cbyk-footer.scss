@@ -1,268 +1,79 @@
 .cb-footer{
-   &-atendimento {
-        background: $color-bg-3;
-        padding-bottom: 30px;
-        @media (max-width: $screen-sm-max) {
-            text-align: center;
-        }
-       h2 {
-        text-align: left;
-        letter-spacing: 0.4px;
-        color: $color-text-1;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        padding: 20px 0;
-        @media (max-width: $screen-sm-max) {
-            text-align: center;
-        }
-       }
 
-       h3 {
-           color: $color-text-3;
-           font-size: 16px;
-       }
+    background: $color-2;
+    padding: 50px;
 
-       p {
-        color: $color-text-2;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
+    h2 {
+        color: $color-1;
+        font-family: 'ChaletComprime-CologneEighty';
+        font-size: 34px;
+        letter-spacing: 0.21px;
+        line-height: 31px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        padding: 0;
         margin: 0;
-        font-size: 12px;
-       }
 
-       a{
-           text-decoration: none;
-           color: $color-text-4;
-           font-size: 12px;
-           font-family: 'Raleway', sans-serif;
-           font-weight: 700;
-       }
+        li {
+            margin-bottom: 20px;
 
-       ul {
-           display: flex;
-           padding: 0;
-           margin: 0;
-
-           @media (max-width: $screen-sm-max) {
-                justify-content: center;
+            a {
+                color: $color-1;
+                font-family: "Bw Modelica";
+                font-size: 18px;
+                letter-spacing: 0.17px;
+                line-height: 22px;
+                text-decoration: none;
             }
-           li {
-               list-style: none;
-               margin-right: 8px;
-               width: 24px;
-               height: 24px;
-               text-align: center;
-
-               border: 1px solid $color-bd-1;
-               border-radius: 50%;
-               a{
-                    color: $color-ico-1;
-                    font-size: 16px;
-               }
-           }
-       }
-
-       img {
-        margin-top: 30px;
-        width: 57px;
-        height: 57px;
-       }
-   }
-
-   &-content{
-       background: $color-bg-4;
-       h2 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700; 
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 0.45px;
-            color: $color-text-5;
         }
+    }
 
-        h3 {
-            letter-spacing: 0.4px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 500; 
-            color: $color-text-5;
-            font-size: 16px;
-            padding-bottom: 35px;
-        }
-
+    &-seguranca{
         ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &-redes {
+        ul {
+            display: flex;
             padding: 0;
             margin: 0;
 
             li {
-                list-style: none;
-
-                a {
-                    text-decoration: none;
-                    letter-spacing: 0.3px;
-                    color: $color-text-5;
-                    font-family: 'Raleway', sans-serif;
-                    font-weight: 500; 
-                    font-size: 12px;
-                }
-            }
-        }
-       &-body{
-        padding-top: 100px;
-       }
-
-       &-top {
-            height: 30px;
-            background: url('/arquivos/footer-top.svg');
-            background-repeat: no-repeat;
-            background-position: right;
-            margin-right: 110px;
-       }
-   }
-
-   &-logo{
-    margin-top: 35px;
-    width: 370px;
-   }
-
-   &-pagamento {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    @media (max-width: $screen-sm-max) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-        ul {
-            display: flex;
-            margin-top: 25px;
-            li {
-                margin-right: 20px;
-            }
-        }
-   }
-
-   &-powered {
-       padding-bottom: 155px;
-       @media (max-width: $screen-sm-max) {
-        padding-bottom: 20px;
-    }
-        ul {
-            display: flex;
-
-            li {
-                margin-right: 20px;
-                img {
-                    width: 80px;
-                }
-            }
-        }
-   }
-
-   &-selos {
-        ul {
-            display: flex;
-            li {
-                margin-right: 20px;
-            }
-        }
-   }
-
-   &-direitos {
-    text-align: center;
-    p {
-        letter-spacing: 0.3px;
-        color: $color-text-5;
-        font-size: 12px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-    }
-   }
-
-   &-departamentos {
-        ul {
-            display: block !important;
-        }
-
-        &-mobile {
-            ul {
-                padding: 0;
-                
-                li{
-                     list-style: none;
-                     cursor: pointer;
-                 }
-            }
-        }
-   }
-
-    &-accordion {
-        padding: 0;  
-
-        @media (max-width: $screen-sm-max) {
-            
-            margin-bottom: 10px;
-            
-            &:first-child{
-                margin-bottom: 10px;
-            }
-        }
-
-        li {
-            @media (max-width: $screen-sm-max) {
-                border-bottom: 1px solid $color-bd-10;
-                padding: 10px 0 !important;
-            }
-
-            &:first-child {
-                @media (max-width: $screen-sm-max) {
-                    border-top: 1px solid $color-bd-10;
-                }
-            }
-
-            ul {
                 margin: 0;
-                padding: 0;
-                border: none;
 
-                li {
-                    &:last-child{
-                        border-bottom: none;
-                    }
+                &:nth-child(2){
+                    margin: 0 45px;
                 }
             }
         }
+    }
 
-        &-none {
-            &-submenu {
-                display: block;
-                display: block;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 700; 
-                font-size: 18px;
-                text-align: left;
-                letter-spacing: 0.45px;
-                color: $color-text-5;
+    &-direitos {
+       p {
+        color: $color-3;
+        font-family: "Montserrat Medium";
+        font-size: 14px;
+        letter-spacing: 0.15px;
+        line-height: 17px;
+        text-align: center;
+        margin: 0;
+       } 
+    }
 
-                &:after {
-                    @include cbyk-icon;
-                    content: '\f078';
-                    color: $color-ico-4;
-                    position: absolute;
-                    right: 40px;
-                }
-            }
-        }
-
-        &-active {
-            &-submenu {
-                display: block;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 700; 
-                font-size: 18px;
-                text-align: left;
-                letter-spacing: 0.45px;
-                color: $color-text-5;
-            }
+    &-powered {
+        h3 {
+            color: $color-3;
+            font-family: 'Dosis';
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.18px;
+            line-height: 28px;
         }
     }
 }

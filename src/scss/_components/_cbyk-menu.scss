@@ -1,13 +1,13 @@
 .cb-menu {
   &-mobile {
     width: 95%;
-    background: $color-bg-1;
+    // background: $color-bg-1;
     position: absolute;
     top: 0;
     z-index: 99999;
     display: none;
     &-header {
-      background: $color-bg-4;
+      // background: $color-bg-4;
       display: flex;
       padding: 20px;
     }
@@ -24,7 +24,7 @@
           display: flex;
           a {
             text-decoration: none;
-            color: $color-text-18;
+            // color: $color-text-18;
             font-family: 'Raleway', sans-serif;
             font-weight: 500;
             font-size: 16px;
@@ -38,9 +38,9 @@
             content: "\f007";
             @include cbyk-icon;
             font-size: 25px;
-            color: $color-ico-7;
+            // color: $color-ico-7;
             margin-right: 10px;
-            background: $color-bg-3;
+            // background: $color-bg-3;
             border-radius: 50%;
             width: 45px;
             height: 45px;
@@ -59,7 +59,7 @@
       align-items: center;
 
       i {
-        color: $color-ico-8;
+        // color: $color-ico-8;
         font-size: 30px;
       }
     }
@@ -106,7 +106,7 @@
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: $color-text-17;
+    // color: $color-text-17;
     display: block;
     border: none;
     background: none;
@@ -120,7 +120,7 @@
 .sidenav span {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid $color-bd-5;
+  // border-bottom: 1px solid $color-bd-5;
 }
 
 .sidenav 

@@ -5,88 +5,28 @@
      <title>Departamento</title>
      <vtex:metaTags/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
-     <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
-     <script src="/arquivos/ion.rangeSlider.min.js"></script>
-     <vtex:template id="CBYK-Ca-Header-Tags" />
-     <link href="/arquivos/CSS.cbyk.ca.departament.css" rel="stylesheet" type="text/css" />
+     <vtex:template id="CBYK-Sa-Header-Tags" />
+     <link href="/arquivos/CSS.cbyk.Sa.departament.css" rel="stylesheet" type="text/css" />
  </head>
  
  <body id="departament-page">
 
     <header>
         <!--  SubTemplate: Header -->
-        <vtex:template id="CBYK-Ca-Header" />
+        <vtex:template id="CBYK-Sa-Header" />
         <!-- /SubTemplate: Header -->
     </header>    
- 
+
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 cb-departament-breadCrumb">
-                    <vtex.cmc:breadCrumb />
-                 </div>
                 <div class="col-12 col-md-12">
-                    <div class="cb-departament-title">
-                        <h2>Seleção de </h2><vtex.cmc:searchTitle />
+                    <div class="cb-departament-brumb" id="box-bread-brumb">
+                        <vtex.cmc:breadCrumb />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 cb-departament-header-texto">
-                    <vtex:contentPlaceHolder id="Departamento - Texto Header" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 cb-departament-banner">
-                    <vtex:contentPlaceHolder id="Departamento - Banner topo" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 cb-departament-departamentos">
-                    <vtex:contentPlaceHolder id="Departamentos categoria" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 cb-shelf-title-link">
-              <vtex:contentPlaceHolder id="Titulo destaques" />
-            </div>
-            <div class="col-12 col-md-5 cb-departament-destaques">
-              <vtex:contentPlaceHolder id="Coleção destaques" />
-            </div>
-            <div class="col-12 col-md-7 cb-departament-destaques-slick">
-              <vtex:contentPlaceHolder id="BANNER DE PRODUTO" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 cb-departament-title">
-                    <h2>Seleção de </h2><vtex.cmc:searchTitle />
-                </div>
                 <div class="col-12 col-md-2 cb-departament-filtros">
                     <div class="cb-departament-navigator">
                         <vtex.cmc:singleDepartmentNavigator/>
@@ -131,82 +71,22 @@
     <section>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-12">
-              <vtex:contentPlaceHolder id="BANNER 2/3" />
+            <div class="col-12 col-md-6">
+              <vtex:contentPlaceHolder id="Banner departamento/categoria footer 1" />
             </div>
+            <div class="col-12 col-md-6">
+                <vtex:contentPlaceHolder id="Banner departamento/categoria footer 2" />
+              </div>
           </div>
         </div>
       </section>
 
-    <section>
-        <div class="container">
-            <div class="row cb-departament-compre-marcas">
-                <div class="col-12 col-md-12">
-                    <vtex:contentPlaceHolder id="Titulo compre por marca" />
-                </div>
-                <div class="col-12 col-md-12">
-                <vtex:contentPlaceHolder id="Banner de marca" />
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-            <div class="col-12 col-md-12 cb-shelf-title-link-categoria">
-                <h2>Novidades sobre </h2> <vtex.cmc:searchTitle /> <p><a href="#"> |  Ver todos os <span>produtos</span></a></p>
-            </div>
-            <div class="col-12 col-md-12 cb-departament-colecao">
-                <vtex:contentPlaceHolder id="Departamento - Coleção Novidades" />
-            </div>
-            </div>
-        </div>
-    </section>
- 
-    <section>
-        <div class="container">
-            <div class="row cb-departament-cartao-club-app">
-            <vtex:contentPlaceHolder id="Banners Cartao Club e App" />
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row cb-departament-text-footer">
-            <vtex:contentPlaceHolder id="Texto footer categoria" />
-            </div>
-        </div>
-    </section>
-
     <!--  SubTemplate: Footer -->
-    <vtex:template id="CBYK-Ca-footer" />
+    <vtex:template id="CBYK-Sa-footer" />
     <!-- /SubTemplate: Footer -->
  
  </body>
-    
-     <!-- <script src="/arquivos/pagination.js"></script>
-     <script src="/arquivos/filters.js"></script>
-     <script>
 
-            $("#sidenavCTRfiltros #close").hide();
-   
-            function openNavfiltro() {
-                document.getElementById("mySidenavfiltros").style.left = "0px";
-                document.getElementById("sidenavCTRfiltros").style.left = "64%";
-                $("#sidenavCTRfiltros #open").hide();
-                $("#sidenavCTRfiltros #close").show();
-            }
-   
-            function closeNavfiltro() {
-                document.getElementById("mySidenavfiltros").style.left = "-880px";
-                document.getElementById("sidenavCTRfiltros").style.left = "0%";
-                $("#sidenavCTRfiltros #close").hide();
-                $("#sidenavCTRfiltros #open").show();
-            }
-        </script> -->
-
-<vtex:template id="CBYK-Ca-footer-Tags" />
+<vtex:template id="CBYK-Sa-footer-Tags" />
 
  </html>
