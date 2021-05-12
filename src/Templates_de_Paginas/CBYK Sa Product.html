@@ -32,7 +32,7 @@
  
          <section id="product-content" class="container">
  
-             <div id="box-bread-brumb" class="hidden-xs">
+             <div id="box-bread-brumb" class="d-none d-sm-block">
                  <vtex.cmc:breadCrumb />
              </div>
  
@@ -48,7 +48,7 @@
                 
                 </div><!-- .product-image -->
 
-                <div class="product-info col-xs-12 col-sm-6 col-lg-6">
+                <div class="product-info col-12 col-sm-6 col-lg-6">
 
                     <div class="product-name ">
                         <h1>
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="codigo-produto col-xs-12 col-lg-6">
+                        <div class="codigo-produto col-12 col-lg-6">
                             <span>Cód:</span>
                             <vtex.cmc:skuReference />
                             <div style="display: none;">
@@ -182,7 +182,7 @@
  
                  </div>
  
-                 <div class="specs-mobile visible-xs visible-sm">
+                 <div class="specs-mobile d-block d-sm-block d-md-none">
                      <ul>
                          <li><h3 style="display: inline-block;color:#4F4F4F !important">DESCRIÇÃO</h3> <a style="display: inline-block;float: right;" id="btn-description-mob"> <svg style="padding-top: 1em;" xmlns="http://www.w3.org/2000/svg" width="30.523" height="41.523" viewBox="0 0 30.523 41.523">
                              <path fill="none" stroke="#4F4F4F" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.7615601 38.76156629l16.00001574-13.99998203-15.9999854-13.00001797"/>
@@ -203,7 +203,7 @@
                  <div class="product-description-box">
                      <div id="description">
  
-                         <span class="hidden-lg hidden-md prod-infos" style="font-weight: 800;">X Fechar</span>
+                         <span class="d-md-none  d-lg-none  prod-infos" style="font-weight: 800;">X Fechar</span>
  
                          <!--  Component: Description -->
                          <vtex.cmc:ProductDescription />
@@ -214,7 +214,7 @@
  
                  <div class="product-description-box">
                      <div id="specification">
-                         <span class="hidden-lg hidden-md prod-infos" style="font-weight: 800;">X Fechar</span>
+                         <span class="d-md-none d-lg-none prod-infos" style="font-weight: 800;">X Fechar</span>
                          <!--  Component: Specification -->
                          <vtex.cmc:productSpecification />
                      </div><!-- .description -->
