@@ -131,7 +131,7 @@
   }
   
   .btn-buscar {
-    background-image: url(/arquivos/lupa.svg) !important;
+    background-image: url(/arquivos/icon-busca.svg) !important;
     background-repeat: no-repeat !important;
     background-size: contain;
     background-position: center center;
@@ -167,6 +167,13 @@
   
   .header .sing-in a {
     font-size: 10px;
+  }
+
+  .sing-in{
+      nav{
+        align-items: center;
+        justify-content: flex-end;
+      }
   }
   
   #drop-login {
@@ -220,7 +227,7 @@
   }
   
   .depto-nav-area {
-    margin-top: 1.4em;
+    margin-top: 0.4em;
   }
   
   .deptos ul {
@@ -622,7 +629,7 @@
     }
   
     .header-container {
-      padding-top: 32px;
+      padding-top: 12px;
     }
   
     .slick-prev {
@@ -633,9 +640,7 @@
       right: -15px !important;
     }
   
-    #special-icon {
-      width: 24%;
-    }
+   
   
     .depto-Ofertas {
       background-color: #007DA5;

@@ -1,4 +1,5 @@
-$(document).ready(function () {
+
+$(window).on("load",function () {
 
 
     fetch("/api/catalog_system/pub/category/tree/3/")
