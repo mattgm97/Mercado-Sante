@@ -14,7 +14,7 @@ $(window).on("load",function () {
                 element.name = element.name.replace(/[\s/,&]+/g, '-');
                 $(".deptos ul").append(`<li class="depto-${element.name}"><a href="${element.url}">${divtext}</a></li>`);
                 console.log("adding main")
-                if (element.hasChildren) {
+              /*  if (element.hasChildren) {
                     $("#top-menu .container-fluid #deptos-list").append(`<div class="deptonav depto-${element.name}" id="${element.name}" style="display: none">
 
             <div class="row" style="width: 1180px;
@@ -91,7 +91,7 @@ $(window).on("load",function () {
 
                 } else {
                     $(".sidenav").append(`<span class="depto-${element.name}"><a style="border-top: solid 1px #333;" href="${element.url}">${divtext}</a></span>`)
-                }
+                }*/
             });
 
 

@@ -94,6 +94,18 @@
       font-weight: bold;
     }
   }
+
+  #user-icon{
+    width: 28px;
+  }
+
+  #dropdownUserLink::after{
+    display: none !important;
+  }
+  #bag-icon{
+    width: 25px;
+    margin-top: -4px;
+  }
   
   .container-fluid {
     padding-left: 0 !important;
@@ -113,18 +125,21 @@
   }
   
   .header .search .busca {
-    border: 1px solid #007DA5;
-    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+    border-radius: 0;
+    background-color: #F2F2F2;
   }
+
+ 
   
   .fulltext-search-box {
     color: #4F4F4F !important;
-  
+    background-color: #F2F2F2 !important;
     /* border-radius: 20px !important; */
     outline-style: none;
     box-shadow: none;
     border-right: transparent !important;
-    border-radius: 40px !important;
+    border-radius: 0px !important;
     font-size: 1.4em;
     height: 2.5em;
     border: none !important;
@@ -158,6 +173,11 @@
       padding: 0 12px !important;
     }
   }
+
+  .nav{
+    align-items: center;
+    justify-content: space-around;
+  }
   
   .dropdown-menu {
     border: none !important;
@@ -177,8 +197,7 @@
   }
   
   #drop-login {
-    margin-left: -31px;
-    margin-top: 15px;
+    margin-top: 1em !important;
     background-color: white !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
     transition: 0.3s;
@@ -195,6 +214,27 @@
     box-shadow: none !important;
     border: none !important;
   }
+
+  .banner-top{
+    h2{
+      text-align: center;
+      color: white;
+      font-family: 'ChaletComprime-MilanEighty';
+      font-size: 25px;
+      padding-top: 5px;
+    }
+  }
+
+  .header .mini-cart{
+    span.badge{
+      font-size: 12px;
+      background-color: #FF8200 !important;
+      border-radius: 100px;
+      padding: 4px 6px;
+      vertical-align: middle !important;
+      padding-top: 2px;
+    }
+  } 
   
   #drop-login li {
     margin: 6px;
@@ -234,17 +274,19 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 17px;
   
     li a {
-      font-size: 14px;
+      font-size: 20px;
       line-height: 16px;
-      color: #828282;
+      color: #4F4F4F;
+      text-transform: uppercase;
+      font-family: 'ChaletComprime-CologneEighty';
       font-weight: 400;
       text-decoration: none;
   
       &:hover {
-        color: #007DA5;
+       
         font-weight: 600;
       }
     }

@@ -20,7 +20,7 @@
  
      <vtex:template id="CBYK-Sa-Header-Tags" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="/arquivos/CSS.cbyk.Sa.departament.css" rel="stylesheet" type="text/css" />
+     <link href="/arquivos/CSS.cbyk.sa.departament.css" rel="stylesheet" type="text/css" />
  </head>
  
  <body id="departament-page">
@@ -34,18 +34,18 @@
          <div id="departament-extra-top"></div>
 
          <div class="container">
-            <div class="title-category">
-                <!--  Controle: Titulo -->
-                <vtex.cmc:searchTitle />
-                <!-- /Controle: Titulo -->
-            </div><!-- .title-category -->
-            <div id="departament-banner">
-                    <!--  placeholder -->
-                    <vtex:contentPlaceHolder id="Banner-Principal" />
-                    <!-- /placeholder -->
-                </div><!-- #departament-banner -->
+             <div class="row">
+                 <div class="col-12">
+                    <div id="box-bread-brumb">
+                        <vtex.cmc:breadCrumb />
+                    </div>
+                 </div>
+                
+             </div>
+           
+      
 
-              
+               
      </div>
 
      <div id="sidenavCTRfiltros" style="position: fixed;top: 50%;z-index: 99;background: #fff;
@@ -75,23 +75,23 @@
         
                  <article id="main-content" class="col-12 col-md-9">
                                                                      
-                     
+                    <div id="departament-banner">
+                        <!--  placeholder -->
+                        <vtex:contentPlaceHolder id="Banner-Principal" />
+                        <!-- /placeholder -->
+                    </div><!-- #departament-banner -->
                    
                          
                      <div id="collections">
                          
                          <div class="collection-wrap">
-                             <vtex.cmc:searchResult layout="ff139741-bd71-4409-97e5-1fe391d3b411" itemCount="24"     columnCount="3" />
+                             <vtex.cmc:searchResult layout="a99e3be6-a726-4b8c-93f6-613254ecbab6" itemCount="12"     columnCount="3" />
                          </div>
                          
  
-                         <div class="showcase-default">
-                             <vtex:contentPlaceHolder id="Destaques" />
-                         </div>
+                       
                          
-                         <div class="showcase-default">
-                             <vtex:contentPlaceHolder id="Lançamentos" />   
-                         </div>
+                        
  
                      </div><!-- #collections -->
                  
@@ -111,7 +111,7 @@
  
  </body>
  <vtex:template id="CBYK-Sa-footer-Tags" />
-
+    
  <script src="/arquivos/JS.cbyk.Sa.filters.js"></script>
      <script>
 
