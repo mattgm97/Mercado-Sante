@@ -1,6 +1,34 @@
 @import "_mixins/cbyk-mixins";
 
 
-.cb-institucional{
-    
+#institucional-content {
+	padding: 40px;
+}
+.Btn-acesse {
+	margin-left: 16em;
+	h3 {
+		font-size: 22px;
+		margin-left: 12%;
+		font-family: "ChaletComprime-CologneEighty";
+	}
+	li {
+		border-radius: 5px;
+		border: 2px solid #E3503C;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	a {
+		color: #e3503c;
+		font-size: 20px;
+		text-decoration: none;
+		font-family: "ChaletComprime-CologneEighty";
+	}
+	li.active {
+		border-radius: 5px;
+		background-color: #E3503C;
+	}
+	a.active {
+		color: #FFF;
+		text-decoration: none;
+	}
 }

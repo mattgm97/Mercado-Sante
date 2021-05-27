@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'ChaletComprime-CologneEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-CologneEighty.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-MilanEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-MilanEighty.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Black';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Black.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BlackItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BlackItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Bold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Bold.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BoldItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBold.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBoldItalic");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Hairline';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Hairline.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-HairlineItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-HairlineItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Light';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Light.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-LightItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-LightItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Medium';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Medium.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-MediumItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-MediumItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Regular';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Regular.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-RegularItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-RegularItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Black';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Black.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BlackItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BlackItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Bold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Bold.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BoldItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBold.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBoldItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-CologneEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-CologneEighty.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-MilanEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-MilanEighty.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cb-home-fullbanner .slick-prev {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background: transparent;
+  border: 0;
+  font-size: 0;
+}
+
+.cb-home-fullbanner .slick-prev:after {
+  content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-banner-prev.svg");
+}
+
+.cb-home-fullbanner .slick-next {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background: transparent;
+  border: 0;
+  font-size: 0;
+}
+
+.cb-home-fullbanner .slick-next:after {
+  content: url("//carajasevolucao.vteximg.com.br/arquivos/arrow-banner-next.svg");
+}
+
+.cb-home-fullbanner .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 0 0;
+}
+
+.cb-home-fullbanner .slick-dots li {
+  list-style: none;
+  font-size: 0;
+}
+
+.cb-home-fullbanner .slick-dots li button {
+  border: 0;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.cb-home-fullbanner .slick-dots li.slick-active button {
+  border: 0;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=CSS.cbyk.Sa.home.css.map */

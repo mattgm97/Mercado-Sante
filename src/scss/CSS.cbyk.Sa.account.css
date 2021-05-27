@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'ChaletComprime-CologneEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-CologneEighty.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-MilanEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-MilanEighty.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Black';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Black.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BlackItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BlackItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Bold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Bold.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BoldItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBold.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBoldItalic");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Hairline';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Hairline.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-HairlineItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-HairlineItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Light';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Light.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-LightItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-LightItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Medium';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Medium.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-MediumItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-MediumItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Regular';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Regular.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-RegularItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-RegularItalic.otf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Black';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Black.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BlackItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BlackItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-Bold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-Bold.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-BoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-BoldItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBold';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBold.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica-ExtraBoldItalic';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/BwModelica-ExtraBoldItalic.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-CologneEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-CologneEighty.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaletComprime-MilanEighty';
+  src: url("https://mercadosante.vteximg.com.br/arquivos/ChaletComprime-MilanEighty.ttf.css");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cb-account .vtex-account__menu.w-100 {
+  width: auto !important;
+}
+
+.cb-account .vtex-account__menu .vtex-account__menu-links .c-on-base {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cb-account .vtex-account__menu .vtex-account__menu-links .c-muted-1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cb-account .vtex-account__page-body .vtex-profile-form__profile-summary {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.cb-account .vtex-account__page-body.pa4-s {
+  padding: 0 !important;
+}
+
+.cb-account .vtex-account__page-body label {
+  letter-spacing: 0.45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cb-account .vtex-account__page-body.vtex-account__profile main div:last-child div:last-child article main.ph7 div:first-child {
+  letter-spacing: 0.45pxb !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.cb-account .vtex-account__page header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cb-account .vtex-account__page header .pa7-ns {
+  padding: 0;
+}
+
+.cb-account .vtex-account__page header .t-heading-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #1D1D1B;
+}
+
+.cb-account .vtex-account__page button span {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cb-account .vtex-account__page button span span {
+  border: 0;
+  padding: 0;
+}
+
+.cb-account .vtex-account__password-box label:last-child {
+  letter-spacing: 0.45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cb-account .vtex-pageHeader__children button {
+  background: transparent;
+  border: 0;
+}
+
+.cb-account .vtex-pageHeader__children button .ph5 {
+  padding: 0;
+}
+
+.cb-account .vtex-account__profile-edit button,
+.cb-account .vtex-account__address-create button {
+  background: transparent;
+  border: 0;
+}
+
+.cb-account .address-summary {
+  letter-spacing: 0.45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=CSS.cbyk.Sa.account.css.map */
