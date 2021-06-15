@@ -1,15 +1,19 @@
 <footer>
     <div class="container-fluid">
-        <div class="row cb-newsletter" id="newsletter">
-            <div class="col-md-5 d-flex cb-newsletter-text" id="newstext">
+        <div class="row cb-newsletter" id="newsletter" style="padding-left: 11em;">
+            <div class="col-md-4 d-flex cb-newsletter-text" id="newstext">
                 <p>Fique por dentro das novidades e promoções</p>
             </div>
             <div class="col-md-7 cb-newsletter-input" id="newsform">
-              <label>
-                  <input id="nameform" type="name" placeholder="NOME" />
-                  <input id="emailform" type="email" placeholder="E-MAIL" />
-                  <input id="commit" name="commit" type="submit" value="ENVIAR" />
-              </label>
+                <label>
+                    <input id="nameform" type="name" placeholder="NOME" style="width: 20em !important;" />
+                    <input id="emailform" type="email" placeholder="E-MAIL" style="width: 20em !important;" />
+                    <input id="commit" name="commit" type="submit" value="ENVIAR" style="width: 18em;
+                  height: 3em;
+                  background: #E3503C;
+                  color: #fff;
+                  border-radius: 5px;" />
+                </label>
             </div>
         </div>
 
@@ -38,7 +42,7 @@
                         <div class="col-12 col-md-3 cb-footer-seguranca">
                             <h2>SEGURANÇA</h2>
                             <ul>
-                                <li>              
+                                <li>
                                     <a href="https://secure.vtex.com/?an=MERCADOSANTE" target="_blank">
                                         <img src="/arquivos/selo-pci-vtex.png" alt="Selo PCI" class="img-responsive" />
                                     </a>
@@ -58,7 +62,7 @@
                         <div class="col-12 col-md-2 cb-footer-redes">
                             <h2>REDES SOCIAIS</h2>
                             <ul>
-                                <li>              
+                                <li>
                                     <a href="#" target="_blank">
                                         <img src="/arquivos/icon-facebook-footer.png" />
                                     </a>
@@ -93,3 +97,43 @@
         </div>
     </div>
 </footer>
+
+<div class="modal fade in footer-lgpd  " id="footer-lgpd" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+    aria-hidden="true" style="display: none; z-index: 9999999999; position: fixed;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="">
+                    <div class="row" id="intro-modal-text">
+                        <div class="col-sm-9">
+                            <h3 style="color: #333;
+                            font-size: 12px;
+                            font-weight: 400;">
+
+                                Utilizamos cookies para melhorar sua experiência online.
+                                Ao continuar navegando, você aceita os termos de nossa <a style="color: #ED1C24;"
+                                    href="/institucional/politica-de-privacidade">Política de Cookies</a>.
+
+                            </h3>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" id="btnlgpd" class="close" data-dismiss="modal" aria-hidden="true"
+                                style="
+                            color: #fff;
+                            border: solid 0px !important;
+                            height: 2em;
+                            margin-top: 34px;
+                            border-radius: 5px;
+                            margin-right: 0em;
+                            font-size: 15px;
+                            background: #E3503C;
+                            font-weight: 100 !important;">OK</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
