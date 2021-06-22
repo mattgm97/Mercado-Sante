@@ -13,11 +13,10 @@
 }*/
 .prateleira {
 	.box-item {
-		background-color: white !important;
-		height: 32.5em;
+		background-color: #fff!important;
+		height: auto;
 		position: relative;
 		margin: 4px;
-		border: solid 0px #CECECE;
 		border-radius: 5px;
 		.hover-part {
 			display: none;
@@ -36,15 +35,17 @@
 		}
 	}
 	.btn-add-buy-button-asynchronous {
-		color: white !important;
-		display: inline-block !important;
+		color: #fff!important;
+		display: inline-block!important;
 		text-transform: uppercase;
-		background-color: #007DA5 !important;
-		font-weight: 500 !important;
-		font-size: 18px !important;
-		padding: 14px !important;
+		font-weight: 500!important;
+		font-size: 25px!important;
+		font-family: "ChaletComprime-CologneEighty";
+		padding: 2px!important;
 		text-decoration: none;
-		border-radius: 0px !important;
+		width: 100% !important;
+		border-radius: 5px;
+		background-color: #E3503C;
 		.fa {
 			display: none !important;
 		}
@@ -63,19 +64,21 @@
 		}
 	}
 	.price {
-		margin-bottom: 4px;
-		text-align: left;
+		margin-bottom: 0px;
+		text-align: end;
+		margin-top: -15%;
 		.best-price {
 			display: inline-flex !important;
-			margin-top: 10px;
+			margin-top: 13px;
 			clear: both;
-			color: rgb(79, 79, 79) !important;
-			font-weight: 300 !important;
+			color: #515151!important;
+			font-weight: 100 !important;
 			font-size: 22px !important;
 			.priceitself {
-				color: #007DA5;
-				padding-left: 6px;
-				font-weight: 400 !important;
+				color: #515151;
+   				padding-left: 6px;
+    			font-weight: 100!important;
+    			font-family: "ChaletComprime-CologneEighty";
 			}
 		}
 		.old-price {
@@ -109,13 +112,16 @@
 	}
 	.product-name {
 		a {
-			color: #000 !important;
-			font-size: 13px !important;
-			line-height: 18px !important;
-			font-weight: 400 !important;
+			color: #000!important;
+    		font-size: 23px!important;
+    		line-height: 18px!important;
+    		font-weight: 400!important;
+    		font-family: "ChaletComprime-CologneEighty";
+    		text-decoration: none;
 		}
 		min-height: 54px !important;
 		text-align: left;
+		margin-top: 8%;
 	}
 	.wrapper-buy-button-asynchronous {
 		display: inline-block;
@@ -126,6 +132,9 @@
 		&::after {
 			content: none !important;
 			background: none !important;
+		}
+		img{
+			max-width: 100% !important;
 		}
 	}
 	.slick-prev {
@@ -193,7 +202,7 @@ fieldset {
 	margin: 0 30% !important;
 }
 .installment {
-	display: block;
+	display: none;
 	margin-top: 0.3em;
 	opacity: 0.82;
 	font-weight: 500;
@@ -213,6 +222,56 @@ fieldset {
 		}
 	}
 }
+
+.prateleira.vitrine {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+.n1colunas {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+.n2colunas {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+.n3colunas {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+.n4colunas {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+.n5colunas {
+	>ul {
+		>li {
+			width: 33.3333%;
+			padding: 0px;
+		}
+	}
+}
+
 @media (max-width: 600px) {
 	#rating-in-card {
 		width: auto !important;
