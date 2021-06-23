@@ -61,6 +61,12 @@
       display: none;
     }
   }
+
+  .resultado-busca-filtro > fieldset.filterBy {
+     
+      display: none !important;
+    
+  }
   
   #returnToTop .text {
     display: none !important;
