@@ -50,6 +50,14 @@
 			display: none !important;
 		}
 	}
+	.prateleira {
+		.btn-add-buy-button-asynchronous {
+			&:hover {
+				background-color: none !important;
+			}
+		}
+	}
+	
 	.buy-btn-icon {
 		display: inline-block;
 		width: 22%;
@@ -66,7 +74,7 @@
 	.price {
 		margin-bottom: 0px;
 		text-align: end;
-		margin-top: -15%;
+		margin-top: -16%;
 		.best-price {
 			display: inline-flex !important;
 			margin-top: 13px;
@@ -94,22 +102,7 @@
 			padding-left: 5px;
 		}
 	}
-	.hover-part {
-		.best-price-hover {
-			color: #FE5000;
-			font-size: 22px;
-		}
-		color: #4F4F4F;
-		font-weight: 500;
-		.apenas {
-			color: #0088C3;
-			line-height: 23px;
-			font-weight: bold;
-			font-size: 15px;
-			display: block;
-			margin-top: 9px;
-		}
-	}
+
 	.product-name {
 		a {
 			color: #000!important;
@@ -119,7 +112,7 @@
     		font-family: "ChaletComprime-CologneEighty";
     		text-decoration: none;
 		}
-		min-height: 54px !important;
+		min-height: 27px !important;
 		text-align: left;
 		margin-top: 8%;
 	}
@@ -222,6 +215,36 @@ fieldset {
 		}
 	}
 }
+#divTitulo.h4 {
+	&:after {
+		background: none;
+	}
+}
+.prateleira.vitrine {
+	h2 {
+		font-size: 35px!important;
+		margin-top: 1em;
+		padding: 13px;
+		background: #F29100;
+    	width: 15%;
+    	height: 50px;
+    	color: #633510 !important;
+    	font-family: "ChaletComprime-CologneEighty";
+		&:after {
+			background: none !important;
+		}
+	}
+}
+.section-title {
+	&:after {
+		background: none;
+	}
+}
+h4#divTitulo {
+	&:after {
+		background: none;
+	}
+}
 
 .prateleira.vitrine {
 	>ul {
@@ -273,6 +296,28 @@ fieldset {
 }
 
 @media (max-width: 600px) {
+	.prateleira.vitrine {
+		.price {
+			margin-top: -23%;
+		
+		}
+	}
+	#divTitulo.h4 {
+		text-align: center;
+	}
+	.prateleira.vitrine {
+		.h2 {
+			text-align: center;
+			width: 30%;
+		}
+	}
+	.section-title {
+		text-align: center;
+	}
+	h4#divTitulo {
+		text-align: center;
+	}
+	
 	#rating-in-card {
 		width: auto !important;
 		margin: 0 27% !important;

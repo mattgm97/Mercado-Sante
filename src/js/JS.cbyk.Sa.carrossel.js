@@ -29,9 +29,9 @@ $(window).on("load",function() {
 
   
 
-  $('.product-carousel .prateleira.vitrine ul').slick({
+  $('.prateleira.vitrine ul').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
   autoplaySpeed: 3000,
@@ -47,6 +47,7 @@ $(window).on("load",function() {
     }]
 
   });
+ 
 
   $('.product-carousel-side .prateleira.vitrine ul').slick({
     infinite: true,
@@ -69,9 +70,62 @@ $(window).on("load",function() {
 
   
 
+  $('.cb-BannerMeio').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }]
 
+  });
 
+  $('.cb-iconeMeio').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }]
 
+  });
+
+  $('.cb-BannerFinal').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }]
+
+  });
   $('#homeCardsCarousel').slick({
     infinite: true,
     slidesToShow: 5,

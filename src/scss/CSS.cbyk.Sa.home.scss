@@ -74,15 +74,16 @@
             padding: 0 41px 0px 0;
             .imgIcone{
                 margin-right: -10%;
-                margin-left: -2em;
+                margin-left: -3em;
                 width: 38%;
             }
             img{
                 width: 50%;
                 height: auto;
+                display: initial;
             }
             p{
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 700;
                 color: #3BAE2A;
                 height: 36%;
@@ -103,3 +104,48 @@ margin-bottom: 4em;
             padding: 10px;
         }
 }
+
+
+@media (max-width: 600px) {
+
+    .cb-home-icone{
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+    .cb-home-banner{
+        margin-top: -8em;
+    }
+    .cb-iconeMeio {
+        .icone{
+            text-align: center;
+            padding: 0px 20px 0px 20px;
+            p{
+                font-size: 21px;
+                font-weight: 700;
+                color: #3BAE2A;
+                height: 36%;
+                margin: 0px 0px 0px 0px;
+                display: flex;
+                margin-top: 0em;
+                margin-bottom: 0px;
+                img{
+                    margin-right: 0%;
+                    margin-left: 0em;
+                    width: 38%;
+                    margin-top: -13%;
+                }
+            }
+            span{
+                margin-right: -24px;
+                margin-left: 0em;
+                width: 38%;
+                margin-top: -13%; 
+            }
+            img{
+                width: 50%;
+                height: auto;
+                margin-left: 0%;
+            }
+        }
+    } 
+    }
