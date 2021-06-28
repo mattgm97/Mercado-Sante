@@ -6,7 +6,7 @@
     h2 {
         color: $color-1;
         font-family: 'ChaletComprime-CologneEighty';
-        font-size: 34px;
+        font-size: 28px;
         letter-spacing: 0.21px;
         line-height: 31px;
         margin-bottom: 30px;
@@ -17,12 +17,12 @@
         margin: 0;
 
         li {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             a {
                 color: $color-1;
-                font-family: "Bw Modelica";
-                font-size: 18px;
+                font-family: Bw Modelica, sans-serif;
+                font-size: 15px;
                 letter-spacing: 0.17px;
                 line-height: 22px;
                 text-decoration: none;
@@ -46,22 +46,34 @@
 
             li {
                 margin: 0;
-
+                a{
+                    img{
+                        width: 85%;
+                        height: auto;
+                    }
+                }
                 &:nth-child(2){
-                    margin: 0 45px;
+                    margin: 0 12px;
                 }
             }
         }
     }
-
+    &-pagamento{
+        margin-bottom: 4em;
+        img{
+            width: 30%;
+            height: auto;
+        }
+    }
     &-direitos {
+        margin-top:25px;
        p {
         color: $color-3;
-        font-family: "Montserrat Medium";
-        font-size: 14px;
+        font-family: Montserrat Medium, sans-serif;
+        font-size: 10px;
         letter-spacing: 0.15px;
         line-height: 17px;
-        text-align: center;
+        text-align: inherit;
         margin: 0;
        } 
     }
@@ -69,11 +81,27 @@
     &-powered {
         h3 {
             color: $color-3;
-            font-family: 'Dosis';
-            font-size: 16px;
+            font-family: Dosis, sans-serif;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: -0.18px;
             line-height: 28px;
+            img{
+                width: 53%;
+            }
         }
     }
+    &-logo{
+        img{
+            width: 70%;
+            height: auto;
+            margin-top: -35px;
+        }
+    }
+}
+.cb-newsletter-text {
+    text-align: inherit;
+}
+.cb-newsletter{
+    padding-left: 4em !important;
 }
