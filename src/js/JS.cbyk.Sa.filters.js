@@ -1,6 +1,9 @@
 
 setTimeout(function(){
 
+    $(".resultado-busca-filtro > fieldset.orderBy select option:first-child").text("ORDENAR POR")
+    
+
     $(".bt-refinar.search-filter-button.even").text("Aplicar Filtros");
     
         $(".refino h5").append(`<svg style="width: 26px;

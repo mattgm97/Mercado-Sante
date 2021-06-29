@@ -6,6 +6,10 @@
     display: block;
     margin: auto;
   }
+
+  #search-mobile{
+    display: none;
+  }
   
   .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     border: none !important;
@@ -86,12 +90,24 @@
   
   #box-bread-brumb li {
     &:before {
-      color: #007EA8 !important;
+      color: #007729 !important;
     }
   
     &.last a {
-      color: #007EA8 !important;
+      color: #007729 !important;
       font-weight: bold;
+    }
+  }
+
+  #box-bread-brumb li{
+    a{
+      color: #4F4F4F;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: "ChaletComprime-CologneEighty";
+    text-transform: uppercase;
     }
   }
 
@@ -706,7 +722,8 @@
     }
   
     .link-logo img {
-      max-width: 172px;
+      max-width: 75px;
+      margin-left: 28%;
       margin-top: 8px;
     }
   
@@ -758,7 +775,7 @@
     }
   
     .header {
-      margin-bottom: -26px !important;
+     
   
       .search .busca {
         margin-right: 12px;

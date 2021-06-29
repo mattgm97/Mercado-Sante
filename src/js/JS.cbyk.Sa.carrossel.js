@@ -71,7 +71,7 @@ docReady(function() {
 
   
 
-  $('.cb-BannerMeio').slick({
+  $('.cb-BannerMeio .row').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -90,7 +90,7 @@ docReady(function() {
 
   });
 
-  $('.cb-iconeMeio').slick({
+  $('.cb-iconeMeio .row').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -109,7 +109,7 @@ docReady(function() {
 
   });
 
-  $('.cb-BannerFinal').slick({
+  $('.cb-BannerFinal .row').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,

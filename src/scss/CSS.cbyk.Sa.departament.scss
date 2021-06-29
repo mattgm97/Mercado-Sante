@@ -67,6 +67,14 @@
       display: none !important;
     
   }
+
+  .resultado-busca-filtro > fieldset.orderBy label {
+     
+    display: none !important;
+  
+}
+
+  
   
   #returnToTop .text {
     display: none !important;
@@ -189,9 +197,16 @@
   }
   
   .resultado-busca-filtro > fieldset select {
-    border: 1px solid white !important;
-    border-radius: 0 !important;
-    color: black !important;
+    color: #E3503C !important;
+    background-color: #F2F2F2;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px !important;
+    text-transform: uppercase;
+    height: 46px;
+    border: 1px solid #fff!important;
+    font-family: "ChaletComprime-CologneEighty";
+    letter-spacing: 2px;
   }
   
   #admake-advanced-filter {
@@ -217,7 +232,7 @@
     border-radius: 9px;
     font-size: 20px;
     color: white;
-    background-color: #FE5000;
+    background-color: #E3503C;
     text-align: center;
     width: 362px;
     font-weight: 700;

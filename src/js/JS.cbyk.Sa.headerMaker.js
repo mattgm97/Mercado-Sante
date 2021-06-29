@@ -1,5 +1,5 @@
 
-$(window).on("load",function () {
+docReady(function () {
 
 
     fetch("/api/catalog_system/pub/category/tree/3/")
@@ -14,51 +14,22 @@ $(window).on("load",function () {
                 element.name = element.name.replace(/[\s/,&]+/g, '-');
                 $(".deptos ul").append(`<li class="depto-${element.name}"><a href="${element.url}">${divtext}</a></li>`);
                 console.log("adding main")
-              /*  if (element.hasChildren) {
-                    $("#top-menu .container-fluid #deptos-list").append(`<div class="deptonav depto-${element.name}" id="${element.name}" style="display: none">
-
-            <div class="row" style="width: 1180px;
-            margin: auto;">
-                 <div class="col-sm-2">
-                     <ul class="">
-                         
-
-                     </ul>
-                 </div>
-                 <div class="col-sm-2">
-                     <ul>
-                     
-
-                     </ul>
-                 </div>
-                 <div class="col-sm-2">
-                    <ul></ul>
-                 </div>
-                 <div class="col-sm-2">
-                    <ul></ul>
-                 </div>
-                 <div class="col-sm-4">
-                 <a><img src="/arquivos/menu_${element.name}.jpg" /></a>
-                 </div>
-             </div>
-            </div>`);
+                if (element.hasChildren) {
+               
 
 
 
-               //mobile
-               $(".sidenav").append(`<div class="depto-box" style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
-               <div class="dropdown-container" id="${element.name}"></div>`);
-
-                    //Desktop
-                    $(`.depto-${element.name}`).mouseenter(function () {
-                        $(".deptonav").hide();
-                        $(`#deptos-list .depto-${element.name}#${element.name}`).show()
-                    });
+                    //mobile
+                    $(".sidenav").append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+             <div class="dropdown-container" id="${element.name}"></div>`);
 
 
-                    $(`#deptos-list .depto-${element.name}#${element.name}`).mouseleave(function () {
+                
+                  /*  $(`#deptos-list .depto-${element.name}#${element.name}`).mouseleave(function () {
                         $(`#deptos-list .depto-${element.name}#${element.name}`).hide()
-                    });
+                        $(`#deptos-list .deptonav .row .secondLayer`).hide();
+                        $(`#deptos-list .deptonav .row .thirdLayer`).hide();
+                    });*/
 
 
                     //Mobile
@@ -72,26 +43,47 @@ $(window).on("load",function () {
                         $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-down');
                     })
 
-
+                    element.children.sort((a, b) => a.name.localeCompare(b.name, 'pt', { ignorePunctuation: true }));
                     element.children.forEach((subs, index) => {
-                        console.log("adding children")
-                        if (index < 5) {
-                            $(`.depto-${element.name} .row .col-sm-2:nth-of-type(1) ul`).append(`<li><a href="${subs.url}">${subs.name}</a></li>`);
-                        } else if (index < 10) {
-                            $(`.depto-${element.name} .row .col-sm-2:nth-of-type(2) ul`).append(`<li><a href="${subs.url}">${subs.name}</a></li>`);
-                        } else if (index < 15) {
-                            $(`.depto-${element.name} .row .col-sm-2:nth-of-type(3) ul`).append(`<li><a href="${subs.url}">${subs.name}</a></li>`);
-                        } else {
-                            $(`.depto-${element.name} .row .col-sm-2:nth-of-type(4) ul`).append(`<li><a href="${subs.url}">${subs.name}</a></li>`);
+                        //  console.log("adding children");
+                        //  console.log(subs)
+                        let divtextsub = subs.name;
+                        subs.name = subs.name.replace(/[\s/,&]+/g, '-');
+                        //desktop
+
+                        if (!subs.hasChildren) {
+                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
+                            $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
+                                // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                                $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
+                            });
                         }
 
-                        $(`.dropdown-container#${element.name}`).append(`<a href="${subs.url}">${subs.name}</a>`)
+
+                       
+
+
+
+                        //mobile
+
 
                     })
 
+                    //Desktop
+
+
+
+
+
+
+
+
+
+
+
                 } else {
                     $(".sidenav").append(`<span class="depto-${element.name}"><a style="border-top: solid 1px #333;" href="${element.url}">${divtext}</a></span>`)
-                }*/
+                }
             });
 
 
@@ -109,7 +101,25 @@ $(window).on("load",function () {
 
 
 
-        $(".depto-Ofertas a").attr("href", "/busca?fq=H:137");
+        let toggle = true;
+        const mq = window.matchMedia("(max-width: 600px)");
+        if (mq.matches) {
+          
+    
+              $("#btn-search-mob").click(function(e){
+                  e.preventDefault();
+                if(toggle) {
+                    $("#search-mobile").show();
+                    $("#btn-search-mob img").attr("src","/arquivos/exit.svg");
+                    toggle = false
+                } else {
+                    toggle = true;
+                    $("#search-mobile").hide();
+                    $("#btn-search-mob img").attr("src","/arquivos/icon-busca.svg");
+    
+                }
+          
+              })}
 
 
         //$(".sidenav").append(`<span><a href="/busca?fq=H:137">OFERTAS</a></span>`)

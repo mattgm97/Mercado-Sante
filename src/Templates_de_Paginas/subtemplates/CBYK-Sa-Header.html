@@ -16,26 +16,26 @@
         <div class="container">
             <div class="row" id="headerrow">
 
-                <div class="button-menu-xs col-3 col-sm-1 d-block d-md-none d-lg-none">
+                <div class="button-menu-xs col-2 col-sm-1 d-block d-md-none d-lg-none d-flex align-items-center">
                     <button class="btn btn-default btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30.905" height="15.75" viewBox="0 0 30.905 15.75">
                             <g>
-                              <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 1c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
-                              <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 7.875c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
-                              <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 14.75c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                              <path fill="#4F4F4F" fill-rule="evenodd" d="M0 1c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                              <path fill="#4F4F4F" fill-rule="evenodd" d="M0 7.875c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                              <path fill="#4F4F4F" fill-rule="evenodd" d="M0 14.75c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
                             </g>
                           </svg></button>
                     <div id="menu-mobile" style="display: none;">
                         <div class="header-menu-mobile d-block d-sm-none">
-                            <span class="close-menu pull-right btn-menu-xs" data-id="#menu-mobile"><img
+                            <span class="close-menu btn-menu-xs" data-id="#menu-mobile" style="float:right"><img
                                     src="/arquivos/exit.svg" style="width:20px" /></span>
                             <span class="icone-menu">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30.905" height="15.75" viewBox="0 0 30.905 15.75">
                                     <g>
-                                      <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 1c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
-                                      <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 7.875c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
-                                      <path fill="rgb(0,125,165)" fill-rule="evenodd" d="M0 14.75c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                                      <path fill="#4F4F4F" fill-rule="evenodd" d="M0 1c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                                      <path fill="#4F4F4F" fill-rule="evenodd" d="M0 7.875c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
+                                      <path fill="#4F4F4F" fill-rule="evenodd" d="M0 14.75c0-.55228475.44771525-1 1-1h28.9047619c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1H1c-.55228475 0-1-.44771525-1-1z"/>
                                     </g>
                                   </svg>
                                </span>
@@ -66,14 +66,11 @@
                     </a>
                 </div>
                 <!-- .logo -->
-                <div class="mini-cart mini-cart-xs text-right col-3 d-block d-sm-none">
-                    <a title="Carrinho de Compras" href="/giftlist" class="btn btn-default d-none d-sm-block">
-                        <img src="/arquivos/atendimento.svg" style="max-width: 20px" />
+                <div class="mini-cart mini-cart-xs text-right col-2 d-block d-sm-none d-flex align-items-center">
+                    <a title="Carrinho de Compras" class="btn btn-default" id="btn-search-mob">
+                        <img src="/arquivos/icon-busca.svg" style="max-width: 29px" />
                     </a>
-                    <a title="Carrinho de Compras" onclick="openNav()" class="btn btn-default">
-                        <img src="/arquivos/bag.svg"  />
-                        <span class="badge bg-danger mini-cart-qty-admake">0</span>
-                    </a>
+                 
 
                 </div><!-- .mini-cart-xs -->
 
@@ -84,11 +81,11 @@
                     </div><!-- .search -->
                 </div>
 
-                <div class="search col-12 col-sm-5 col-md-4 col-lg-4">
+                <div class="search col-12 col-sm-5 col-md-4 col-lg-4 d-none d-sm-block">
                     <vtex.cmc:fullTextSearchBox />
                 </div><!-- .search -->
 
-                <div class="sing-in col-2 col-sm-3 col-md-2 col-lg-2 text-center">
+                <div class="sing-in col-2 col-sm-3 col-md-2 col-lg-2 text-center d-flex align-items-center">
 
 
                     <ul class="nav">
@@ -172,6 +169,11 @@
 
 
             </div><!-- .row -->
+            <div class="row" id="search-mobile">
+                <div class="search col-12 ">
+                    <vtex.cmc:fullTextSearchBox />
+                </div><!-- .search -->
+            </div>
 
         </div><!-- .container -->
     </div><!-- .header -->
