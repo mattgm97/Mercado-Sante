@@ -1,6 +1,7 @@
 
 
-$(window).on("load",function() {
+
+docReady(function() {
 
   //$(".helperComplement").remove();
 
@@ -29,7 +30,7 @@ $(window).on("load",function() {
 
   
 
-  $('.prateleira.vitrine ul').slick({
+  $('.product-carousel .prateleira.vitrine ul').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
