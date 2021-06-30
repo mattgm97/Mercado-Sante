@@ -3,6 +3,10 @@
 .notifyme.sku-notifyme {
     text-align: center;
   }
+
+  .skuList{
+    display: none;
+  }
   
   .notifymetitle.notifyme-title {
     color: #000;
@@ -147,9 +151,10 @@
   
     .product-name .productName {
       color: #333;
-      font-size: 22px;
+      font-size: 50px;
       font-weight: 600;
-      line-height: 25px;
+      line-height: 50px;
+      font-family: "ChaletComprime-CologneEighty";
     }
   }
   
@@ -263,7 +268,11 @@
   }
   
   #comprar-flutuante .descricao-preco .valor-por, .product-details .price-box .descricao-preco .valor-por {
-    color: black !important;
+    color: #007729  !important;
+    font-family: 'ChaletComprime-CologneEighty';
+    display: inline-block !important;
+    font-size: 50px!important;
+    font-style: normal!important;
   }
   
   .preco-a-vista {
@@ -275,6 +284,7 @@
     color: #4F4F4F;
     text-transform: uppercase;
     margin-top: 9px;
+    margin-left: 10px;
   }
   
   #modalstuff {
@@ -291,10 +301,11 @@
   }
   
   #comprar-flutuante .descricao-preco .valor-por strong, .product-details .price-box .descricao-preco .valor-por strong, #modalstuff .descricao-preco .valor-por strong {
-    font-weight: 600;
-    color: #007DA5 !important;
-    font-size: 25px !important;
+    font-weight: 200;
+    color: #007729  !important;
+    font-size: 50px !important;
     font-style: initial !important;
+    display: inline-block !important;
   }
   
   #calculoFrete {
@@ -315,16 +326,17 @@
   
   .product-description .buy-together-content td.buy .comprar-junto a, .buy-button.buy-button-ref {
     display: block;
-    width: 54%;
-    background-color: #007DA5 !important;
+    width: 80%;
+    background-color: #E3503C !important;
     font-weight: 400;
     color: #fff !important;
     text-transform: uppercase;
-    font-size: 22px;
+    font-family: 'ChaletComprime-CologneEighty';
+    font-size: 29px;
     line-height: 27px;
     letter-spacing: 1px;
-    height: 50px;
-    padding: 12px;
+    height: 53px;
+    padding: 13px;
     margin-right: 1em;
     border-radius: 0px;
   }
@@ -343,7 +355,7 @@
   
   .product-info .shipping-box {
     label {
-      font-size: 17px;
+      font-size: 13px;
       font-weight: 500 !important;
       text-decoration: none;
       color: #4F4F4F !important;
@@ -362,11 +374,11 @@
     margin-top: 0%;
   
     .qtd {
-      font-weight: bold;
+      font-weight: 500;
       border-right: none !important;
       width: 44px;
-      font-size: 24px !important;
-      color: #333 !important;
+      font-size: 26px !important;
+      color: #4F4F4F  !important;
   
       /* border: solid 2px #931A29 !important; */
       border-radius: 15px !important;
@@ -421,6 +433,18 @@
     &.emptyRatingStar:before, &.filledRatingStar:before {
       color: #007DA5 !important;
     }
+  }
+
+
+  #comprar-flutuante .descricao-preco .valor-de, .product-details .price-box .descricao-preco .valor-de, .modal-body .descricao-preco .valor-de {
+    display: block;
+    font-style: normal;
+    color: #4F4F4F !important;
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: line-through;
+    margin-bottom: 6px;
   }
   
   span#spnRatingProdutoTop {
@@ -503,19 +527,20 @@
   
   .product-info .shipping-box {
     label .fitext {
-      color: black !important;
+      color: #4F4F4F !important;
       background: white !important;
-      border: 2px solid #0088C3 !important;
+      border: 2px solid #E3503C !important;
       border-radius: 0px 0px 0px 0px !important;
+      width: 22em;
     }
   
     .freight-btn {
       color: white !important;
-      background: #0088C3 !important;
-      border: 1px solid #0088C3 !important;
+      background: #E3503C !important;
+      border: 1px solid #E3503C !important;
       border-radius: 0px 0px 0px 0px !important;
       margin-top: -3px;
-      padding: 0px 18px;
+      padding: 0px 29px;
       margin-left: -5px;
     }
   }
@@ -959,10 +984,11 @@
     font-size: 22px;
     text-transform: uppercase;
     color: #4F4F4F !important;
+    width: 50%;
   }
   
   #btn-description, #btn-specification, #btn-reviews {
-    margin-right: 3em;
+  
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0em;
@@ -1011,7 +1037,7 @@
     }
   
     .product-image .apresentacao .thumbs a {
-      border: solid 1px #007DA5;
+      border: solid 1px #e3503c;
       border-radius: 5px;
       padding: 7px;
     }
@@ -1323,7 +1349,7 @@
   
   @media (min-width: 992px) {
     .product-image .apresentacao .thumbs {
-      left: -99px !important;
+      left: -110px !important;
       top: -7px;
     }
   

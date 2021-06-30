@@ -54,7 +54,7 @@
   .prateleira.vitrine h2 {
     color: #007DA5;
     text-align: center;
-    font-size: 24px !important;
+    font-size: 36px !important;
     margin-top: 2em;
     margin-bottom: 1.3em;
   }
@@ -410,7 +410,7 @@
       padding: 17px 8px 17px 0px;
       text-decoration: none;
       font-size: 13px;
-      color: #025EB9 !important;
+      color: #e3503c !important;
       font-weight: 500;
       display: block;
       text-transform: uppercase;
@@ -460,7 +460,7 @@
   .fa-angle-down, .fa-angle-up {
     float: right;
     padding-right: 8px;
-    color: #025EB9;
+    color: #e3503c;
     font-size: 25px;
   }
   
@@ -714,13 +714,20 @@
   }
   
   @media screen and (max-width: 1200px) {
+
+    .sidenav {
+      .depto-box{
+        span{
+          display: inline-block;
+        }
+      }
+      
+    }
     #mini-cart-admake .mini-cart-itens {
       max-height: 460px;
     }
   
-    #headerrow {
-      margin-top: 10px;
-    }
+   
   
     .link-logo img {
       max-width: 75px;

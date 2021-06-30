@@ -77,7 +77,7 @@
 		margin-top: -16%;
 		.best-price {
 			display: inline-flex !important;
-			margin-top: 13px;
+		
 			clear: both;
 			color: #515151!important;
 			font-weight: 100 !important;
@@ -112,7 +112,7 @@
     		font-family: "ChaletComprime-CologneEighty";
     		text-decoration: none;
 		}
-		min-height: 27px !important;
+		/*min-height: 27px !important;*/
 		text-align: left;
 		margin-top: 8%;
 	}
@@ -124,6 +124,8 @@
     		font-weight: 400!important;
     		font-family: "ChaletComprime-CologneEighty";
     		text-decoration: none;
+			margin-top: 1em;
+			display: block;
 	}
 	.wrapper-buy-button-asynchronous {
 		display: inline-block;
@@ -231,11 +233,11 @@ fieldset {
 }
 .prateleira.vitrine {
 	h2 {
-		font-size: 35px!important;
+		font-size: 36px!important;
 		margin-top: 1em;
-		padding: 13px;
+		padding: 4px;
 		background: #F29100;
-    	width: 15%;
+    	width: 24%;
     	height: 50px;
     	color: #633510 !important;
     	font-family: "ChaletComprime-CologneEighty";

@@ -93,9 +93,9 @@ $(window).on("load",function () {
 	if ($.fn.ADMAKEmenu) {
 		$(document).ADMAKEmenu();
 	}
-	$('.col-mini-cart').ADMAKEminiCart({
+	/*$('.col-mini-cart').ADMAKEminiCart({
 		miniCartQtd: '.mini-cart-qty-admake',
-	});
+	});*/
 
 	var $btnComprar = $('.btn-add-buy-button-asynchronous');
 	if ($btnComprar.length) {
@@ -163,11 +163,11 @@ $(window).on("load",function () {
 			$recebeQtyForm.prepend(
 				'<div class="pull-left box-qtd">' +
 				'	<div class="bts">' +
-				'		<button class="btn btn-menos"><img src="/arquivos/menos.svg"/></i></button>' +
+				'		<button class="btn btn-menos"><img src="/arquivos/mmenos.svg"/ style="margin-top: -2px;"></i></button>' +
 				' 	</div>' +
 				'	<input type="text" class="qtd" value="1" />' +
 				'	<div class="bts">' +
-				'		<button class="btn btn-mais"><img src="/arquivos/mais.svg"/></i></button>' +
+				'		<button class="btn btn-mais"><img src="/arquivos/mmais.svg"/></i></button>' +
 				' 	</div>' +
 				'</div>'
 			);
