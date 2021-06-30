@@ -116,6 +116,15 @@
 		text-align: left;
 		margin-top: 8%;
 	}
+
+	.out-of-stock{
+		color: #000!important;
+    		font-size: 23px!important;
+    		line-height: 18px!important;
+    		font-weight: 400!important;
+    		font-family: "ChaletComprime-CologneEighty";
+    		text-decoration: none;
+	}
 	.wrapper-buy-button-asynchronous {
 		display: inline-block;
 		width: 88%;
@@ -327,7 +336,7 @@ h4#divTitulo {
 	}
 	.prateleira {
 		.box-item {
-			height: 24em;
+			height: 17em;
 			padding: 6px !important;
 		}
 		.buy-btn-icon {
