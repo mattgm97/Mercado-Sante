@@ -284,9 +284,36 @@
     color: #4F4F4F;
     text-transform: uppercase;
     margin-top: 9px;
+    display: inline-block !important;
     margin-left: 10px;
   }
   
+  .colection-title{
+    font-size: 36px!important;
+		margin-top: 1em;
+		padding: 4px;
+		background: #F29100;
+    	width: 24%;
+    	height: 50px;
+    	color: #633510 !important;
+    	font-family: "ChaletComprime-CologneEighty";
+  }
+  .box-contents{
+
+    span, .thelist{
+      display: inline-block;
+      color: #4F4F4F;
+    }
+    ul{
+      display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    li{
+      margin-right: 1em;
+    }
+    }
+  }
   #modalstuff {
     padding: 0;
     margin: 5px 0;
@@ -999,8 +1026,8 @@
   }
   
   #product-specs a:hover, .active-tab {
-    border-bottom: 4px solid #FE5000 !important;
-    color: #FE5000 !important;
+    border-bottom: 4px solid #E3503C !important;
+    color: #E3503C !important;
     transition: 0.3s;
   }
   
@@ -1075,6 +1102,10 @@
   
     #wishlist-btn, #wishlist-btn-deactivated {
       left: 0%;
+    }
+
+    .product-image{
+      z-index: 1;
     }
   
     .product-image .zoomPad {

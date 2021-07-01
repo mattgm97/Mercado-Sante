@@ -32,7 +32,7 @@
     top: 0px;
   
     /* z-index: 10000000;*/
-    z-index: 999999999;
+    z-index: 99999;
     background-color: white !important;
     padding-top: 8px;
   }
@@ -495,7 +495,7 @@
     }
   
     #mini-cart-admake-total, .mini-cart-totais span {
-      color: #333 !important;
+      color: #4F4F4F !important;
       font-size: 20px !important;
       font-weight: 500 !important;
       line-height: 18px !important;
@@ -511,7 +511,7 @@
     }
   
     #mini-cart-admake-total {
-      color: #333 !important;
+      color: #4F4F4F !important;
     }
   
     right: -25px !important;
@@ -521,13 +521,13 @@
       color: white !important;
       display: block;
       text-transform: uppercase;
-      background-color: #007DA5 !important;
+      background-color: #e3503c !important;
       font-weight: 500 !important;
       font-size: 18px !important;
       padding: 12px !important;
       text-decoration: none;
       float: right;
-      width: 48%;
+      width: 100%;
       border-radius: 0px !important;
       text-align: center;
     }
