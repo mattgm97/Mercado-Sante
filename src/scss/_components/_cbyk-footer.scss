@@ -149,8 +149,8 @@
                 margin-right: 13px !important;
             }
             #commit{
-                width: 12em !important;
-                height: 41px;
+                width: 86%!important;
+                height: 41px !important;
                 font-size: 26px;
                 font-family: 'ChaletComprime-CologneEighty';
                 background: #E3503C;
@@ -181,34 +181,6 @@
                 margin-left: 25px;
             }
         }
-        &-servicos{
-            background-color: #F3F3F3;
-            ul{
-                text-align: center;
-                li{
-                    margin-bottom: 5px;
-                    a{
-                        text-decoration: none;
-                        font-size: 15px;
-                        font-family: Bw Modelica,sans-serif;
-                    }
-                }  
-            }
-        }
-        &-atendimento{
-            background-color: #F3F3F3;
-            ul{
-                text-align: center;
-                li{
-                    margin-bottom: 5px;
-                    a{
-                        text-decoration: none;
-                        font-size: 15px;
-                        font-family: Bw Modelica,sans-serif;
-                    }
-                }  
-            }
-        }
 
 
         &-redes{
@@ -220,7 +192,36 @@
             margin-top: 3em;
         }
     }
-
+    .accordion-button{
+        background-color: #F3F3F3;
+        font-family: ChaletComprime-CologneEighty;
+        font-size: 30px;
+        background-color: #F3F3F3;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .accordion-button:not(.collapsed)::after{
+        display: none!important;
+    }
+    .accordion-button:not(.collapsed) {
+        color: #333 !important;
+    }
+    .accordion-button::after{
+        display: none !important;
+    }
+    .accordion-body{
+        text-align: center;
+        background-color: #f3f3f3;
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: Bw Modelica,sans-serif;
+                }
+            }
+        }
+    }
 }
 
 
