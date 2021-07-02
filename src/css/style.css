@@ -793,7 +793,7 @@
          display: block;
        }
 
-    .product-image .apresentacao .slick-dots li button {
+    /*.product-image .apresentacao .slick-dots li button {
         display: inline-block;
         vertical-align: top;
         margin: 0 8px;
@@ -801,7 +801,7 @@
         height: 10px;
         background: #2F334E;
         border-radius: 50%;
-    }
+    }*/
 
    .product-details .product-name{
      margin-bottom: 25px;

@@ -88,7 +88,7 @@ setTimeout(()=>{
 
         for (let i = 0; i < imgsLength; i++) {
             let imgProduct = $($(".product-image .apresentacao .thumbs a img")[i]).attr("src");
-            imgProduct = imgProduct.replace(/-90-90/g, '-500-500');
+            imgProduct = imgProduct.replace(/-55-55/g, '-500-500');
             $($(".product-image .apresentacao .thumbs a img")[i]).attr("src", imgProduct);
         }
 
