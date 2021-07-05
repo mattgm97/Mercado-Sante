@@ -1,35 +1,37 @@
- <!DOCTYPE html>
- <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
  
  <head>
-     <title>Login | Carajás Home Center</title>
+     <title>Login</title>
      <vtex:metaTags/>
-     <vtex:template id="CBYK-Ca-Header-Tags" />
+     <vtex:template id="CBYK-Sa-Header-Tags" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
  </head>
  
- <body id="login-page">
+ <body id="home-page">
  
      <div class="page">
  
          <!--  SubTemplate: Header -->
-         <vtex:template id="CBYK-Ca-Header" />
+         <vtex:template id="CBYK-Sa-Header" />
          <!-- /SubTemplate: Header -->
                      
-         <div id="login-extra-top"></div>                    
- 
-         <section id="login-content" class="container">
-             <vtex.cmc:userLogin/>
-         </section><!-- #content -->  
+
                      
-         <div id="login-extra-bottom"></div>   
+         <section id="login-content" class="container">
+    		<vtex.cmc:userLogin/>
+        </section><!-- #content -->  
                  
          <!--  SubTemplate: Footer -->
-         <vtex:template id="CBYK-Ca-footer" />
+         <vtex:template id="CBYK-Sa-footer" />
          <!-- /SubTemplate: Footer -->
      
      </div><!-- .container-fluid -->
  
  </body>
- <vtex:template id="CBYK-Ca-footer-Tags" />
+     <vtex:template id="CBYK-Sa-footer-Tags" />
  </html>
+
+
+

@@ -7,6 +7,10 @@
   .skuList{
     display: none;
   }
+
+  .product-image .zoomPad{
+    z-index: 1;
+  }
   
   .notifymetitle.notifyme-title {
     color: #000;
@@ -1257,6 +1261,13 @@
     }
   
     @media screen and (max-width: 800px) {
+
+      .product-image .apresentacao .thumbs{
+        padding: 0;
+      }
+      .colection-title{
+        width: 63%;
+      }
       .selectedQuantity span.label, .selectedspecification span.label, .selectedspecification-value {
         text-align: center !important;
       }
@@ -1334,7 +1345,7 @@
       padding-right: 0;
   
       label {
-        width: 70%;
+        width: 60%;
       }
     }
   
@@ -1382,6 +1393,7 @@
     .product-image .apresentacao .thumbs {
       left: -110px !important;
       top: -7px;
+      z-index: 1;
     }
   
     .modal-dialog {
@@ -1459,6 +1471,6 @@
   
   @media screen and (max-width: 365px) {
     .product-info .shipping-box label {
-      width: 65%;
+      width: 60%;
     }
   }

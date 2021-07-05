@@ -74,8 +74,8 @@ $(".parcelamentoProd").click(function(){
 
 setTimeout(()=>{
 
-    if($(".brandName a").text() == "iSINALIZA.COM"){
-        $(".under-img").fadeIn();
+    if(skuJson.name.includes("Cesta")){
+        $(".box-contents").fadeIn();
     }
  
     const mq = window.matchMedia("(max-width: 800px)");

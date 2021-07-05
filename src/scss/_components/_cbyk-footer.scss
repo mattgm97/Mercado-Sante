@@ -1,3 +1,7 @@
+.container-fluid .row{
+    margin: 0;
+}
+
 .accordion-button {
     &:not(.collapsed) {
       color: #212529 !important;
@@ -31,7 +35,7 @@
 .cb-footer{
 
     background: $color-2;
-    padding: 50px;
+    padding: 50px 0px;
 
     h2 {
         color: $color-1;
@@ -109,16 +113,14 @@
     }
 
     &-powered {
-        h3 {
+        li{
             color: $color-3;
             font-family: Dosis, sans-serif;
             font-size: 13px;
             font-weight: 700;
             letter-spacing: -0.18px;
             line-height: 28px;
-            img{
-                width: 53%;
-            }
+         
         }
     }
     &-logo{
@@ -223,10 +225,10 @@
         }
     }
     .accordion-button{
-        background-color: #F3F3F3;
+        background-color: #F3F3F3 !important;
         font-family: 'ChaletComprime-CologneEighty';
         font-size: 30px;
-        background-color: #F3F3F3;
+        
         color: #333;
         margin-bottom: 10px;
     }
