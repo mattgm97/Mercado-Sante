@@ -134,7 +134,7 @@ fill: #025EB9;
       
       </span>
       </span>
-      <div class="prod-total"><span class="price" style="float: right;font-weight: bolder;">Valor ${element.formattedPrice}</span></div>
+      <div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">Valor ${element.formattedPrice}</span></div>
   
     </div>
   `);

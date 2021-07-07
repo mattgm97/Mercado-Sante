@@ -64,7 +64,7 @@ c-0.8,7.6-7.2,13.4-14.8,13.4H48.7c-7.6,0-14.1-5.7-14.8-13.4l-7.5-75.7h78.1L97,10
 					
 					</span>
 					</span>
-					<div class="prod-total"><span class="price" style="float: right;font-weight: bolder;">Valor ${latest.formattedPrice}</span></div>
+					<div class="prod-total"><span class="price" style="float: right;font-weight: bolder;color: #4f4f4f!important;">Valor ${latest.formattedPrice}</span></div>
 			
 				</div>
 			`);
