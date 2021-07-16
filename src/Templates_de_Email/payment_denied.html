@@ -174,13 +174,13 @@
                                             <tr>
                                                 <td class="force-col">
                                                     <!-- ### BEGIN CONTENT ### -->
-                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" class="col-3">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" style="padding-bottom:0;margin-bottom:0;" class="col-3">
                                                         <tbody>
                                                             <tr>
                                                                 <td align="center">
-                                                                    <p style="margin: 0; box-sizing: border-box !important; text-transform: uppercase; color: #333; font-family: ChaletComprime-CologneEighty; font-size: 22px; line-height: 20px;">Pagamento pendente.</p>
+                                                                    <p style="margin: 0; box-sizing: border-box !important; text-transform: uppercase; color: #333; font-family: ChaletComprime-CologneEighty; font-size: 22px; line-height: 20px;">Pagamento não autorizado!</p>
                                                                     <div style="box-sizing: border-box; color: #4F4F4F; margin-top: .5rem !important;font-size: 15px; line-height: 17px; font-family: Bw Modelica">
-                                                                        realizado em: <span style="font-weight: 700 !important; font-family: Bw Modelica">{{formatDate orders.0.creationDate}}</span>
+                                                                        pedido realizado em: <span style="font-weight: 700 !important; font-family: Bw Modelica">{{formatDate orders.0.creationDate}}</span>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -188,14 +188,10 @@
                                                                 <td align="left">
                                                                     <p style="margin-top: 2rem; box-sizing: border-box !important; color: #333; font-family: ChaletComprime-CologneEighty; font-size: 22px; line-height: 20px;">Olá, {{orders.0.clientProfileData.firstName}}</p>
                                                                     <p style="margin-bottom: 4rem; box-sizing: border-box !important; color: #828282; font-family: Bw Modelica; font-size: 14px; line-height: 1.5">
-                                                                        Verificamos que o pagamento referente ao(s) pedido(s) abaixo continua pendente. Por favor, realize este pagamento para continuar com sua compra.
+                                                                        Parece que houve algum problema com seu pagamento. <strong>Seu pedido foi cancelado.</strong>
                                                                     </p>
                                                                 </td>
                                                             </tr>
-
-
-                                                            <!-- BOLETO e MERCHANT NULL -->
-                                                            {{#eq split false}}
                                                             <tr>
                                                                 <td style="padding-top:5px;padding-bottom:5px;">
                                                                     <table cellspacing="0" style="padding-top:5px;padding-bottom:2rem;padding-right:25px;" border="0" align="left" class="side-border">
@@ -204,64 +200,23 @@
                                                                                 <td>
                                                                                     <p style="margin-bottom: 10px; text-transform: uppercase;  box-sizing: border-box; margin-top: 0 !important; font-size: 22px; line-height: 20px; color: #333; font-family: ChaletComprime-CologneEighty;">
                                                                                         Forma de agamento</p>
-                                                                                    {{#each orders.0.paymentData.transactions}} {{#each payments}}
                                                                                     <div style="box-sizing: border-box; line-height: 20px; font-size: 15px !important; font-family: Bw Modelica; color: #4F4F4F;">
-                                                                                        <strong>{{paymentSystemName}} </strong>
-                                                                                        <span>R$ {{formatCurrency value}} à vista</span> {{#eq paymentSystemName 'Boleto Bancário'}}
-                                                                                        <p>
-                                                                                            <a style="box-sizing: border-box; border-radius: .25rem; display: inline-block; background-color:#991301; border-radius:10px; text-transform: uppercase; padding-top: .5rem; padding-bottom: .5rem; padding-left: 1rem; padding-right: 1rem; text-decoration: none !important; color: #FFF;
-                                                                                            font-family: ChaletComprime-CologneEighty;
-                                                                                            font-size: 28px;
-                                                                                            line-height: 21px;
-                                                                                            text-align: center;" href="{{replace url '{Installment}' installments}}">Imprimir Boleto</a>
-
-                                                                                        </p>
-                                                                                        {{/eq}}
+                                                                                        {{#each orders.0.paymentData.transactions}} {{#each payments}}
+                                                                                        <strong>{{paymentSystemName}}</strong> {{#if lastDigits}} final {{lastDigits}} {{/if}}
+                                                                                        <span>R$ {{formatCurrency value}} {{#eq installments 1}} (à vista) {{else}} (em {{installments}}x) {{/eq}}</span>
+                                                                                        <br />
+                                                                                        <span style="color:#BBB;">Tid: {{tid}}</span>
+                                                                                        <br /> {{/each}} {{/each}}
                                                                                     </div>
-                                                                                    {{/each}} {{/each}}
                                                                                 </td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
                                                                 </td>
                                                             </tr>
-                                                            {{/eq}} {{#eq split undefined}}
-                                                            <tr>
-                                                                <td style="padding-top:5px;padding-bottom:5px;">
-                                                                    <table cellspacing="0" style="padding-top:5px;padding-bottom:5px;padding-right:25px;" border="0" align="left" class="side-border">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <p style="margin-bottom: 10px; text-transform: uppercase;  box-sizing: border-box; margin-top: 0 !important; font-size: 22px; line-height: 20px; color: #333; font-family: ChaletComprime-CologneEighty;">
-                                                                                        Forma de agamento</p>
-                                                                                    {{#each orders.0.paymentData.transactions}} {{#each payments}}
-                                                                                    <div style="box-sizing: border-box; line-height: 20px; font-size: 15px !important; font-family: Bw Modelica; color: #4F4F4F;">
-                                                                                        <strong>{{paymentSystemName}} </strong>
-                                                                                        <span>R$ {{formatCurrency value}} à vista</span> {{#eq paymentSystemName 'Boleto Bancário'}}
-                                                                                        <p>
-                                                                                            <a style="box-sizing: border-box; border-radius: .25rem; display: inline-block; background-color:#991301; border-radius:10px; text-transform: uppercase; padding-top: .5rem; padding-bottom: .5rem; padding-left: 1rem; padding-right: 1rem; text-decoration: none !important; color: #FFF;
-                                                                                            font-family: ChaletComprime-CologneEighty;
-                                                                                            font-size: 28px;
-                                                                                            line-height: 21px;
-                                                                                            text-align: center;" href="{{replace url '{Installment}' installments}}">Imprimir Boleto</a>
-
-                                                                                        </p>
-                                                                                        {{/eq}}
-                                                                                    </div>
-                                                                                    {{/each}} {{/each}}
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                            {{/eq}}
                                                         </tbody>
                                                     </table>
-
                                                     {{#each orders}}
-
-                                                    <!-- TABELA DE DETALHE DA ORDER -->
                                                     <table width="100%" cellspacing="0" border="0" style="border:1px;border-bottom:1px">
                                                         <tbody>
                                                             <tr>
@@ -284,34 +239,22 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td style="padding-left:10px;">
-                                                                    <table style="padding-bottom:0px;padding-top:5px;">
+                                                                <td style="padding-left:10px; ">
+                                                                    <table style="padding-bottom:0px;padding-top:5px; ">
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td>
-                                                                                    <div class="status" style="vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px;">
-                                                                                        <strong style="vertical-align:top;font-size:16px;color:#E3503C;">&#10003;</strong>
-                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;color:#E3503C;padding-left:3px;width:100px;">
-                                                                                            <strong style="font-size:14px;">PEDIDO REALIZADO</strong>
-                                                                                            <!--<br><span style="display:inline-block;line-height:16px;">{{formatDate orders.0.creationDate}} 10:30</span>-->
+                                                                                    <div class="status " style="vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px; ">
+                                                                                        <strong style="vertical-align:top;font-size:16px;color:#BBB; ">&#10003;</strong>
+                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;color:#BBB;padding-left:3px;width:100px; ">
+                                                                                            <strong style="font-size:14px; ">PEDIDO REALIZADO</strong>
+                                                                                            <!--<br><span style="display:inline-block;line-height:16px; ">{{formatDate orders.0.creationDate}} 10:30</span>-->
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="status" style="vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px;">
-                                                                                        <strong style="vertical-align:top;font-size:13px;color:#BBB;padding-left:3px;padding-right:5px;">&#9658;</strong>
-                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;color:#BBB;padding-left:3px;width:120px;">
-                                                                                            <strong style="font-size:14px;"> PAGAMENTO CONFIRMADO</strong>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="status" style="vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px;">
-                                                                                        <strong style="vertical-align:top;font-size:13px;color:#BBB;padding-left:3px;padding-right:5px;">&#9658;</strong>
-                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;color:#BBB;padding-left:3px;width:120px;">
-                                                                                            <strong style="font-size:14px;"> PEDIDO FATURADO</strong>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="status" style="vertical-align:top;vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px;">
-                                                                                        <strong style="vertical-align:top;font-size:13px;color:#BBB;padding-left:3px;padding-right:5px;">&#9658;</strong>
-                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;padding-left:3px;color:#BBB;width:90px;">
-                                                                                            <strong style="font-size:14px;"> PEDIDO ENVIADO</strong>
+                                                                                    <div class="status " style="vertical-align:top;display:inline-block;padding-right:5px;padding-bottom:10px;padding-top:0px; ">
+                                                                                        <strong style="vertical-align:top;font-size:16px;color:#E3503C; ">X</strong>
+                                                                                        <div style="display:inline-block;line-height:16px;font-size:10px;color:#E3503C;padding-left:3px;width:140px; ">
+                                                                                            <strong style="font-size:14px; ">PAGAMENTO NÃO AUTORIZADO</strong>
                                                                                         </div>
                                                                                     </div>
                                                                                 </td>
@@ -402,32 +345,11 @@
                                                         </tbody>
                                                     </table>
 
-
-                                                    <!-- TABELA DE FORMA DE PAGAMENTO DA ORDER -->
-
-
-                                                    {{#eq ../split true}}
-
-                                                    <table cellspacing="0" cellpadding="4" border="0" align="right" style="margin-bottom:0px;border: 1px;border-top:0px;padding-top:7px;padding-bottom:7px;padding-left:7px;padding-right:7px;" bgcolor="#f9f9f9" width="100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <div style="color:#BBB;font-size:14px;font-weight:bold;text-transform:uppercase;" scope="col">Forma depagamento</div>
-                                                                    {{#each paymentData.transactions}} {{#each payments}}
-                                                                    <div>
-                                                                        <strong>{{paymentSystemName}} </strong>
-                                                                        <span>R$ {{formatCurrency value}}</span>
-                                                                        </span> &nbsp;
-                                                                    </div>
-                                                                    {{/each}} {{/each}}
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                    {{/eq}}
-
-                                                    <!-- TABELA DE TOTALIZADORES DA ORDER -->
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                     <table cellspacing="0" cellpadding="4" border="0" align="right" style="margin-bottom:15px;border: 1px;border-top:0px;padding-top:10px;padding-bottom:7px;padding-left:7px;padding-right:7px;" bgcolor="#f9f9f9">
                                                         <tbody>
                                                             {{#each totals}} {{#if value}}
@@ -442,50 +364,29 @@
                                                             {{/if}} {{/each}}
                                                         </tbody>
                                                     </table>
-
-
-                                                    {{/each}}
-
-                                            </tr>
-                                            <br />
-                                            </td>
-
-                                            <tr>
-                                                <td>
-                                                    <table align="left" class="table-button">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <p style="box-sizing: border-box !important;color:#444;">
-                                                                        <a href="{{ordersUrl}}"><button style="margin-top: 1rem !important; height: 50px; width: 220px; background-color: #E3503C; font-size: 28px; line-height: 21px; text-align: center; color:#FFF; border: none; font-family: ChaletComprime-CologneEighty; ">Acompanhar Pedido</button></a>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
                                                 </td>
                                             </tr>
+                                            {{/each}}
                                             <tr>
                                                 <td>
-                                                    <p style="padding-top: 3rem; color: #333; font-family: ChaletComprime-CologneEighty; font-size: 22px; line-height: 20px;">ATENÇÃO: Desconsidere a mensagem caso já tenha efetuado o pagamento.</p>
-                                                    <p style="box-sizing: border-box; border-collapse: collapse; text-align: left;padding-top: 1rem; color: #4F4F4F; font-family: Bw Modelica; font-size: 15px;" align="left">Atenciosamente,</p>
-                                                    <p style="box-sizing: border-box; border-collapse: collapse; text-align: left; padding-bottom: 6rem !important; color: #4F4F4F; font-family: Bw Modelica; font-size: 15px;" align="left">Equipe Mercado Santé.</p>
+                                                    <p style="box-sizing: border-box; border-collapse: collapse; text-align: left;padding-top: 1rem; color: #4F4F4F; font-family: Bw Modelica; font-size: 15px; " align="left ">Atenciosamente,</p>
+                                                    <p style="box-sizing: border-box; border-collapse: collapse; text-align: left; padding-bottom: 6rem !important; color: #4F4F4F; font-family: Bw Modelica; font-size: 15px; " align="left ">Equipe Mercado Santé.</p>
                                                 </td>
                                             </tr>
-                                            <tr style="box-sizing: border-box !important;">
-                                                <td class="ph4-ns" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-top: 1rem; padding-bottom: 1rem !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
-                                                    align="left">
-                                                    <tr style="box-sizing: border-box !important;border-bottom:solid 10px">
-                                                        <td style="background-color: #E3503C;">
-                                                            <ul class="list-inline" style="display: flex; align-items: center; justify-content: space-between;padding-left:35%;padding-right:35%; list-style: none;background-color: #E3503C; padding-top:1em;">
+                                            <tr style="box-sizing: border-box !important; ">
+                                                <td class="ph4-ns " style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-top: 1rem; padding-bottom: 1rem !important; font-family: -apple-system,
+                                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; " align="left ">
+                                                    <tr style="box-sizing: border-box !important;border-bottom:solid 10px ">
+                                                        <td style="background-color: #E3503C; ">
+                                                            <ul class="list-inline " style="display: flex; align-items: center; justify-content: space-between;padding-left:35%;padding-right:35%; list-style: none;background-color: #E3503C; padding-top:1em; ">
                                                                 <li>
-                                                                    <a href="https://www.facebook.com/mercadosante"><img src="https://mercadosante.myvtex.com/arquivos/icon-facebook-white.png" style="max-width:53px;"></a>
+                                                                    <a href="https://www.facebook.com/mercadosante "><img src="https://mercadosante.myvtex.com/arquivos/icon-facebook-white.png " style="max-width:53px; "></a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="https://www.instagram.com/mercadosante/"><img src="https://mercadosante.myvtex.com/arquivos/icon-instagram-white.png" style="max-width:53px; "></a>
+                                                                    <a href="https://www.instagram.com/mercadosante/ "><img src="https://mercadosante.myvtex.com/arquivos/icon-instagram-white.png " style="max-width:53px; "></a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href=""><img src="https://mercadosante.myvtex.com/arquivos/icon-youtube-white.png" style="max-width:53px;"></a>
+                                                                    <a href=" "><img src="https://mercadosante.myvtex.com/arquivos/icon-youtube-white.png " style="max-width:53px; "></a>
                                                                 </li>
 
 
