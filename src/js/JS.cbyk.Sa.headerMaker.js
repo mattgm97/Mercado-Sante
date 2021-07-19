@@ -2,7 +2,7 @@
 docReady(function () {
 
 
-    fetch("/api/catalog_system/pub/category/tree/3/")
+    fetch("/api/catalog_system/pub/category/tree/2/")
         .then(res => res.json())
         .then(response => {
             console.log(response);
@@ -16,6 +16,24 @@ docReady(function () {
                 console.log("adding main")
                 if (element.hasChildren) {
                
+
+                    $("#deptos-list").append(`
+                    
+                    <div class="col-sm-4 offset-md-2 secondLayer secondLayer-${element.name} " id="${element.name}">
+                    <ul class="">
+                     </ul>
+                </div>
+                `);
+                    //Desktop
+                    $(`.depto-${element.name}`).mouseenter(function () {
+                        $(".secondLayer").hide();
+                        $(`.secondLayer-${element.name}#${element.name}`).show()
+                    });
+
+                    $(`.secondLayer-${element.name}#${element.name}`).mouseleave(function () {
+                        $(".secondLayer").hide();
+                       
+                    });
 
 
 
@@ -50,7 +68,7 @@ docReady(function () {
                         let divtextsub = subs.name;
                         subs.name = subs.name.replace(/[\s/,&]+/g, '-');
                         //desktop
-
+                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${subs.name}"><a href="${subs.url}">${divtextsub}</a></li>`);
                         if (!subs.hasChildren) {
                             $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
