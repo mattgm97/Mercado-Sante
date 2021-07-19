@@ -59,6 +59,7 @@ body.menu-ativo:before {
   text-align: center;
   font-size: 36px !important;
   margin-top: 2em;
+  text-transform: uppercase;
   margin-bottom: 1.3em;
 }
 
@@ -819,6 +820,7 @@ h4#divTitulo::after {
   h4#divTitulo,
   .prateleira.vitrine h2 {
     text-align: left;
+    text-transform: uppercase;
   }
 
   .section-title::after,

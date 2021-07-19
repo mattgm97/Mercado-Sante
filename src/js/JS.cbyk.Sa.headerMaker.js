@@ -25,12 +25,12 @@ docReady(function () {
                 </div>
                 `);
                     //Desktop
-                    $(`.depto-${element.name}`).mouseenter(function () {
+                    $(`.depto-${element.name}`).on('mouseenter',function () {
                         $(".secondLayer").hide();
                         $(`.secondLayer-${element.name}#${element.name}`).show()
                     });
 
-                    $(`.secondLayer-${element.name}#${element.name}`).mouseleave(function () {
+                    $(`.secondLayer-${element.name}#${element.name}`).on('mouseleave',function () {
                         $(".secondLayer").hide();
                        
                     });

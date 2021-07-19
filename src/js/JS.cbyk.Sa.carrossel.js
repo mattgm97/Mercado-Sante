@@ -83,7 +83,7 @@ docReady(function() {
 
     });
 
-   /* $('.cb-iconeMeio .row').slick({
+    $('.cb-iconeMeio .row').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -99,7 +99,7 @@ docReady(function() {
             }
         }]
 
-    });*/
+    });
 
     $('.cb-BannerFinal .row').slick({
         infinite: true,

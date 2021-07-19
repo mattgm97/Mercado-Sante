@@ -631,7 +631,7 @@
        }
      .prateleira .price{
        display: block;
-       padding: 5px 0;
+       padding: 0px 0;
      }
        .prateleira .price a{
          display: block;
