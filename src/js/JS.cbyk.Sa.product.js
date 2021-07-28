@@ -167,7 +167,13 @@ setTimeout(()=>{
 
     createinstallments();
    
-  
+    const imgsLength = $("#divCompreJunto td a img").length;
+
+        for (let i = 0; i < imgsLength; i++) {
+            let imgProduct = $($("#divCompreJunto td a img")[i]).attr("src");
+            imgProduct = imgProduct.replace(/-90-90/g, '-182-182');
+            $($("#divCompreJunto td a img")[i]).attr("src", imgProduct);
+        }
     
 
 }, 1000)

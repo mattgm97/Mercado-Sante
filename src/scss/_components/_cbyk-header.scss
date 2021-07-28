@@ -1,3 +1,7 @@
+.secondLayer-Mix-Mercado-Santé{
+  display: none !important;
+}
+
 .banner-top .box-banner a img {
   width: auto;
   max-width: 100%;
@@ -65,21 +69,18 @@ body.menu-ativo:before {
 
 .section-title,
 h4#divTitulo {
-  color: #007da5;
-  text-align: center;
-  font-size: 24px;
+  padding: 5px;
+  background: #f29100;
+  margin-top: 2em;
+    margin-bottom: 2em;
+  width: 24%;
+  height: 50px;
+  color: #633510!important;
+  font-size: 36px!important;
+  font-family: 'ChaletComprime-CologneEighty';
 }
 
-.section-title::after,
-.prateleira.vitrine h2::after,
-h4#divTitulo::after {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 2px;
-  margin: 12px auto 0;
-  background: #007da5;
-}
+
 
 .deptonav .secondLayer {
   display: none;
