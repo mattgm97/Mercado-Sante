@@ -2254,12 +2254,11 @@
 
 
   .modal-content {
-      
-  top: 94px !important;
+    width: 100% !important;
+    top: 8px !important;
   }
   .modal{
     left: 76%;
- 
     width: 380px;
   }
   
