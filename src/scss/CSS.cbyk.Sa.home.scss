@@ -9,6 +9,10 @@
     }
 }*/
 
+.fullbanner > .box-banner:not(:first-child) {
+    display: none;
+  }
+
 .siganos{
     font-size: 36px!important;
     margin-top: 1em;
