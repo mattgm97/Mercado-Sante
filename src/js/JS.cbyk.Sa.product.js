@@ -74,9 +74,9 @@ $(".parcelamentoProd").click(function(){
 
 setTimeout(()=>{
 
-    if(skuJson.name.includes("Cesta")){
+   /* if(skuJson.name.includes("Cesta")){
         $(".box-contents").fadeIn();
-    }
+    }*/
  
     const mq = window.matchMedia("(max-width: 800px)");
 
