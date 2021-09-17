@@ -329,14 +329,16 @@
       color: #4F4F4F;
     }
     ul{
-      display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
+     
 
     li{
       margin-right: 1em;
     }
     }
+  }
+
+  .cesta-modal{
+   display: none;
   }
   #modalstuff {
     padding: 0;
@@ -852,13 +854,29 @@
     }
   }
   
-  .modal {
+  .footer-lgpd {
     background-color: transparent !important;
     z-index: 99999 !important;
     top: 16% !important;
     border: none !important;
     box-shadow: none !important;
     width: 60%;
+  }
+  
+  .cesta-modal{
+    background-color: #f29100 !important;
+    border-color: #f29100 !important;
+    box-shadow: none !important;
+  }
+
+ 
+  #ElementsModal .modal-content{
+    background-color: white !important;
+  }
+
+
+  .modal{
+    top: 16%!important;
   }
   
   .modal-content {
@@ -876,7 +894,11 @@
   }
   
   .modal-title {
-    color: #8D7573;
+    color: #333;
+    font-size: 32px;
+    font-weight: 600;
+    /* line-height: 50px; */
+    font-family: 'ChaletComprime-CologneEighty';
   }
   
   .modal-body img {

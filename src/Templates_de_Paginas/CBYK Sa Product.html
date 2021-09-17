@@ -99,24 +99,38 @@
                     <div class="seletor-sku">
                         <vtex.cmc:skuselection />
                     </div><!-- .seletor-sku -->
+                    <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal">
+                        Conteúdo da cesta
+                      </button>
 
-                    <div class="box-contents" style="display: none;">
-                        <div class="row">
-                            <div class="col-12">
-                                <span>Este box contém:</span>
 
-                                <div class="thelist">
-                                    <ul>
-                                        <li><img src="/arquivos/mcenoura.svg" alt="Cenoura" title="Cenoura"/></li>
-                                        <li><img src="/arquivos/mchuchu.svg" alt="Chuchu" title="Chuchu"/></li>
-                                        <li><img src="/arquivos/mcouveflor.svg" alt="Couve-flor" title="Couve-flor"/></li>
-                                        <li><img src="/arquivos/mespinafre.svg" alt="Espinafre" title="Espinafre"/></li>
-                                    </ul>
-                                </div>
-                              
+                      <div class="modal fade" id="ElementsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Este box contém:</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <div class="modal-body">
+                                <div class="box-contents">
+                                    <div class="row">
+                                        <div class="col-12">
+            
+                                            <div class="thelist">
+                                                <ul>
+                                                    
+                                                </ul>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          </div>
                         </div>
-                    </div>
+                      </div>
+                   
 
                     <div class="row">
 

@@ -20,14 +20,14 @@ accentsTidy = function (s) {
 };
 
 
-function createinstallments(){
+function createinstallments() {
     let price = skuJson.skus[0].bestPriceFormated;
     price = price.replace(/,/g, '.').replace(/[\sR$]+/g, '');
     price = Number(price);
     let installments = skuJson.skus[0].installments;
 
-    for(let i = installments; i > 0; i--){
-        let installment =( price / i).toFixed(2);
+    for (let i = installments; i > 0; i--) {
+        let installment = (price / i).toFixed(2);
         //console.log(installment)
 
         $(".installmentslist ul").append(`
@@ -41,43 +41,53 @@ function createinstallments(){
 
 
 
-  /*  let dados = {
-        "items":[
-            {
-                id: `${skuJson.skus[0].sku}`,
-                quantity: 1,
-                seller: "1"
-            }
-        ],
-        "country": "BRA"
-        
-    }
+/*  let dados = {
+      "items":[
+          {
+              id: `${skuJson.skus[0].sku}`,
+              quantity: 1,
+              seller: "1"
+          }
+      ],
+      "country": "BRA"
+      
+  }
 
-    fetch("/api/checkout/pub/orderforms/simulation",{
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dados)
-    })
-    .then(response =>{return response.json()})
-    .then(data =>{
-        console.log(data)
-    })
+  fetch("/api/checkout/pub/orderforms/simulation",{
+      method: 'POST',
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(dados)
+  })
+  .then(response =>{return response.json()})
+  .then(data =>{
+      console.log(data)
+  })
 */
 
-$(".parcelamentoProd").click(function(){
-  
+$(".parcelamentoProd").click(function () {
+
     $(".installmentslist").toggle();
 })
 
 
-setTimeout(()=>{
+setTimeout(() => {
 
-   /* if(skuJson.name.includes("Cesta")){
-        $(".box-contents").fadeIn();
-    }*/
- 
+    if (skuJson.name.includes("Cesta")) {
+        $(".cesta-modal").fadeIn();
+        let conteudo = $(".value-field.Produtos-na-cesta").text();
+        let conteudoArray = conteudo.split(", ");
+
+        conteudoArray.forEach(item =>{
+            console.log(item);
+            $(".thelist ul").append(`<li><img src="/arquivos/icon-${item}.svg" alt="${item}" title="${item}"/></li>`)
+        })
+
+    }
+
+
+
     const mq = window.matchMedia("(max-width: 800px)");
 
     if (mq.matches) {
@@ -101,33 +111,33 @@ setTimeout(()=>{
             arrows: true,
             responsive: [
                 {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true
-                  }
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
                 },
                 {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true
-                  }
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
                 },
                 {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true
-                  }
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
                 }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
-              ]
+            ]
         });
 
 
@@ -166,18 +176,18 @@ setTimeout(()=>{
 
 
     createinstallments();
-   
+
     const imgsLength = $("#divCompreJunto td a img").length;
 
-        for (let i = 0; i < imgsLength; i++) {
-            let imgProduct = $($("#divCompreJunto td a img")[i]).attr("src");
-            imgProduct = imgProduct.replace(/-90-90/g, '-182-182');
-            $($("#divCompreJunto td a img")[i]).attr("src", imgProduct);
-        }
-    
+    for (let i = 0; i < imgsLength; i++) {
+        let imgProduct = $($("#divCompreJunto td a img")[i]).attr("src");
+        imgProduct = imgProduct.replace(/-90-90/g, '-182-182');
+        $($("#divCompreJunto td a img")[i]).attr("src", imgProduct);
+    }
+
 
 }, 1000)
-  
+
 
 
 
@@ -186,43 +196,43 @@ const mq = window.matchMedia("(max-width: 800px)");
 
 if (mq.matches) {
 
-    $("#btn-description").click(function(){
+    $("#btn-description").click(function () {
         document.getElementById("description").style.right = "0px";
-        
+
     })
 
-    $("#description .prod-infos").click(function(){
+    $("#description .prod-infos").click(function () {
         document.getElementById("description").style.right = "-880px";
-        
+
     })
 
-    $("#btn-specification").click(function(){
+    $("#btn-specification").click(function () {
         document.getElementById("specification").style.right = "0px";
-        
+
     })
 
-    $("#specification .prod-infos").click(function(){
+    $("#specification .prod-infos").click(function () {
         document.getElementById("specification").style.right = "-880px";
-        
+
     })
 
 
 
-} else{
+} else {
     $("#description").show();
     $("#btn-description").click(() => {
         $("#description").show();
         $("#btn-description").addClass("active-tab")
         $("#btn-specification").removeClass("active-tab")
         $("#specification").hide();
-      
+
     })
     $("#btn-specification").click(() => {
         $("#specification").show();
         $("#btn-specification").addClass("active-tab")
         $("#btn-description").removeClass("active-tab")
         $("#description").hide();
-       
+
     })
 }
 
@@ -230,11 +240,11 @@ if (mq.matches) {
 
 setInterval(() => {
     $("#btnFreteSimulacao").val("CALCULAR");
-    for(let i = 0; i < $(".product-details .seletor-sku .topic").length; i++){
-        let myName =  $($(".product-details .seletor-sku .topic .specification")[i]).text();
+    for (let i = 0; i < $(".product-details .seletor-sku .topic").length; i++) {
+        let myName = $($(".product-details .seletor-sku .topic .specification")[i]).text();
         $($(".product-details .seletor-sku .topic .select select option:first-of-type")[i]).text(myName)
-       }
-   
+    }
+
 }, 1000);
 
 
