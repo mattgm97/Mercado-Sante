@@ -12,7 +12,7 @@ docReady(function () {
             response.forEach(element => {
                 let divtext = element.name;
                 element.name = element.name.replace(/[\s/,&]+/g, '-');
-                $(".deptos ul").append(`<li class="depto-${element.name}"><a href="${element.url}">${divtext}</a></li>`);
+                $(".deptos ul").append(`<li class="depto-${element.name}"><a href="${element.url}?PS=12&O=OrderByNameASC">${divtext}</a></li>`);
                 console.log("adding main")
                 if (element.hasChildren) {
                
@@ -38,7 +38,7 @@ docReady(function () {
 
 
                     //mobile
-                    $(".sidenav").append(`<div class="depto-box" style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+                    $(".sidenav").append(`<div class="depto-box" style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${element.url}?PS=12&O=OrderByNameASC">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
              <div class="dropdown-container" id="${element.name}"></div>`);
 
 
@@ -68,9 +68,9 @@ docReady(function () {
                         let divtextsub = subs.name;
                         subs.name = subs.name.replace(/[\s/,&]+/g, '-');
                         //desktop
-                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${subs.name}"><a href="${subs.url}">${divtextsub}</a></li>`);
+                        $(`.secondLayer-${element.name}  ul`).append(`<li  class="item-${subs.name}"><a href="${subs.url}?PS=12&O=OrderByNameASC">${divtextsub}</a></li>`);
                         if (!subs.hasChildren) {
-                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
+                            $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #333;"><span class="depto-${element.name}"><a href="${subs.url}?PS=12&O=OrderByNameASC">${divtextsub}</a></span></div>`);
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
                                 // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
