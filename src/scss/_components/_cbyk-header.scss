@@ -62,20 +62,23 @@ body.menu-ativo:before {
   color: #007da5;
   text-align: center;
   font-size: 36px !important;
-  margin-top: 2em;
+  margin-top: 1em;
+  padding: 5px 46px;
   text-transform: uppercase;
   margin-bottom: 1.3em;
+  display: inline-block;
+
 }
 
 .section-title,
 h4#divTitulo {
-  padding: 5px;
   background: #f29100;
   margin-top: 2em;
+  display: inline-block;
     margin-bottom: 2em;
-  width: 24%;
   height: 50px;
   color: #633510!important;
+  padding: 5px 46px;
   font-size: 36px!important;
   font-family: 'ChaletComprime-CologneEighty';
 }
@@ -822,6 +825,7 @@ h4#divTitulo {
   .prateleira.vitrine h2 {
     text-align: left;
     text-transform: uppercase;
+    display: inline-block;
   }
 
   .section-title::after,

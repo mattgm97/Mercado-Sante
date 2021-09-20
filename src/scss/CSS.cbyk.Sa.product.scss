@@ -315,11 +315,12 @@
   .colection-title{
     font-size: 36px!important;
 		margin-top: 1em;
-		padding: 4px;
+    padding: 5px 46px;
 		background: #F29100;
-    	width: 24%;
+    display: inline-block;
     	height: 50px;
     	color: #633510 !important;
+      text-align: center;
     	font-family: "ChaletComprime-CologneEighty";
   }
   .box-contents{
@@ -329,10 +330,14 @@
       color: #4F4F4F;
     }
     ul{
-     
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    margin: 0;
 
     li{
-      margin-right: 1em;
+     
+      width: 50%;
     }
     }
   }
@@ -1307,9 +1312,7 @@
       .product-image .apresentacao .thumbs{
         padding: 0;
       }
-      .colection-title{
-        width: 63%;
-      }
+     
       .selectedQuantity span.label, .selectedspecification span.label, .selectedspecification-value {
         text-align: center !important;
       }
@@ -1358,9 +1361,9 @@
       font-size: 22px !important;
     }
   
-    .modal-body {
-      max-height: 605px !important;
-      overflow-y: inherit;
+   #ElementsModal .modal-body {
+      max-height: 475px!important;
+      overflow-y: auto;
     }
   
     .modal-header .close {

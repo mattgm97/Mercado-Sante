@@ -3,19 +3,20 @@ $(".notifymetitle.notifyme-title").text("Produto indisponível");
 $(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
 
 
-accentsTidy = function (s) {
-    var r = s
-
-    r = r.replace(new RegExp("[Ã Ã¡Ã¢Ã£Ã¤Ã¥]", 'g'), "a");
-    r = r.replace(new RegExp("Ã¦", 'g'), "ae");
-    r = r.replace(new RegExp("Ã§", 'g'), "c");
-    r = r.replace(new RegExp("[Ã¨Ã©ÃªÃ«]", 'g'), "e");
-    r = r.replace(new RegExp("[Ã¬Ã­Ã®Ã¯]", 'g'), "i");
-    r = r.replace(new RegExp("Ã±", 'g'), "n");
-    r = r.replace(new RegExp("[Ã²Ã³Ã´ÃµÃ¶]", 'g'), "o");
-    r = r.replace(new RegExp("Å“", 'g'), "oe");
-    r = r.replace(new RegExp("[Ã¹ÃºÃ»Ã¼]", 'g'), "u");
-    r = r.replace(new RegExp("[Ã½Ã¿]", 'g'), "y");
+accentsTidy = function(s){
+    var r=s.toLowerCase();
+    r = r.replace(new RegExp(/\s/g),"");
+    r = r.replace(new RegExp(/[àáâãäå]/g),"a");
+    r = r.replace(new RegExp(/æ/g),"ae");
+    r = r.replace(new RegExp(/ç/g),"c");
+    r = r.replace(new RegExp(/[èéêë]/g),"e");
+    r = r.replace(new RegExp(/[ìíîï]/g),"i");
+    r = r.replace(new RegExp(/ñ/g),"n");                
+    r = r.replace(new RegExp(/[òóôõö]/g),"o");
+    r = r.replace(new RegExp(/œ/g),"oe");
+    r = r.replace(new RegExp(/[ùúûü]/g),"u");
+    r = r.replace(new RegExp(/[ýÿ]/g),"y");
+    r = r.replace(new RegExp(/\W/g),"");
     return r;
 };
 
@@ -79,9 +80,14 @@ setTimeout(() => {
         let conteudo = $(".value-field.Produtos-na-cesta").text();
         let conteudoArray = conteudo.split(", ");
 
-        conteudoArray.forEach(item =>{
+        conteudoArray.forEach(item => {
             console.log(item);
-            $(".thelist ul").append(`<li><img src="/arquivos/icon-${item}.svg" alt="${item}" title="${item}"/></li>`)
+            let itemImage = item
+            itemImage.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            itemImage = itemImage.toLowerCase();
+            itemImage = itemImage.replace(/ /g,'');
+            itemImage = accentsTidy(itemImage);
+            $(".thelist ul").append(`<li><img src="/arquivos/icon-${itemImage}.svg" alt="${item}" title="${item}"/><span style="display:block">${item}</span></li>`)
         })
 
     }
