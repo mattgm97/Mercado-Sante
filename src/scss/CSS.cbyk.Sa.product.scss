@@ -869,9 +869,10 @@
   }
   
   .cesta-modal{
-    background-color: #f29100 !important;
-    border-color: #f29100 !important;
-    box-shadow: none !important;
+    background-color: white !important;
+    border-color: #f29100!important;
+    box-shadow: none!important;
+    color: #f29100!important;
   }
 
  
@@ -890,7 +891,7 @@
   
   .modal-body {
     text-align: center;
-    max-height: 665px !important;
+    max-height: 430px !important;
   
     h4 {
       font-size: 14px;
