@@ -93,6 +93,8 @@ setTimeout(() => {
     }
 
 
+    $('.product-details .price-box .descricao-preco .valor-por').html( $('.product-details .price-box .descricao-preco .valor-por').html().replace('Por:', '') ); 
+    $(".product-details .price-box .descricao-preco .valor-por").css({"visibility": "visible"})
 
     const mq = window.matchMedia("(max-width: 800px)");
 
