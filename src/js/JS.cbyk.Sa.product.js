@@ -92,6 +92,12 @@ setTimeout(() => {
 
     }
 
+    if($(".value-field.Contem")){
+        let amount = $(".value-field.Contem").text()
+        $(".skuBestPrice").append(`<span style="font-size: 25px!important;margin-left: 11px;"> (${amount})</span>`)
+
+    }
+
 
     $('.product-details .price-box .descricao-preco .valor-por').html( $('.product-details .price-box .descricao-preco .valor-por').html().replace('Por:', '') ); 
     $(".product-details .price-box .descricao-preco .valor-por").css({"visibility": "visible"})
