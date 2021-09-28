@@ -92,7 +92,7 @@ setTimeout(() => {
 
     }
 
-    if($(".value-field.Contem")){
+    if($(".bread-crumb").html().includes("Hortifruti")){
         let amount = $(".value-field.Contem").text()
         $(".skuBestPrice").append(`<span style="font-size: 25px!important;margin-left: 11px;"> (${amount})</span>`)
 
