@@ -99,9 +99,20 @@
                     <div class="seletor-sku">
                         <vtex.cmc:skuselection />
                     </div><!-- .seletor-sku -->
-                    <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal">
-                       Essa cesta contém
-                      </button>
+
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal">
+                                Essa cesta contém
+                            </button>
+
+                    </div>
+                    <div class="col-6 col-sm-3">
+    
+                         <a href="#anchor-more-info" class="more-info-btn"> Mais informações</a>
+                    </div>
+                    </div>
+                    
 
 
                    
@@ -143,35 +154,34 @@
  
  
              <div id="product-extra-details-3"></div>
-             <div class="product-description-box">
-                 <!--  Component: Cross selling -->
-                 <vtex.cmc:BuyTogether />
-             </div>
+            
  
              <div id="product-extra-description-5"></div>
 
            
  
-             <div class="product-description-box" id="sugestions" style="    margin: 4em 0;">
+           <!--<div class="product-description-box" id="sugestions" style="    margin: 4em 0;">
               
                
-                <div class="product-carousel">
+             <div class="product-carousel">
                    <vtex:contentPlaceHolder id="inclua-prods" />
-               </div><!-- .showcase-default -->
+               </div> 
                  
-                 <style>
-                     @media (max-width: 600px) {
-                         #svgdoprod {
-                             width: 100% !important;
- 
-                         }
-                     }
-                 </style>
-                 <div class="product-carousel">
+               
+              <div class="product-carousel">
                      <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
-                 </div><!-- .showcase-default -->
-             </div>
- 
+                 </div> 
+             </div>--> 
+             <style>
+                @media (max-width: 600px) {
+                    #svgdoprod {
+                        width: 100% !important;
+
+                    }
+                }
+            </style>
+
+            <div id="anchor-more-info"></div>
              <h2 class="colection-title">ESPECIFICAÇÃO TÉCNICAS</h2>
  
              <div class="product-description">
@@ -205,6 +215,20 @@
                      </div><!-- .description -->
                  </div>
  
+                 <div class="product-description-box" id="sugestions" style="    margin: 2em 0;">
+              
+               
+                    <div class="product-carousel">
+                          <vtex:contentPlaceHolder id="ofertas" />
+                      </div> 
+                        
+                      
+                    </div>
+
+                    <div class="product-description-box">
+                        <!--  Component: Cross selling -->
+                        <vtex.cmc:BuyTogether />
+                    </div>
  
  
                  <div class="product-description-box">

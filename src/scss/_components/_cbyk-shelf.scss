@@ -45,7 +45,7 @@
 		text-decoration: none;
 		width: 100% !important;
 		border-radius: 5px;
-		background-color: #E3503C !important;
+		background-color: #D8742F !important;
 		.fa {
 			display: none !important;
 		}
@@ -107,7 +107,7 @@
 
 	.product-name {
 
-		min-height: auto !important;
+		min-height: 64px;
 		height: 58px;
 		vertical-align: top;
 		display: inline-block;
@@ -341,8 +341,11 @@ h4#divTitulo {
 	}
 	.prateleira {
 		.box-item {
-			height: 17em;
+			height: 20em;
 			padding: 6px !important;
+		}
+		.product-name{
+			height: 97px;
 		}
 		.buy-btn-icon {
 			.btn-add-buy-button-asynchronous {

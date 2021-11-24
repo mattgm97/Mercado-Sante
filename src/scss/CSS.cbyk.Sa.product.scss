@@ -44,11 +44,11 @@
   
   .sku-notifyme-form.notifyme-form input.btn-ok {
     color: white;
-    background-color: #e3503c!important;
+    background-color: #D8742F!important;
     font-size: 24px;
     text-decoration: none;
     font-family: 'ChaletComprime-CologneEighty';
-    border-color: #e3503c!important;
+    border-color: #D8742F!important;
   }
 
   .divCompreJunto table{
@@ -111,13 +111,13 @@
       font-size: 18px;
   
       strong, .more a {
-        color: #e3503c;
+        color: #D8742F;
       }
   
       .comprar-junto a {
         display: block;
         width: 100%;
-        background-color: #e3503c!important;
+        background-color: #D8742F!important;
         font-weight: 400;
         color: #fff!important;
         font-size: 25px;
@@ -386,7 +386,7 @@
   .product-description .buy-together-content td.buy .comprar-junto a, .buy-button.buy-button-ref {
     display: block;
     width: 80%;
-    background-color: #E3503C !important;
+    background-color: #D8742F !important;
     font-weight: 400;
     color: #fff !important;
     text-transform: uppercase;
@@ -588,15 +588,15 @@
     label .fitext {
       color: #4F4F4F !important;
       background: white !important;
-      border: 2px solid #E3503C !important;
+      border: 2px solid #D8742F !important;
       border-radius: 0px 0px 0px 0px !important;
       width: 22em;
     }
   
     .freight-btn {
       color: white !important;
-      background: #E3503C !important;
-      border: 1px solid #E3503C !important;
+      background: #D8742F !important;
+      border: 1px solid #D8742F !important;
       border-radius: 0px 0px 0px 0px !important;
       margin-top: -3px;
       padding: 0px 29px;
@@ -876,6 +876,19 @@
     color: #f29100!important;
   }
 
+  .more-info-btn{
+    background-color: white !important;
+    border-color: #f29100!important;
+    box-shadow: none!important;
+    color: #f29100!important;
+    border: solid 1px;
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+    border-radius: 0.25rem;
+
+  }
+
  
   #ElementsModal .modal-content{
     background-color: white !important;
@@ -1079,8 +1092,8 @@
   }
   
   #product-specs a:hover, .active-tab {
-    border-bottom: 4px solid #E3503C !important;
-    color: #E3503C !important;
+    border-bottom: 4px solid #D8742F !important;
+    color: #D8742F !important;
     transition: 0.3s;
   }
   
@@ -1117,7 +1130,7 @@
     }
   
     .product-image .apresentacao .thumbs a {
-      border: solid 1px #e3503c;
+      border: solid 1px #D8742F;
       border-radius: 5px;
       padding: 7px;
     }
@@ -1528,7 +1541,7 @@
     label .fitext {
       color: #4F4F4F !important;
       background: white !important;
-      border: 2px solid #E3503C !important;
+      border: 2px solid #D8742F !important;
       border-radius: 0px 0px 0px 0px !important;
       width: 27.5em;
     }
