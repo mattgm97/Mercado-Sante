@@ -10,6 +10,12 @@ function insertProductOnCart(item){
 		const position = [orderForm.items.length - 1]
 		let latest = orderForm.items[position]
 			//UPDATE CART
+			let miniNumber = 0
+			for(let i = 0; i < orderForm.items.length; i++) {
+				$($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+				miniNumber += orderForm.items[i].quantity
+			}
+			$(".mini-cart-qty-admake").text(`${miniNumber}`)
 
 			$("#mini-cart-admake .mini-cart-itens").append(`
 			

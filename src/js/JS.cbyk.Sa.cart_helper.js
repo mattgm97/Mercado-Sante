@@ -80,6 +80,15 @@ fill: #025EB9;
 .then(function(orderForm) {
 
 
+  let miniNumber = 0
+    for(let i = 0; i < orderForm.items.length; i++) {
+        $($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+        miniNumber += orderForm.items[i].quantity
+    }
+    $(".mini-cart-qty-admake").text(`${miniNumber}`)
+
+    $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+
   orderForm.items.forEach((element, index) => {
     $("#mini-cart-admake .mini-cart-itens").append(`
 							
@@ -153,19 +162,12 @@ $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
 
 
 
-let miniNumber = 0
-    for(let i = 0; i < orderForm.items.length; i++) {
-        $($(".qtd-field")[i]).val(orderForm.items[i].quantity)
-        miniNumber += orderForm.items[i].quantity
-    }
-    $(".mini-cart-qty-admake").text(`${miniNumber}`)
 
-    $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
  //formatReal(orderForm.value)
 });
 
 
-},2500);
+},1500);
 
 
 
@@ -198,6 +200,12 @@ $(document).on('click', ".btn-mais-check",  function(event) {
   //alert('Items atualizados!');
   console.log(orderForm);
   $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+  let miniNumber = 0
+			for(let i = 0; i < orderForm.items.length; i++) {
+				$($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+				miniNumber += orderForm.items[i].quantity
+			}
+			$(".mini-cart-qty-admake").text(`${miniNumber}`)
 });
 
 });
@@ -232,6 +240,12 @@ $(document).on('click',".btn-menos-check",  function(event) {
   //alert('Items atualizados!');
   console.log(orderForm);
   $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+  let miniNumber = 0
+			for(let i = 0; i < orderForm.items.length; i++) {
+				$($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+				miniNumber += orderForm.items[i].quantity
+			}
+			$(".mini-cart-qty-admake").text(`${miniNumber}`)
 });
 }
 });
@@ -243,10 +257,14 @@ $(document).on('click', ".product-remover", function(event){
   "quantity": 0}]
   vtexjs.checkout.removeItems(itemsToRemove).then(res=>{
     console.log("removido");
-    
     $($(".mini-cart-item")[rowindex]).remove();
     $("#mini-cart-admake-total").text("R$ " + formatReal(res.value));
-
+    let miniNumber = 0
+    for(let i = 0; i < res.items.length; i++) {
+        $($(".qtd-field")[i]).val(res.items[i].quantity)
+        miniNumber += res.items[i].quantity
+    }
+    $(".mini-cart-qty-admake").text(`${miniNumber}`)
   });
 })
 

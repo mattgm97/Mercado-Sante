@@ -100,17 +100,17 @@
                         <vtex.cmc:skuselection />
                     </div><!-- .seletor-sku -->
 
-                    <div class="row">
-                        <div class="col-6 col-sm-4">
-                            <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal">
+                    <div class="btns-list" style="display: flex;align-items:center;justify-content:flex-start">
+                        
+                            <button type="button" class="btn btn-primary cesta-modal" data-bs-toggle="modal" data-bs-target="#ElementsModal" style="margin-right: 1em;">
                                 Essa cesta contém
                             </button>
 
-                    </div>
-                    <div class="col-6 col-sm-3">
+                    
+                   
     
                          <a href="#anchor-more-info" class="more-info-btn"> Mais informações</a>
-                    </div>
+                    
                     </div>
                     
 
@@ -180,7 +180,15 @@
                     }
                 }
             </style>
-
+     <div class="product-description-box" id="sugestions" style="    margin: 2em 0;">
+              
+               
+        <div class="product-carousel">
+              <vtex:contentPlaceHolder id="ofertas" />
+          </div> 
+            
+          
+        </div>
             <div id="anchor-more-info"></div>
              <h2 class="colection-title">ESPECIFICAÇÃO TÉCNICAS</h2>
  
@@ -215,20 +223,12 @@
                      </div><!-- .description -->
                  </div>
  
-                 <div class="product-description-box" id="sugestions" style="    margin: 2em 0;">
-              
-               
-                    <div class="product-carousel">
-                          <vtex:contentPlaceHolder id="ofertas" />
-                      </div> 
-                        
-                      
-                    </div>
+            
 
-                    <div class="product-description-box">
-                        <!--  Component: Cross selling -->
+                   <!--   <div class="product-description-box">
+                       
                         <vtex.cmc:BuyTogether />
-                    </div>
+                    </div>-->
  
  
                  <div class="product-description-box">

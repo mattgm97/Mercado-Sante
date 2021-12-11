@@ -62,6 +62,9 @@
     }
   }
 
+  .hortifruti li a{
+    color: #FEC601
+  }
   .search-single-navigator .Marca{
     display: none;
 
@@ -238,7 +241,7 @@
     border-radius: 9px;
     font-size: 20px;
     color: white;
-    background-color: #D8742F;
+    background-color: #D8742F !important;
     text-align: center;
     width: 362px;
     font-weight: 700;
@@ -249,7 +252,7 @@
   #returnToTop {
     .arrowToTop {
       background: none !important;
-      background-color: rgb(254, 80, 0) !important;
+      background-color: #D8742F !important;
       width: 40px !important;
       height: 32px;
       position: absolute;
@@ -364,7 +367,7 @@
     }
   
     #mySidenavfiltros {
-      z-index: 99;
+      z-index: 999;
       top: 0;
       left: -880px;
       overflow-x: hidden;

@@ -292,7 +292,7 @@
   }
   
   #comprar-flutuante .descricao-preco .valor-por, .product-details .price-box .descricao-preco .valor-por {
-    color: #007729  !important;
+    color: #3A5038  !important;
     font-family: 'ChaletComprime-CologneEighty';
     display: inline-block !important;
     font-size: 50px!important;
@@ -338,7 +338,7 @@
 
     li{
      
-      width: 50%;
+      width: 25%;
     }
     }
   }
@@ -361,7 +361,7 @@
   
   #comprar-flutuante .descricao-preco .valor-por strong, .product-details .price-box .descricao-preco .valor-por strong, #modalstuff .descricao-preco .valor-por strong {
     font-weight: 200;
-    color: #007729  !important;
+    color: #3A5038  !important;
     font-size: 50px !important;
     font-style: initial !important;
     display: inline-block !important;
@@ -871,23 +871,25 @@
   
   .cesta-modal{
     background-color: white !important;
-    border-color: #f29100!important;
+    border-color: #FFC701!important;
     box-shadow: none!important;
-    color: #f29100!important;
+    color: #FFC701!important;
   }
 
   .more-info-btn{
     background-color: white !important;
-    border-color: #f29100!important;
+    border-color: #FFC701!important;
     box-shadow: none!important;
-    color: #f29100!important;
+    color: #FFC701!important;
     border: solid 1px;
     text-decoration: none;
     display: block;
+    text-align: center;
     padding: 6px;
     border-radius: 0.25rem;
 
   }
+
 
  
   #ElementsModal .modal-content{
@@ -905,7 +907,7 @@
   
   .modal-body {
     text-align: center;
-    max-height: 430px !important;
+    max-height: 452px !important;
   
     h4 {
       font-size: 14px;
@@ -1457,7 +1459,8 @@
     }
   
     .modal-dialog {
-      width: 560px;
+      width: 900px;
+      max-width: 900px;
     }
   
     .under-img {

@@ -72,7 +72,7 @@ body.menu-ativo:before {
 
 .section-title,
 h4#divTitulo {
-  background: #f29100;
+  background: #FFC701;
   margin-top: 2em;
   display: inline-block;
     margin-bottom: 2em;
@@ -101,12 +101,12 @@ h4#divTitulo {
 
 #box-bread-brumb li {
   &:before {
-    color: #007729 !important;
+    color: #3A5038 !important;
   }
 
   &.last a {
-    color: #007729 !important;
-    font-weight: bold;
+    color: #3A5038 !important;
+    
   }
 }
 
@@ -122,17 +122,17 @@ h4#divTitulo {
   }
 }
 
-#user-icon {
+/*#user-icon {
   width: 28px;
-}
+}*/
 
-#dropdownUserLink::after {
+#dropdownUserLink::after, #dropdownAtendimento::after {
   display: none !important;
 }
-#bag-icon {
+/*#bag-icon {
   width: 25px;
   margin-top: -4px;
-}
+}*/
 
 .container-fluid {
   padding-left: 0 !important;
@@ -151,10 +151,24 @@ h4#divTitulo {
   text-align: left;
 }
 
+.menu-selection ul{
+  align-content: stretch;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
 .header .search .busca {
   border: 1px solid #f2f2f2;
-  border-radius: 0;
+  border-radius: 6px;
   background-color: #f2f2f2;
+}
+
+.nav-desk{
+  display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .fulltext-search-box {
@@ -272,6 +286,7 @@ h4#divTitulo {
 .header {
   .button-menu-xs .btn {
     outline: none;
+    height: 100%;
   }
 
   .mini-cart .btn {
@@ -680,6 +695,20 @@ h4#divTitulo {
 
 .header .sing-in a {
   background-color: white !important;
+  text-decoration: none;
+  display: flex;
+    align-items: center;
+}
+
+.header-spam-title{
+  font-size: 20px;
+    line-height: 16px;
+    color: #3B5239;
+    text-transform: uppercase;
+    font-family: "ChaletComprime-CologneEighty";
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 18px;
 }
 
 .cart-top span {

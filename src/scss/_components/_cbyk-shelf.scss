@@ -35,7 +35,7 @@
 		}
 	}
 	.btn-add-buy-button-asynchronous {
-		color: #fff!important;
+		color: #D8742F!important;
 		display: inline-block!important;
 		text-transform: uppercase;
 		font-weight: 500!important;
@@ -45,7 +45,13 @@
 		text-decoration: none;
 		width: 100% !important;
 		border-radius: 5px;
-		background-color: #D8742F !important;
+		border: solid 2px #D8742F;
+		background-color: #fff !important;
+
+		&:hover{
+			background-color: #D8742F !important;
+			color: #fff!important;
+		}
 		.fa {
 			display: none !important;
 		}
@@ -73,9 +79,6 @@
 	}
 	.price {
 		margin-bottom: 0px;
-		width: 45%;
-		display: inline-block;
-		text-align: end;
 		
 		.best-price {
 			display: inline-flex !important;
@@ -83,7 +86,7 @@
 			clear: both;
 			color: #515151!important;
 			font-weight: 100 !important;
-			font-size: 22px !important;
+			font-size: 30px !important;
 			.priceitself {
 				color: #515151;
    				padding-left: 6px;
@@ -110,18 +113,18 @@
 		min-height: 64px;
 		height: 58px;
 		vertical-align: top;
-		display: inline-block;
-    width: 50%;
 		a {
-			color: #000!important;
+			color: #6E6e6e !important;
     		font-size: 23px!important;
     		line-height: 18px!important;
     		font-weight: 400!important;
     		font-family: "ChaletComprime-CologneEighty";
     		text-decoration: none;
+
+			
 		}
 		/*min-height: 27px !important;*/
-		text-align: left;
+		text-align: center;
 	
 	}
 
@@ -244,7 +247,7 @@ fieldset {
 		font-size: 36px!important;
 		margin-top: 1em;
 		padding: 4px;
-		background: #F29100;
+		background: #FFC701;
     	height: 50px;
     	color: #633510 !important;
     	font-family: "ChaletComprime-CologneEighty";
@@ -341,7 +344,7 @@ h4#divTitulo {
 	}
 	.prateleira {
 		.box-item {
-			height: 20em;
+			height: 24em;
 			padding: 6px !important;
 		}
 		.product-name{

@@ -3,6 +3,9 @@ setTimeout(function(){
 
     $(".resultado-busca-filtro > fieldset.orderBy select option:first-child").text("ORDENAR POR")
     
+    if($(".box-item").length < 12){
+        $(".carregar-prox-pg").hide()
+    }
 
     $(".bt-refinar.search-filter-button.even").text("Aplicar Filtros");
     

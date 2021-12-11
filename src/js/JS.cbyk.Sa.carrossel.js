@@ -28,7 +28,7 @@ docReady(function() {
 
     $('.product-carousel .prateleira.vitrine ul').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -102,7 +102,7 @@ docReady(function() {
 
     });
 
-    $('.cb-BannerFinal .row').slick({
+   /* $('.cb-BannerFinal .row').slick({
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -119,7 +119,7 @@ docReady(function() {
             }
         }]
 
-    });
+    });*/
     $('#homeCardsCarousel').slick({
         infinite: true,
         slidesToShow: 5,
