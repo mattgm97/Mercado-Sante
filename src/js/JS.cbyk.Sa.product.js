@@ -87,7 +87,7 @@ setTimeout(() => {
             itemImage = itemImage.toLowerCase();
             itemImage = itemImage.replace(/ /g,'');
             itemImage = accentsTidy(itemImage);
-            $(".thelist ul").append(`<li><img src="/arquivos/icon-${itemImage}.svg" alt="${item}" title="${item}"/><span style="display:block">${item}</span></li>`)
+            $(".thelist ul").append(`<li><img src="/arquivos/new-icon-${itemImage}.svg" alt="${item}" title="${item}"/><span style="display:block">${item}</span></li>`)
         })
 
     }

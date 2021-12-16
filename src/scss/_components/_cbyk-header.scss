@@ -157,6 +157,13 @@ h4#divTitulo {
     margin-top: 1em;
     padding-left: 0;
 
+    #assine-special {
+      background-color: #6DAC3B; 
+  
+      &:hover {
+      background-color: #3b5239;
+      }
+    }
     li {
       background-color: #3b5239;
       border-radius: 6px;
@@ -173,6 +180,8 @@ h4#divTitulo {
       background-color: #6DAC3B;
       }
 
+   
+
       a {
         color: white;
         text-decoration: none;
@@ -187,6 +196,24 @@ h4#divTitulo {
         }
       }
     }
+  }
+}
+
+.link-logo img{
+  width: 76%;
+  margin-top: -1.7em;
+}
+
+@media screen and (min-width: 1400px) {
+  .link-logo img{
+    width: 72%;
+    margin-top: -2.1em;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .menu-selection ul li{
+    width: 144px;
+    padding: 5px 12px;
   }
 }
 
@@ -796,7 +823,8 @@ h4#divTitulo {
     }
 
   .header-container {
-    padding-top: 12px;
+   /* padding-top: 12px;*/
+    border-top: solid 16px#6DAC3B;
   }
 
   .slick-prev {
