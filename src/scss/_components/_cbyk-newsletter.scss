@@ -1,5 +1,5 @@
 .cb-newsletter {
-    background: $color-2;
+    background: #6dac3b;
     margin-bottom: 20px;
     padding-top: 25px;
     padding-bottom: 10px;
@@ -7,10 +7,11 @@
     &-text {
         text-align: right;
         p {
-            color: $color-1;
+            color:white;
             font-family: 'ChaletComprime-CologneEighty';
             font-size: 40px;
             letter-spacing: 0.43px;
+            text-transform: uppercase;
             line-height: 36px;
         }
     
@@ -25,8 +26,9 @@
             max-width: 349px;
             border-radius: 5px;
             background-color: $white;
-            border: 1px solid $color-1;
-            text-align: center;
+           /* border: 1px solid $color-1;
+            text-align: center;*/
+            padding-left: 1em;
         }
     }
 }

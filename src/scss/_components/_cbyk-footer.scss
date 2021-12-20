@@ -30,11 +30,18 @@
   }
  
           
-                
+  .cb-footer-contatos ul li a {
+    font-family: Bw Modelica,sans-serif;
+    font-size: 26px !important;
+    background-color: #F5F5F5 !important;
+    border: 1px solid #C4C4C4 !important;
+    border-radius: 10px !important;
+    padding: 16px !important;
+  }               
 
 .cb-footer{
 
-    background: $color-2;
+   /* background: $color-2;*/
     padding: 50px 0px;
 
     h2 {
@@ -64,13 +71,13 @@
         }
     }
 
-    &-seguranca{
+  /*  &-seguranca{
         ul {
             display: flex;
             padding: 0;
             margin: 0;
         }
-    }
+    }*/
 
     &-redes {
         ul {
@@ -93,9 +100,9 @@
         }
     }
     &-pagamento{
-        margin-bottom: 4em;
+        margin-top: 4em;
         img{
-            width: 30%;
+            width: 38%;
             height: auto;
         }
     }
@@ -136,6 +143,7 @@
 }
 .cb-newsletter {
 	padding-left: 4em !important;
+ background-color: #6DAC3B;
 }
 .footer-btn {
 	width: 100%;
@@ -196,6 +204,8 @@
         p{
             text-align: center;
             padding: 5px 60px 5px 47px;
+            color: white !important;
+            text-transform: uppercase;
         }
     }
     .cb-footer{
@@ -207,11 +217,11 @@
             img{
                 width: 100%;
                 height: auto;
-                margin-left: 25px;
+              /*  margin-left: 25px;*/
             }
-            h2{
+           /* h2{
                 margin-left: 25px;
-            }
+            }*/
         }
 
 
