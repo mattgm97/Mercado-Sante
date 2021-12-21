@@ -81,15 +81,16 @@
 		margin-bottom: 0px;
 		
 		.best-price {
-			display: inline-flex !important;
+		/*	display: inline-flex !important;*/
+		text-align: left;
 		
 			clear: both;
-			color: #515151!important;
+			color: #B4B4B4!important;
 			font-weight: 100 !important;
 			font-size: 30px !important;
+			
 			.priceitself {
-				color: #515151;
-   				padding-left: 6px;
+				color: #B4B4B4;
     			font-weight: 100!important;
     			font-family: "ChaletComprime-CologneEighty";
 			}
