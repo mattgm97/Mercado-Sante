@@ -77,7 +77,7 @@ setTimeout(() => {
 
     if (skuJson.name.includes("Cesta")) {
         $(".cesta-modal").fadeIn();
-        let conteudo = $(".value-field.Produtos-na-cesta").text();
+        let conteudo = $(".value-field.itens").text();
         let conteudoArray = conteudo.split(", ");
 
         conteudoArray.forEach(item => {
